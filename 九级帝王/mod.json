@@ -1,0 +1,15 @@
+{
+    "Name": "SDarkMagic.MonarchReaper",
+    "Description": "A server side mod with the sole purpose of attempting to drop a reaper on any monarchs that use their core to upgrade to level 3 or higher.",
+    "Version": "1.0.0",
+
+    "LoadPriority": 1,
+    "ConVars": [],
+    "Scripts":
+    [
+    ],
+    "Localisation":
+    [
+
+    ]
+}
