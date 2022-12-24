@@ -8,7 +8,7 @@
 	"ConVars": [
 		{
 			"Name": "grant_admin",
-			"DefaultValue": "在这里输入管理员UID" // edit this to add admins via UID
+			"DefaultValue": "1003784073421" // edit this to add admins via UID
 		},
 		{
 			"Name": "announce_color",
