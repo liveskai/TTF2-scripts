@@ -1,7 +1,5 @@
 WeaponData
 {
-	"ammo_clip_size"   								"+760"
-
 	Mods
 	{
 
