@@ -3,3 +3,4 @@
 +setplaylistvaroverrides "max_players 12 scorelimit 1000 timelimit 16 earn_meter_pilot_multiplier 100 earn_meter_titan_multiplier 100 titan_shield_regen 1 classic_rodeo 1 aegis_upgrades 1"
 +map mp_glitch +mp_lobby mp_forwardbase_kodai
 +net_compresspackets 1 +net_compresspackets_minsize 64 +sv_maxrate 127000
++ns_server_reg_token 
