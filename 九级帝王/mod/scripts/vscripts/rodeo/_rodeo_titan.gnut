@@ -2253,8 +2253,8 @@ void function Rodeo_ApplyBatteryToTitan( entity battery, entity titan, bool shou
 
 		float coreFrac = 0.4
 		float shieldFrac = GetCurrentPlaylistVarFloat( "battery_shield_frac", 1.0 )
-		float ampedHealthSegmentFrac = 1.0
-		float healthSegmentFrac = 2.0
+		float ampedHealthSegmentFrac = 2.0
+		float healthSegmentFrac = 1.0
 		float RedBatteryHealthSegmentFrac = 0.5
 
 		bool batteryIsAmped = IsAmpedBattery( battery )
