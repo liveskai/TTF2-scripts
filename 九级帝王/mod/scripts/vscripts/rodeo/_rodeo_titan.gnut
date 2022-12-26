@@ -1753,8 +1753,8 @@ void function Rodeo_ApplyBatteryToTitan( entity battery, entity titan )
 		}
 		float coreFrac = GetCurrentPlaylistVarFloat( "battery_core_frac", 0.2 )
 		float shieldFrac = GetCurrentPlaylistVarFloat( "battery_shield_frac", 1.0 )
-		float ampedHealthSegmentFrac = GetCurrentPlaylistVarFloat( "amped_battery_health_frac", 2.0 )
-		float healthSegmentFrac = GetCurrentPlaylistVarFloat( "battery_health_frac", 0.5 )
+		float ampedHealthSegmentFrac = GetCurrentPlaylistVarFloat( "amped_battery_health_frac", 2.0 ) // 黄电池加血量
+		float healthSegmentFrac = GetCurrentPlaylistVarFloat( "battery_health_frac", 1 )  // 绿电池加血量
 
 		AddCreditToTitanCoreBuilder( titan, coreFrac ) //Always give core
 
@@ -2477,7 +2477,7 @@ void function ClassicRodeo_DropAllStoredBatteries( entity ent, var damageInfo )
 	baseVelocity.z = 0
 	newBattery.SetVelocity( baseVelocity + direction * 100 + <0, 0, 1> )
 	int random = RandomInt( 10 )
-	if( random <= 8 )	//0,1,2,3,4,5,6,7,8 -> 90%Yellow 10%Green
+	if( random <= 8 )	//0,1,2,3,4,5,6,7,8 -> 5%Yellow 50%Green // 电池掉落概率
 	{
 		newBattery.SetSkin( 2 )
 		Battery_StartFX( newBattery )
