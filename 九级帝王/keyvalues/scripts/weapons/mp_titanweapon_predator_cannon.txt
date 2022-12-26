@@ -1,12 +1,13 @@
 WeaponData
 {
+"no remove form clip"					"1"
 	Mods
 	{
 
 		LongRangeAmmo
 		{
-			"damage_near_value_titanarmor"					"*2"
-			"damage_far_value_titanarmor" 					"*2"
+			"damage_near_value_titanarmor"					"*1.2"
+			"damage_far_value_titanarmor" 					"*1.2"
 		}
 		Smart_Core
 		{
