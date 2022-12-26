@@ -2239,7 +2239,7 @@ void function Rodeo_ApplyBatteryToTitan( entity battery, entity titan, bool shou
 
 		if( IsValid( battery ) && soul.IsDoomed() )
 		{
-			if( battery.GetSkin() == 1 )
+			if( battery.GetSkin() == 2 )
 			{
 				UndoomTitan( titan, 1 )
 				titan.SetHealth( 1 )
