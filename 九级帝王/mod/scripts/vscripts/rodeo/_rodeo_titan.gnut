@@ -3524,7 +3524,7 @@ void function ClassicRodeo_DropAllStoredBatteries( entity ent, var damageInfo )
 		newBattery.SetVelocity( baseVelocity + direction * 100 + <0, 0, 1> )
 
 		int random = RandomInt( 10 )
-		if( random <= 8 )	//0,1,2,3,4,5,6,7,8 -> 90%Yellow 10%Green
+		if( random <= 8 )	//0,1,2,3,4,5,6,7,8 -> 5%Yellow 50%Green
 		{
 			newBattery.SetSkin( 2 )
 			Battery_StartFX( newBattery )
