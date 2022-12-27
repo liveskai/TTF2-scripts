@@ -2258,7 +2258,7 @@ void function Rodeo_ApplyBatteryToTitan( entity battery, entity titan, bool shou
 		float RedBatteryHealthSegmentFrac = 0.5
 
 		bool batteryIsAmped = IsAmpedBattery( battery )
-		if( batteryIsAmped )
+		if( ture )
 			coreFrac = 0.2
 
 		AddCreditToTitanCoreBuilder( titan, coreFrac ) //Always give core
