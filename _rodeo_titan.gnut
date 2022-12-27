@@ -2239,7 +2239,7 @@ void function Rodeo_ApplyBatteryToTitan( entity battery, entity titan, bool shou
 
 		if( IsValid( battery ) && soul.IsDoomed() )
 		{
-			if( battery.GetSkin() == 1 )
+			if( battery.GetSkin() == 2 )
 			{
 				UndoomTitan( titan, 1 )
 				titan.SetHealth( 1 )
@@ -2253,8 +2253,8 @@ void function Rodeo_ApplyBatteryToTitan( entity battery, entity titan, bool shou
 
 		float coreFrac = 0.4
 		float shieldFrac = GetCurrentPlaylistVarFloat( "battery_shield_frac", 1.0 )
-		float ampedHealthSegmentFrac = 1.0
-		float healthSegmentFrac = 2.0
+		float ampedHealthSegmentFrac = 2.0 //黄电池加血
+		float healthSegmentFrac = 1.0 //绿电池加血
 		float RedBatteryHealthSegmentFrac = 0.5
 
 		bool batteryIsAmped = IsAmpedBattery( battery )
@@ -3524,16 +3524,11 @@ void function ClassicRodeo_DropAllStoredBatteries( entity ent, var damageInfo )
 		newBattery.SetVelocity( baseVelocity + direction * 100 + <0, 0, 1> )
 
 		int random = RandomInt( 10 )
-		if( random <= 8 )	//0,1,2,3,4,5,6,7,8 -> 90%Yellow 10%Green
+		if( random <= 0 )	//0,1,2,3,4,5,6,7,8 -> 10%Yellow 90%Green
 		{
 			newBattery.SetSkin( 2 )
 			Battery_StartFX( newBattery )
 		}
-		/*if( random >= 6 )	//6,7,8,9 -> 30%  50% Yellow 40%Red 10% Green
-		{
-			newBattery.SetSkin( 1 )
-			Battery_StartFX( newBattery )
-		}*/
 	}
 }
 
