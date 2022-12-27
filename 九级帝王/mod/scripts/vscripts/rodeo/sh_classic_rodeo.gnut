@@ -12,7 +12,7 @@ const array<int> ELECTRIC_SMOKE_DAMAGESOURCES = [ eDamageSourceId.mp_titanabilit
 
 struct
 {
-	float classicRodeoAdditionalDamage = 1 // default additional damage value, should make it changable through playlistVars
+	float classicRodeoAdditionalDamage = 0.4 // default additional damage value, should make it changable through playlistVars
 } file
 #endif
 
