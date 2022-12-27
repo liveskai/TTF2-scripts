@@ -2470,7 +2470,7 @@ void function ClassicRodeo_DropAllStoredBatteries( entity ent, var damageInfo )
 
 	entity newBattery = Rodeo_CreateBatteryPack()
 	newBattery.s.touchEnabledTime = Time() + 0.3
-	vector direction = AnglesToForward( <0, i/batteryCount * 360.0, 0> )
+	vector direction = AnglesToForward( <0, 360.0, 0> )
 	newBattery.SetOrigin( ent.GetWorldSpaceCenter() + direction * 30 )
 	newBattery.SetAngles( <0, 0, 0 > )
 	vector baseVelocity = ent.GetVelocity()
