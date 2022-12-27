@@ -1753,8 +1753,8 @@ void function Rodeo_ApplyBatteryToTitan( entity battery, entity titan )
 		}
 		float coreFrac = GetCurrentPlaylistVarFloat( "battery_core_frac", 0.2 )
 		float shieldFrac = GetCurrentPlaylistVarFloat( "battery_shield_frac", 1.0 )
-		float ampedHealthSegmentFrac = GetCurrentPlaylistVarFloat( "amped_battery_health_frac", 2.0 ) //黄电池
-		float healthSegmentFrac = GetCurrentPlaylistVarFloat( "battery_health_frac", 1.0 ) //绿电池
+		float ampedHealthSegmentFrac = GetCurrentPlaylistVarFloat( "amped_battery_health_frac", 2.0 )
+		float healthSegmentFrac = GetCurrentPlaylistVarFloat( "battery_health_frac", 0.5 )
 
 		AddCreditToTitanCoreBuilder( titan, coreFrac ) //Always give core
 
@@ -2470,20 +2470,16 @@ void function ClassicRodeo_DropAllStoredBatteries( entity ent, var damageInfo )
 
 	entity newBattery = Rodeo_CreateBatteryPack()
 	newBattery.s.touchEnabledTime = Time() + 0.3
-	vector direction = AnglesToForward( <0, 360.0, 0> )
+	vector direction = AnglesToForward( <0, i/batteryCount * 360.0, 0> )
 	newBattery.SetOrigin( ent.GetWorldSpaceCenter() + direction * 30 )
 	newBattery.SetAngles( <0, 0, 0 > )
 	vector baseVelocity = ent.GetVelocity()
 	baseVelocity.z = 0
 	newBattery.SetVelocity( baseVelocity + direction * 100 + <0, 0, 1> )
-	int random = RandomInt( 20 )
-	if( random <= 0 )	//0 -> 5%Yellow
+	int random = RandomInt( 10 )
+	if( random <= 8 )	//0,1,2,3,4,5,6,7,8 -> 90%Yellow 10%Green
 	{
 		newBattery.SetSkin( 2 )
 		Battery_StartFX( newBattery )
-	}
-	if( random >= 11 )	//11,12,13,14,15,16,17,18,19 -> 45%Destroy
-	{
-		newBattery.Destroy()
 	}
 }
