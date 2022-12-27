@@ -1,5 +1,0 @@
-WeaponData
-{
-	// Damage - When Used by Players
-	"damage_rodeo" 									"1875"
-}
