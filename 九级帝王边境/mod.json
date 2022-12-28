@@ -1,0 +1,7 @@
+{
+    "Name": "ifp",
+    "Description": "ifp",
+    "Authors": ["cube"],
+    "LoadPriority": 101,
+    "RequiredOnClient": false
+}

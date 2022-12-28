@@ -1,0 +1,19 @@
+WeaponData
+{
+"ammo_no_remove_from_clip"						"1"
+	Mods
+	{
+
+		LongRangeAmmo
+		{
+			"damage_near_value_titanarmor"					"*1.5"
+			"damage_far_value_titanarmor" 					"*1.5"
+		}
+		Smart_Core
+		{
+			"damage_near_value_titanarmor"					"*1.5"
+			"damage_far_value_titanarmor" 					"*1.5"
+		}
+
+	}
+}
