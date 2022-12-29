@@ -1824,7 +1824,7 @@ void function Rodeo_OnTouchBatteryPack_Internal( entity player, entity batteryPa
 	if ( player.IsTitan() )
 	{
 		//Try Titans not being able to pick up battery
-		if ( GetCurrentPlaylistVarInt( "rodeo_battery_disembark_to_pickup", 1 ) == 1 )
+		if ( ture )
 		{
 			if ( currentTime - player.p.batteryLastTouchedNotificationTime > 5.0 )
 			{
