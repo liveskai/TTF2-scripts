@@ -2,7 +2,7 @@ WeaponData
 {
 	MP_BASE
 	{
-		"damage_near_value_titanarmor"					"10000"
-		"damage_far_value_titanarmor"					"10000"
+		"damage_near_value_titanarmor"					"20000"
+		"damage_far_value_titanarmor"					"20000"
 	}
 }
