@@ -11,8 +11,6 @@ WeaponData
 		}
 		Smart_Core
 		{
-			"damage_near_value_titanarmor"					"*1.2"
-			"damage_far_value_titanarmor" 					"*1.2"
 		}
 
 	}
