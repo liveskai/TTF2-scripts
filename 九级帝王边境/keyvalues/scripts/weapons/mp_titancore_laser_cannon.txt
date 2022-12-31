@@ -11,6 +11,6 @@ WeaponData
 
 		"core_duration"							"1.0"
 
-		"sustained_discharge_duration"					"10.0" // core duration
+		"sustained_discharge_duration"					"15.0" // core duration
 	}
 }
