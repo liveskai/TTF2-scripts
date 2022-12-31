@@ -1,0 +1,7 @@
+@echo off
+:Start
+chcp 65001
+NorthstarLauncher.exe -dedicated -multiple
+TIMEOUT /T 10
+cls
+GOTO:Start
