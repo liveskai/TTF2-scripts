@@ -1,6 +1,6 @@
 +setplaylist aitdm
 +mp_gamemode aitdm
-+setplaylistvaroverrides "max_players 12 scorelimit 1000 timelimit 18 earn_meter_pilot_multiplier 5 earn_meter_titan_multiplier 4 titan_shield_regen 1 classic_rodeo 1 aegis_upgrades 1"
++setplaylistvaroverrides "scorelimit 1500 timelimit 19 earn_meter_pilot_multiplier 5 earn_meter_titan_multiplier 4 titan_shield_regen 1 classic_rodeo 1 aegis_upgrades 1"
 +map mp_grave
 +net_compresspackets 1 +net_compresspackets_minsize 64 +sv_maxrate 127000
 +ns_server_reg_token 
