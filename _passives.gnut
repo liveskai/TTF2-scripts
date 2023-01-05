@@ -160,11 +160,11 @@ void function ApplyRoninFDUpgrades( array<string> upgradeRefs, entity titan, Tit
 				float titanShieldHealth = GetTitanSoulShieldHealth( soul )
 				soul.SetShieldHealthMax( int( titanShieldHealth * 1.5 ) )
 				break
-			case "fd_upgrade_ronin_weapon_tier_1":
+			/*case "fd_upgrade_ronin_weapon_tier_1":
 				entity weapon = titan.GetOffhandWeapon( OFFHAND_MELEE )
 				array<string> mods = weapon.GetMods()
 				mods.append( "fd_sword_upgrade" )
-				weapon.SetMods( mods )
+				weapon.SetMods( mods )*/
 				break
 			case "fd_upgrade_ronin_weapon_tier_2":
 				entity weapon = titan.GetOffhandWeapon( OFFHAND_LEFT )
@@ -172,12 +172,12 @@ void function ApplyRoninFDUpgrades( array<string> upgradeRefs, entity titan, Tit
 				mods.append( "fd_sword_block" )
 				weapon.SetMods( mods )
 				break
-			case "fd_upgrade_ronin_ultimate":
+			/*case "fd_upgrade_ronin_ultimate":
 				entity weapon = titan.GetOffhandWeapon( OFFHAND_EQUIPMENT )
 				array<string> mods = weapon.GetMods()
 				mods.append( "fd_duration" )
 				weapon.SetMods( mods )
-				break
+				break*/
 		}
 	}
 }
@@ -245,7 +245,7 @@ void function ApplyNorthstarFDUpgrades( array<string> upgradeRefs, entity titan,
 
 void function ApplyDerivedVanguardFDUpgrades( array<string> upgradeRefs, TitanLoadoutDef loadout )
 {
-	foreach ( upgrade in upgradeRefs )
+	/*foreach ( upgrade in upgradeRefs )
 	{
 		switch ( upgrade )
 		{
@@ -253,12 +253,12 @@ void function ApplyDerivedVanguardFDUpgrades( array<string> upgradeRefs, TitanLo
 				loadout.setFileMods.append( "fd_health_upgrade" )
 				break
 		}
-	}
+	}*/
 }
 
 void function ApplyVanguardFDUpgrades( array<string> upgradeRefs, entity titan, TitanLoadoutDef loadout )
 {
-	entity soul = titan.GetTitanSoul()
+	/*entity soul = titan.GetTitanSoul()
 	if ( !IsValid( soul ) ) //Ejecting
 		return
 
@@ -386,7 +386,7 @@ void function ApplyVanguardFDUpgrades( array<string> upgradeRefs, entity titan, 
 				}
 				break
 		}
-	}
+	}*/
 }
 
 void function ApplyDerivedIonFDUpgrades( array<string> upgradeRefs, TitanLoadoutDef loadout )
