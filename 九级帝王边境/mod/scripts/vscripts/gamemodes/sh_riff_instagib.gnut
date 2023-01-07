@@ -40,7 +40,7 @@ void function InstagibSetWeapons( entity player )
 	if ( !( player in file.playerWeapons ) )
 		file.playerWeapons[ player ] <- 0
 
-	player.SetMaxHealth( 1 )
+	player.SetMaxHealth( 4 )
 	InstagibUpdateWeapons( player )
 }
 
