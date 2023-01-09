@@ -1,6 +1,0 @@
-# ttf2_server_mod
-MOD自用
-h1 mp_titancore_amp_core 爆发核心
-mp_titancore_flame_wave 火焰核心
-mp_titanweapon_sword 浪人剑
- "weapons/mp_titancore_flight_core.nut", "weapons/mp_titancore_lasercannon.nut", "weapons/mp_titancore_salvo_core.nut", "weapons/mp_titancore_shift_core.nut", "weapons/mp_titancore_dash_core.nut", "weapons/mp_titancore_upgrade.nut", "weapons/mp_titancore_siege_mode.nut", "weapons/mp_titanweapon_40mm.nut", "weapons/mp_titanweapon_arc_wave.nut", "weapons/mp_titanweapon_arc_ball.nut", "weapons/mp_titanweapon_dumbfire_rockets.nut", "weapons/mp_titanweapon_flame_wall.nut", "weapons/mp_titanweapon_flightcore_rockets.nut", "weapons/mp_titanweapon_homing_rockets.nut", "weapons/mp_titanweapon_laser_lite.nut", "weapons/mp_titanweapon_leadwall.nut", "weapons/mp_titanweapon_particle_accelerator.nut", "weapons/mp_titanweapon_predator_cannon.nut", "weapons/mp_titanweapon_meteor.nut", "weapons/mp_titanweapon_rocketeer_rocketstream.nut", "weapons/mp_titanweapon_salvo_rockets.nut", "weapons/mp_titanweapon_tracker_rockets.nut", "weapons/mp_titanweapon_shoulder_rockets.nut", "weapons/mp_titanweapon_sniper.nut", "weapons/mp_titanweapon_vortex_shield.nut", "weapons/mp_titanweapon_xo16.nut", "weapons/mp_titanweapon_heat_shield.nut", "weapons/.nut", "weapons/mp_titanweapon_stun_laser.nut", "weapons/mp_weapon_arc_launcher.nut", 
