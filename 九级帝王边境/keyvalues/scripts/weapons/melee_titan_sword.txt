@@ -15,8 +15,8 @@ WeaponData
 
 		fd_sword_upgrade
 		{
-			"melee_damage"									"*3"
-			"melee_damage_heavyarmor"						"*3"
+			"melee_damage"									"*2"
+			"melee_damage_heavyarmor"						"*2"
 		}
 	}
 }
