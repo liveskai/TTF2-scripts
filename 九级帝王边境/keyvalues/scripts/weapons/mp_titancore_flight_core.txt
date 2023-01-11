@@ -1,0 +1,6 @@
+WeaponData
+{//飞行核心
+	"ammo_stockpile_max"							"400"
+	"ammo_clip_size"   								"400"
+	"ammo_default_total"							"400"
+}

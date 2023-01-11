@@ -1,0 +1,22 @@
+WeaponData
+{//剑核心
+	MP_BASE
+	{
+		"melee_damage"									"800"
+		"melee_damage_heavyarmor"						"800"
+	}
+	Mods
+	{
+		super_charged
+		{
+			"melee_damage"										"++1400"
+			"melee_damage_heavyarmor"							"++1400"
+		}
+
+		fd_sword_upgrade
+		{
+			"melee_damage"									"*3"
+			"melee_damage_heavyarmor"						"*3"
+		}
+	}
+}
