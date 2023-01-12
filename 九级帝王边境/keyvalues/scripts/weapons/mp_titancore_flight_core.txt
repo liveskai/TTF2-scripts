@@ -1,5 +1,5 @@
 WeaponData
 {//飞行核心
 	"sustained_discharge_duration"					"60.0" 
-	"core_duration"									"60.0"
+	"core_duration"							"60.0"
 }
