@@ -1,6 +1,5 @@
 WeaponData
 {//飞行核心
-	"ammo_stockpile_max"							"400"
-	"ammo_clip_size"   								"400"
-	"ammo_default_total"							"400"
+	"sustained_discharge_duration"					"60.0" 
+	"core_duration"									"60.0"
 }
