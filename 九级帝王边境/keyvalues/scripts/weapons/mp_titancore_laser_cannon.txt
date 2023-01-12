@@ -10,4 +10,12 @@ WeaponData
 
 		"sustained_discharge_duration"					"15.0" // 镭射时间
 	}
+	Mods
+	{
+		pas_ion_lasercannon
+		{
+			"core_duration"									"15.0"
+			"sustained_discharge_duration"					"1.0" // core duration
+		}
+	}
 }
