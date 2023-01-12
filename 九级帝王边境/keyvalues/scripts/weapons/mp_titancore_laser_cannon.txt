@@ -4,18 +4,18 @@ WeaponData
 	{
 		"damage_near_value_titanarmor"					"600"
 		"damage_far_value_titanarmor" 					"600"
-		"npc_damage_near_value_titanarmor"					"100"
-		"npc_damage_far_value_titanarmor" 					"100"
-		"core_duration"							"1.0" //核心条时间
+		"npc_damage_near_value_titanarmor"				"100"
+		"npc_damage_far_value_titanarmor" 				"100"
+		"core_duration"							"1" //核心条时间
 
-		"sustained_discharge_duration"					"15.0" // 镭射时间
+		"sustained_discharge_duration"					"15" // 镭射时间
 	}
 	Mods
 	{
 		pas_ion_lasercannon
 		{
-			"core_duration"									"15.0"
-			"sustained_discharge_duration"					"1.0" // core duration
+			"core_duration"						"15"
+			"sustained_discharge_duration"				"1" 
 		}
 	}
 }
