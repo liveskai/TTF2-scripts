@@ -6,7 +6,7 @@ WeaponData
 		"npc_damage_far_value_titanarmor" 					"100"
 		"core_duration"							"1.0" //核心条时间
 
-		"sustained_discharge_duration"						"15.0" // 镭射时间
+		"sustained_discharge_duration"						"10" // 镭射时间
 	}
 	Mods
 	{
