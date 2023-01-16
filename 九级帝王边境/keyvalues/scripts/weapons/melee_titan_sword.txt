@@ -1,11 +1,15 @@
 WeaponData
-{//剑核心
+{//浪人剑
 	Mods
 	{
-		fd_sword_upgrade
+		super_charged //剑核心
 		{
-			"melee_damage"						"*2"
-			"melee_damage_heavyarmor"				"*2"
+		"melee_range"								"600"
+		}
+		fd_sword_upgrade //剑道大师-神盾升级：增加剑核心伤害
+		{
+			"melee_damage"							"*2"
+			"melee_damage_heavyarmor"					"*2"
 		}
 	}
 }
