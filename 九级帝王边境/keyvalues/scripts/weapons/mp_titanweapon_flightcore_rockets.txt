@@ -1,0 +1,12 @@
+WeaponData
+{//飞行核心炮弹
+	MP_BASE
+	{
+		"explosion_inner_radius"						"600"
+		"explosionradius" 							"600" 
+		"projectile_launch_speed"						"4000"
+		"projectile_drift_windiness"						"1"
+		"projectile_drift_intensity"						"1"
+
+	}
+}
