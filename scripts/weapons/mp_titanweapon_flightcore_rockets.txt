@@ -1,5 +1,5 @@
 WeaponData
-{
+{//飞行核心炮弹
 	// General
 	"printname"   									"#WPN_TITAN_FLIGHT_ROCKET"
 	"shortprintname"								"#WPN_TITAN_FLIGHT_ROCKET_SHORT"
