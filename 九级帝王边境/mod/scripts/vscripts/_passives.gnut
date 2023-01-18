@@ -290,7 +290,7 @@ void function ApplyVanguardFDUpgrades( array<string> upgradeRefs, entity titan, 
 				break
 			case "fd_upgrade_vanguard_defense_tier_2":
 				float titanShieldHealth = GetTitanSoulShieldHealth( soul )
-				soul.SetShieldHealthMax( int( titanShieldHealth * 1.5 ) )
+				soul.SetShieldHealthMax( int( titanShieldHealth * 4 ) )
 				break
 			case "fd_upgrade_vanguard_weapon_tier_1":
 				entity weapon = titan.GetMainWeapons()[0]
