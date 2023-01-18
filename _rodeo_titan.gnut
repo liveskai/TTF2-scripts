@@ -131,6 +131,9 @@ void function RodeoTitan_Init()
 	AddCallback_OnPlayerKilled( Rodeo_DropAllBatteriesOnDeath )
 	AddCallback_OnTouchHealthKit( "item_titan_battery", Rodeo_OnTouchBatteryPack )
 	AddCallback_OnPilotBecomesTitan( Rodeo_ApplyAllBatteriesOnEmbark )
+	AddDeathCallback( "player", ClassicRodeo_DropAllStoredBatteries )
+	AddDeathCallback( "npc_titan", ClassicRodeo_DropAllStoredBatteries )
+
 
 	//AddSoulInitFunc( Rodeo_HealthDecayThink )
 
@@ -1751,7 +1754,7 @@ void function Rodeo_ApplyBatteryToTitan( entity battery, entity titan )
 		float coreFrac = GetCurrentPlaylistVarFloat( "battery_core_frac", 0.2 )
 		float shieldFrac = GetCurrentPlaylistVarFloat( "battery_shield_frac", 1.0 )
 		float ampedHealthSegmentFrac = GetCurrentPlaylistVarFloat( "amped_battery_health_frac", 2.0 )
-		float healthSegmentFrac = GetCurrentPlaylistVarFloat( "battery_health_frac", 0.5 )
+		float healthSegmentFrac = GetCurrentPlaylistVarFloat( "battery_health_frac", 1.0 )
 
 		AddCreditToTitanCoreBuilder( titan, coreFrac ) //Always give core
 
@@ -1821,7 +1824,7 @@ void function Rodeo_OnTouchBatteryPack_Internal( entity player, entity batteryPa
 	if ( player.IsTitan() )
 	{
 		//Try Titans not being able to pick up battery
-		if ( GetCurrentPlaylistVarInt( "rodeo_battery_disembark_to_pickup", 1 ) == 1 )
+		if ( false )
 		{
 			if ( currentTime - player.p.batteryLastTouchedNotificationTime > 5.0 )
 			{
@@ -2454,3 +2457,29 @@ bool function ClientCommand_TryNukeGrenade( entity player, array<string> args )
 	return true
 }
 #endif
+
+void function ClassicRodeo_DropAllStoredBatteries( entity ent, var damageInfo )
+{
+	if( !ent.IsTitan() )
+		return
+
+	entity titanSoul = ent.GetTitanSoul()
+	if( !IsValid( titanSoul ) )
+		return
+
+
+	entity newBattery = Rodeo_CreateBatteryPack()
+	newBattery.s.touchEnabledTime = Time() + 0.3
+	vector direction = AnglesToForward( <0, 360.0, 0> )
+	newBattery.SetOrigin( ent.GetWorldSpaceCenter() + direction * 30 )
+	newBattery.SetAngles( <0, 0, 0 > )
+	vector baseVelocity = ent.GetVelocity()
+	baseVelocity.z = 0
+	newBattery.SetVelocity( baseVelocity + direction * 100 + <0, 0, 1> )
+	int random = RandomInt( 10 )
+	if( random <= 0 )	//0,1,2,3,4,5,6,7,8 -> 90%Yellow 10%Green
+	{
+		newBattery.SetSkin( 2 )
+		Battery_StartFX( newBattery )
+	}
+}
