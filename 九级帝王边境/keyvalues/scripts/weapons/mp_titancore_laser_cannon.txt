@@ -2,8 +2,6 @@ WeaponData
 {//镭射核心
 	MP_BASE
 	{
-		"npc_damage_near_value_titanarmor"					"100"
-		"npc_damage_far_value_titanarmor" 					"100"
 		"core_duration"							"1.0" //核心条时间
 
 		"sustained_discharge_duration"						"10" // 镭射时间
@@ -19,7 +17,7 @@ WeaponData
 		{
 			"damage_near_value_titanarmor"					"*2"
 			"damage_far_value_titanarmor" 					"*2"
-			"explosion_damage"							"*2"
+			"explosion_damage"						"*2"
 			"explosion_damage_heavy_armor"					"*2"
 		}
 	}
