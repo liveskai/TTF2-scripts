@@ -1,5 +1,5 @@
 WeaponData
-{
+{//加特林
 "ammo_no_remove_from_clip"						"1"
 	Mods
 	{
@@ -14,6 +14,15 @@ WeaponData
 			"damage_near_value_titanarmor"					"*1.5"
 			"damage_far_value_titanarmor" 					"*1.5"
 		}
-
+		pas_CloseRangePowerShot
+		{
+			"damage_near_value_titanarmor"					"*2"
+			"damage_far_value_titanarmor"					"*2"
+		}
+		pas_CloseRangePowerShot
+		{
+			"damage_near_value_titanarmor"					"*2"
+			"damage_far_value_titanarmor"					"*2"
+		}
 	}
 }
