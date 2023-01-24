@@ -245,7 +245,7 @@ void function ApplyNorthstarFDUpgrades( array<string> upgradeRefs, entity titan,
 
 void function ApplyDerivedVanguardFDUpgrades( array<string> upgradeRefs, TitanLoadoutDef loadout )
 {
-	/*foreach ( upgrade in upgradeRefs )
+	foreach ( upgrade in upgradeRefs )
 	{
 		switch ( upgrade )
 		{
@@ -253,12 +253,12 @@ void function ApplyDerivedVanguardFDUpgrades( array<string> upgradeRefs, TitanLo
 				loadout.setFileMods.append( "fd_health_upgrade" )
 				break
 		}
-	}*/
+	}
 }
 
 void function ApplyVanguardFDUpgrades( array<string> upgradeRefs, entity titan, TitanLoadoutDef loadout )
 {
-	/*entity soul = titan.GetTitanSoul()
+	entity soul = titan.GetTitanSoul()
 	if ( !IsValid( soul ) ) //Ejecting
 		return
 
@@ -386,7 +386,7 @@ void function ApplyVanguardFDUpgrades( array<string> upgradeRefs, entity titan, 
 				}
 				break
 		}
-	}*/
+	}
 }
 
 void function ApplyDerivedIonFDUpgrades( array<string> upgradeRefs, TitanLoadoutDef loadout )
