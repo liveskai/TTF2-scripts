@@ -1,8 +1,0 @@
-WeaponData
-{
-	MP_BASE
-	{
-		// Damage - When Used by Players
-		"damage_rodeo" 								"375"
-	}
-}
