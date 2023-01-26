@@ -1,0 +1,10 @@
+WeaponData
+{//电浆磁轨炮
+	Mods
+	{
+		fd_upgrade_charge
+		{
+			"charge_time" 							"*0.1"
+		}
+	}
+}
