@@ -44,7 +44,7 @@
 		healthDoomed	4000	[$sp]
 
 		healthPerSegment 2500 	[$mp]
-		health			37500	[$mp]
+		health			50000	[$mp]
 		healthDoomed	2500	[$mp]
 
 		healthShield	2500	[$mp]
