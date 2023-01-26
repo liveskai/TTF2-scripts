@@ -1,6 +1,8 @@
 WeaponData
 {//加特林
 "ammo_no_remove_from_clip"						"1"
+		"damage_near_value"   							"*2"
+		"damage_far_value"							"*2"
 	Mods
 	{
 
