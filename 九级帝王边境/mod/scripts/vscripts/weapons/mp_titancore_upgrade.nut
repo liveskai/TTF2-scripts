@@ -85,7 +85,7 @@ var function OnWeaponPrimaryAttack_UpgradeCore( entity weapon, WeaponPrimaryAtta
 					array<string> mods = primaryWeapon.GetMods()
 					mods.append( "arc_rounds" )
 					primaryWeapon.SetMods( mods )
-					primaryWeapon.SetWeaponPrimaryClipCount( primaryWeapon.GetWeaponPrimaryClipCount() + 10 )
+					primaryWeapon.SetWeaponPrimaryClipCount( primaryWeapon.GetWeaponPrimaryClipCount() + 0 )
 				}
 			}
 			if ( owner.IsPlayer() )
