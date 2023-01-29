@@ -1753,8 +1753,8 @@ void function Rodeo_ApplyBatteryToTitan( entity battery, entity titan )
 		}
 		float coreFrac = GetCurrentPlaylistVarFloat( "battery_core_frac", 0.2 )
 		float shieldFrac = GetCurrentPlaylistVarFloat( "battery_shield_frac", 1.0 )
-		float ampedHealthSegmentFrac = GetCurrentPlaylistVarFloat( "amped_battery_health_frac", 2.0 )
-		float healthSegmentFrac = GetCurrentPlaylistVarFloat( "battery_health_frac", 1.0 )
+		float ampedHealthSegmentFrac = GetCurrentPlaylistVarFloat( "amped_battery_health_frac", 8.0 ) //黄电池加血
+		float healthSegmentFrac = GetCurrentPlaylistVarFloat( "battery_health_frac", 4.0 ) //绿电池加血
 
 		AddCreditToTitanCoreBuilder( titan, coreFrac ) //Always give core
 
