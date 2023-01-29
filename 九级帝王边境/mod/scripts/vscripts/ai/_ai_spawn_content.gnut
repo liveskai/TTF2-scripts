@@ -563,7 +563,7 @@ function CommonNPCTitanOnSpawned( entity npc )
 
 	local maxHealth = GetPlayerSettingsFieldForClassName_Health( npc.ai.titanSettings.titanSetFile ) //FD META - TO UPDATE with NPC equivalent of .GetPlayerModHealth()
 	if ( npc.ai.titanSpawnLoadout.setFileMods.contains( "fd_health_upgrade" ) )
-		maxHealth += 50000
+		maxHealth = (2500+maxHealth)*10
 	//TEMP - GetPlayerSettingsFieldForClassName_Health doesn't return modded values.
 	if ( IsHardcoreGameMode() )
 		maxHealth *= 0.5
