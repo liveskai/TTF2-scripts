@@ -158,7 +158,7 @@ void function ApplyRoninFDUpgrades( array<string> upgradeRefs, entity titan, Tit
 				break
 			case "fd_upgrade_ronin_defense_tier_2":
 				float titanShieldHealth = GetTitanSoulShieldHealth( soul )
-				soul.SetShieldHealthMax( int( titanShieldHealth * 20 ) )
+				soul.SetShieldHealthMax( int( titanShieldHealth * 1.5 ) )
 				break
 			case "fd_upgrade_ronin_weapon_tier_1":
 				entity weapon = titan.GetOffhandWeapon( OFFHAND_MELEE )
@@ -219,7 +219,7 @@ void function ApplyNorthstarFDUpgrades( array<string> upgradeRefs, entity titan,
 				break
 			case "fd_upgrade_northstar_defense_tier_2":
 				float titanShieldHealth = GetTitanSoulShieldHealth( soul )
-				soul.SetShieldHealthMax( int( titanShieldHealth * 20 ) )
+				soul.SetShieldHealthMax( int( titanShieldHealth * 1.5 ) )
 				break
 			case "fd_upgrade_northstar_weapon_tier_1":
 				entity weapon = titan.GetMainWeapons()[0]
@@ -290,7 +290,7 @@ void function ApplyVanguardFDUpgrades( array<string> upgradeRefs, entity titan, 
 				break
 			case "fd_upgrade_vanguard_defense_tier_2":
 				float titanShieldHealth = GetTitanSoulShieldHealth( soul )
-				soul.SetShieldHealthMax( int( titanShieldHealth * 20 ) )
+				soul.SetShieldHealthMax( int( titanShieldHealth * 1.5 ) )
 				break
 			case "fd_upgrade_vanguard_weapon_tier_1":
 				entity weapon = titan.GetMainWeapons()[0]
@@ -440,7 +440,7 @@ void function ApplyIonFDUpgrades( array<string> upgradeRefs, entity titan, Titan
 		{
 			case "fd_upgrade_ion_defense_tier_2":
 				float titanShieldHealth = GetTitanSoulShieldHealth( soul )
-				soul.SetShieldHealthMax( int( titanShieldHealth * 20 ) )
+				soul.SetShieldHealthMax( int( titanShieldHealth * 1.5 ) )
 				break
 			case "fd_upgrade_ion_weapon_tier_1":
 				entity ordanance = titan.GetOffhandWeapon( OFFHAND_RIGHT )
@@ -502,7 +502,7 @@ void function ApplyToneFDUpgrades( array<string> upgradeRefs, entity titan, Tita
 				break
 			case "fd_upgrade_tone_defense_tier_2":
 				float titanShieldHealth = GetTitanSoulShieldHealth( soul )
-				soul.SetShieldHealthMax( int( titanShieldHealth * 20 ) )
+				soul.SetShieldHealthMax( int( titanShieldHealth * 1.5 ) )
 				break
 			case "fd_upgrade_tone_weapon_tier_1":
 				entity weapon = titan.GetMainWeapons()[0]
@@ -564,7 +564,7 @@ void function ApplyScorchFDUpgrades( array<string> upgradeRefs, entity titan, Ti
 				break
 			case "fd_upgrade_scorch_defense_tier_2":
 				float titanShieldHealth = GetTitanSoulShieldHealth( soul )
-				soul.SetShieldHealthMax( int( titanShieldHealth * 20 ) )
+				soul.SetShieldHealthMax( int( titanShieldHealth * 1.5 ) )
 				break
 			case "fd_upgrade_scorch_weapon_tier_1":
 				entity weapon = titan.GetMainWeapons()[0]
@@ -631,7 +631,7 @@ void function ApplyLegionFDUpgrades( array<string> upgradeRefs, entity titan, Ti
 				break
 			case "fd_upgrade_legion_defense_tier_2":
 				float titanShieldHealth = GetTitanSoulShieldHealth( soul )
-				soul.SetShieldHealthMax( int( titanShieldHealth * 20 ) )
+				soul.SetShieldHealthMax( int( titanShieldHealth * 1.5 ) )
 				break
 			case "fd_upgrade_legion_weapon_tier_1":
 				entity weapon = titan.GetMainWeapons()[0]
