@@ -4,8 +4,8 @@ WeaponData
 	{
 		arc_rounds_with_battle_rifle
 			{
-			"damage_near_value_titanarmor"				"*10"
-			"damage_far_value_titanarmor" 				"*10"
+			"damage_near_value_titanarmor"				"*2"
+			"damage_far_value_titanarmor" 				"*2"
 			}
 	}
 }
