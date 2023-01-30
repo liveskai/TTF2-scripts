@@ -4,7 +4,7 @@ WeaponData
 	{
 		super_charged //剑核心
 		{
-		"melee_range"								"600"
+		"melee_range"								"*2"
 		}
 		fd_sword_upgrade //剑道大师-神盾升级：增加剑核心伤害
 		{
