@@ -207,14 +207,16 @@ var function OnWeaponPrimaryAttack_UpgradeCore( entity weapon, WeaponPrimaryAtta
 
 				if ( !GetDoomedState( owner ) )
 				{
-					int missingHealth = owner.GetMaxHealth() - owner.GetHealth()
-					array<string> settingMods = owner.GetPlayerSettingsMods()
-					settingMods.append( "core_health_upgrade" )
-					owner.SetPlayerSettingsWithMods( owner.GetPlayerSettings(), settingMods )
-					owner.SetHealth( max( owner.GetMaxHealth() - missingHealth, VANGUARD_CORE8_HEALTH_AMOUNT ) )
+						int currentlyMaxHealth = owner.GetMaxHealth()
+						int missingHealth = owner.GetMaxHealth() - owner.GetHealth()
+						array<string> settingMods = owner.GetPlayerSettingsMods()
+						settingMods.append( "core_health_upgrade" )
+						owner.SetPlayerSettingsWithMods( owner.GetPlayerSettings(), settingMods )
+						owner.SetMaxHealth( currentlyMaxHealth + 20000 )
+						owner.SetHealth( max( owner.GetMaxHealth() - missingHealth, VANGUARD_CORE8_HEALTH_AMOUNT ) )
 
-					//Hacky Hack - Append core_health_upgrade to setFileMods so that we have a way to check that this upgrade is active.
-					soul.soul.titanLoadout.setFileMods.append( "core_health_upgrade" )
+						//Hacky Hack - Append core_health_upgrade to setFileMods so that we have a way to check that this upgrade is active.
+						soul.soul.titanLoadout.setFileMods.append( "core_health_upgrade" )
 				}
 				else
 				{
