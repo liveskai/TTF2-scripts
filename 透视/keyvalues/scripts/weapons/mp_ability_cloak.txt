@@ -1,0 +1,7 @@
+WeaponData
+{
+	MP_BASE
+	{
+		"fire_duration"									"1"
+	}
+}
