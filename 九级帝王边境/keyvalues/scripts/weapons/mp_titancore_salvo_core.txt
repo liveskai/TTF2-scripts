@@ -1,9 +1,12 @@
 WeaponData
 {//弹群核心
-	MP_BASE
+	Mods
 	{
-		"damage_near_value_titanarmor"					"200"
-		"damage_far_value_titanarmor" 					"200"
+		fd_salvo_core
+		{
+			"damage_near_value_titanarmor"					"*2"
+			"damage_far_value_titanarmor" 					"*2"
+		}
 	}
 
 }
