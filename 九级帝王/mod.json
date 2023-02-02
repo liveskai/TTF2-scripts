@@ -1,7 +1,16 @@
 {
-    "Name": "ifp",
-    "Description": "ifp",
-    "Authors": ["cube"],
+    "Name": "Brute",
+    "Description": "Change Prime Northstar to Brute",
+    "Authors": [ "LightBlueCube", "VoyageDB" ],
     "LoadPriority": 101,
-    "RequiredOnClient": false
+    "RequiredOnClient": false,
+    "Scripts": [
+        {
+            "Path": "Brute.nut",
+            "RunOn": "SERVER && MP",
+            "ServerCallback": {
+                "After": "Brute_Init"
+            }
+        }
+    ]
 }

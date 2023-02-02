@@ -1,0 +1,48 @@
+WeaponData
+{
+	Mods
+	{
+		mod_ordnance_core
+		{
+		}
+
+		dev_mod_low_recharge
+		{
+		}
+
+		extended_smart_ammo_range
+		{
+		}
+
+		burn_mod_titan_shoulder_rockets
+		{
+		}
+
+		upgradeCore_Vanguard
+		{
+		}
+
+		upgradeCore_MissileRack_Vanguard
+		{
+		}
+
+		fd_balance
+		{
+		}
+
+		sp_base
+		{
+			"fire_rate"   									"30"
+			"damage_near_distance"							"800"
+			"damage_far_distance" 							"1200"
+			"damage_near_value"   							"280"
+			"damage_far_value"								"280"
+			"damage_near_value_titanarmor"					"150"
+			"damage_far_value_titanarmor"					"150"
+			"explosion_damage"								"100"
+			"explosion_damage_heavy_armor"					"100"
+			"explosionradius" 								"200"
+
+		}
+	}
+}

@@ -1,0 +1,10 @@
+WeaponData
+{
+	Mods
+	{
+		sp_base
+		{
+			//给script做识别，调用sp版本的核心武器
+		}
+	}
+}
