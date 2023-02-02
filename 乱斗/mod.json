@@ -1,0 +1,20 @@
+{
+    "Name": "luandou",
+    "Description": "chw",
+    "Authors": ["DINO and Steveplays"],
+    "Contacts": [
+        "DINO#9644 (Discord)"
+    ],
+    "LoadPriority": 101,
+    "Version": "1.7.0",
+    "RequiredOnClient": false,
+    "Scripts": [
+        {
+            "Path": "smart_pistol_ffa.nut",
+            "RunOn": "SERVER && MP",
+            "ServerCallback": {
+                "After": "SmartPistolFFA_Init"
+            }
+        }
+    ]
+}
