@@ -47,7 +47,7 @@ function Passives_Init()
 	if ( GetCurrentPlaylistVarInt( "aegis_upgrades", 0 ) == 1 )
 		AddCallback_OnUpdateDerivedPlayerTitanLoadout( ApplyFDDerviedUpgrades ) //Half of the meta functions, the other half lives in passives.gnut This is used for class mods.
 	#endif
-
+	AddCallback_OnUpdateDerivedPlayerTitanLoadout( ApplyBruteHealth )
 	level.wifiLeachInterval <- 2.5
 }
 
@@ -57,6 +57,22 @@ function InitPassives( entity player )
 }
 
 #if MP
+void function ApplyBruteHealth( entity player, TitanLoadoutDef loadout )
+{
+	array<ItemData> fdUpgrades = GetAllItemsOfType( eItemTypes.TITAN_FD_UPGRADE )
+	array<string> upgradeRefs
+	foreach ( ItemData upgrade in fdUpgrades )
+	{
+		if ( loadout.titanClass == upgrade.parentRef && !IsSubItemLocked( player, upgrade.ref, upgrade.parentRef ) )
+		{
+			upgradeRefs.append( upgrade.ref )
+		}
+	}
+	if ( loadout.titanClass == "northstar" )
+		if( loadout.isPrime == "titan_is_prime" )
+			ApplyDerivedNorthstarFDUpgrades( upgradeRefs, loadout )
+}
+
 void function ApplyFDDerviedUpgrades( entity player, TitanLoadoutDef loadout )
 {
 	array<ItemData> fdUpgrades = GetAllItemsOfType( eItemTypes.TITAN_FD_UPGRADE )
@@ -395,12 +411,12 @@ void function ApplyDerivedIonFDUpgrades( array<string> upgradeRefs, TitanLoadout
 	{
 		switch ( upgrade )
 		{
-			case "fd_upgrade_ion_utility_tier_1":
-				loadout.setFileMods.append( "fd_energy_regen" )
-				break
-			case "fd_upgrade_ion_utility_tier_2":
-				loadout.setFileMods.append( "fd_energy_max" )
-				break
+			//case "fd_upgrade_ion_utility_tier_1":
+			//	loadout.setFileMods.append( "fd_energy_regen" )
+			//	break
+			//case "fd_upgrade_ion_utility_tier_2":
+			//	loadout.setFileMods.append( "fd_energy_max" )
+			//	break
 			case "fd_upgrade_ion_defense_tier_1":
 				loadout.setFileMods.append( "fd_health_upgrade" )
 				break
@@ -701,6 +717,9 @@ void function ApplyTitanWeaponPassives( entity titan, TitanLoadoutDef loadout )
 			weapon.SetMods( mods )
 		}
 	}
+
+	if( titan.GetModelName() == $"models/titans/light/titan_light_northstar_prime.mdl" )
+		return
 
 	foreach ( passive, value in soul.passives )
 	{
