@@ -1,5 +1,5 @@
 WeaponData
-{
+{//军团武器
 	// General
 	"printname"   									"#WPN_TITAN_PREDATOR_CANNON"
     "shortprintname"                              	"#WPN_TITAN_PREDATOR_CANNON_SHORT"
