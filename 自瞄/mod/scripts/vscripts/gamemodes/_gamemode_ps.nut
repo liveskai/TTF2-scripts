@@ -15,7 +15,7 @@ struct {
 void function GamemodePs_Init()
 {
 	Riff_ForceTitanAvailability( eTitanAvailability.Never )
-	SetKillcamsEnabled( false )
+
 	AddCallback_OnPlayerKilled( GiveScoreForPlayerKill )
 	ScoreEvent_SetupEarnMeterValuesForMixedModes()
 	SetTimeoutWinnerDecisionFunc( CheckScoreForDraw )
@@ -28,6 +28,9 @@ void function GamemodePs_Init()
 	
 	file.militiaPreviousSpawnZones = [ null, null, null ]
 	file.imcPreviousSpawnZones = [ null, null, null ]
+
+	// nscn specifics
+	SetShouldPlayDefaultMusic( true )
 }
 
 void function GiveScoreForPlayerKill( entity victim, entity attacker, var damageInfo )
