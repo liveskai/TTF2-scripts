@@ -41,6 +41,9 @@ global function Battery_StopFXAndHideIconForPlayer
 global function RemovePlayerAirControl //This function should really be in a server only SP & MP utility script file. No such file exists as of right now.
 global function RestorePlayerAirControl //This function should really be in a server only SP & MP utility script file. No such file exists as of right now.
 
+// fort war needs these
+global function Rodeo_TakeBatteryAwayFromPilot
+
 #if DEV
 global function SetDebugRodeoPrint
 global function GetDebugRodeoPrint
@@ -133,8 +136,6 @@ void function RodeoTitan_Init()
 	AddCallback_OnPilotBecomesTitan( Rodeo_ApplyAllBatteriesOnEmbark )
 	AddDeathCallback( "player", ClassicRodeo_DropAllStoredBatteries )
 	AddDeathCallback( "npc_titan", ClassicRodeo_DropAllStoredBatteries )
-
-
 	//AddSoulInitFunc( Rodeo_HealthDecayThink )
 
 	if ( IsMultiplayer() )
@@ -352,7 +353,8 @@ void function RodeoBatteryRemoval( entity pilot )
 
 	vector direction = CalculateDirectionToThrowOffBatteryThief( pilot, titan )
 
-	ThrowRiderOff( pilot, titan, direction ) //This signals RodeoOver
+
+		ThrowRiderOff( pilot, titan, direction ) //This signals RodeoOver
 
 	#if MP
 		PIN_PlayerRodeoedEnemyTitanToCompletion( pilot, titan, playerHadBattery )
@@ -837,7 +839,7 @@ void function TryBatteryStyleRodeo( entity rodeoPilot, entity rodeoTitan, entity
 
 	if ( ShouldThrowGrenadeInHatch( rodeoPilot ) )
 	{
-		waitthread PlayerThrowsGrenadeInHatch( rodeoPilot, rodeoTitan, titanSoul, rodeoPackage ) //This ends rodeo at the end of the sequence
+			waitthread PlayerThrowsGrenadeInHatch( rodeoPilot, rodeoTitan, titanSoul, rodeoPackage ) //This ends rodeo at the end of the sequence
 	}
 	else
 	{
@@ -1656,7 +1658,6 @@ void function Rodeo_DropAllBatteries( entity player )
 {
 	if ( !PlayerHasBattery( player ) )
 		return
-
 	while ( GetPlayerBatteryCount( player ) > 1 )
 	{
 		entity newBattery = Rodeo_CreateBatteryPack()
@@ -1753,8 +1754,8 @@ void function Rodeo_ApplyBatteryToTitan( entity battery, entity titan )
 		}
 		float coreFrac = GetCurrentPlaylistVarFloat( "battery_core_frac", 0.2 )
 		float shieldFrac = GetCurrentPlaylistVarFloat( "battery_shield_frac", 1.0 )
-		float ampedHealthSegmentFrac = GetCurrentPlaylistVarFloat( "amped_battery_health_frac", 8.0 ) //黄电池加血
-		float healthSegmentFrac = GetCurrentPlaylistVarFloat( "battery_health_frac", 4.0 ) //绿电池加血
+		float ampedHealthSegmentFrac = GetCurrentPlaylistVarFloat( "amped_battery_health_frac", 2.0 )//黄电池加血
+		float healthSegmentFrac = GetCurrentPlaylistVarFloat( "battery_health_frac", 1.0 )//绿电池加血
 
 		AddCreditToTitanCoreBuilder( titan, coreFrac ) //Always give core
 
@@ -1824,7 +1825,7 @@ void function Rodeo_OnTouchBatteryPack_Internal( entity player, entity batteryPa
 	if ( player.IsTitan() )
 	{
 		//Try Titans not being able to pick up battery
-		if ( false )
+		if ( flase )
 		{
 			if ( currentTime - player.p.batteryLastTouchedNotificationTime > 5.0 )
 			{
@@ -2311,7 +2312,7 @@ void function RestorePlayerAirControl( entity player ) //This function should re
 {
 	Assert( player.IsPlayer() )
 	player.kv.airSpeed = player.GetPlayerSettingsField( "airSpeed" )
-	player.kv.airAcceleration = player.GetPlayerSettingsField( "airAcceleration" )
+	player.kv.airAcceleration = GetCurrentPlaylistVarInt( "custom_air_accel_pilot", int( player.GetPlayerSettingsField( "airAcceleration" ) ) )
 }
 
 bool function ShouldThrowGrenadeInHatch( entity rodeoPilot )
@@ -2457,7 +2458,6 @@ bool function ClientCommand_TryNukeGrenade( entity player, array<string> args )
 	return true
 }
 #endif
-
 void function ClassicRodeo_DropAllStoredBatteries( entity ent, var damageInfo )
 {
 	if( !ent.IsTitan() )
@@ -2477,7 +2477,7 @@ void function ClassicRodeo_DropAllStoredBatteries( entity ent, var damageInfo )
 	baseVelocity.z = 0
 	newBattery.SetVelocity( baseVelocity + direction * 100 + <0, 0, 1> )
 	int random = RandomInt( 10 )
-	if( random <= 0 )	//0,1,2,3,4,5,6,7,8 -> 90%Yellow 10%Green
+	if( random <= 1 )	//0,1,2,3,4,5,6,7,8 -> 90%绿 10%黄
 	{
 		newBattery.SetSkin( 2 )
 		Battery_StartFX( newBattery )
