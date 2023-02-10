@@ -411,12 +411,12 @@ void function ApplyDerivedIonFDUpgrades( array<string> upgradeRefs, TitanLoadout
 	{
 		switch ( upgrade )
 		{
-			//case "fd_upgrade_ion_utility_tier_1":
-			//	loadout.setFileMods.append( "fd_energy_regen" )
-			//	break
-			//case "fd_upgrade_ion_utility_tier_2":
-			//	loadout.setFileMods.append( "fd_energy_max" )
-			//	break
+			case "fd_upgrade_ion_utility_tier_1":
+				loadout.setFileMods.append( "fd_energy_regen" )
+				break
+			case "fd_upgrade_ion_utility_tier_2":
+				loadout.setFileMods.append( "fd_energy_max" )
+				break
 			case "fd_upgrade_ion_defense_tier_1":
 				loadout.setFileMods.append( "fd_health_upgrade" )
 				break
