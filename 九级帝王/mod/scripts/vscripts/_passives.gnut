@@ -47,7 +47,7 @@ function Passives_Init()
 	if ( GetCurrentPlaylistVarInt( "aegis_upgrades", 0 ) == 1 )
 		AddCallback_OnUpdateDerivedPlayerTitanLoadout( ApplyFDDerviedUpgrades ) //Half of the meta functions, the other half lives in passives.gnut This is used for class mods.
 	#endif
-	AddCallback_OnUpdateDerivedPlayerTitanLoadout( ApplyBruteHealth )
+
 	level.wifiLeachInterval <- 2.5
 }
 
@@ -57,22 +57,6 @@ function InitPassives( entity player )
 }
 
 #if MP
-void function ApplyBruteHealth( entity player, TitanLoadoutDef loadout )
-{
-	array<ItemData> fdUpgrades = GetAllItemsOfType( eItemTypes.TITAN_FD_UPGRADE )
-	array<string> upgradeRefs
-	foreach ( ItemData upgrade in fdUpgrades )
-	{
-		if ( loadout.titanClass == upgrade.parentRef && !IsSubItemLocked( player, upgrade.ref, upgrade.parentRef ) )
-		{
-			upgradeRefs.append( upgrade.ref )
-		}
-	}
-	if ( loadout.titanClass == "northstar" )
-		if( loadout.isPrime == "titan_is_prime" )
-			ApplyDerivedNorthstarFDUpgrades( upgradeRefs, loadout )
-}
-
 void function ApplyFDDerviedUpgrades( entity player, TitanLoadoutDef loadout )
 {
 	array<ItemData> fdUpgrades = GetAllItemsOfType( eItemTypes.TITAN_FD_UPGRADE )
@@ -176,24 +160,24 @@ void function ApplyRoninFDUpgrades( array<string> upgradeRefs, entity titan, Tit
 				float titanShieldHealth = GetTitanSoulShieldHealth( soul )
 				soul.SetShieldHealthMax( int( titanShieldHealth * 1.5 ) )
 				break
-			/*case "fd_upgrade_ronin_weapon_tier_1":
+			case "fd_upgrade_ronin_weapon_tier_1":
 				entity weapon = titan.GetOffhandWeapon( OFFHAND_MELEE )
 				array<string> mods = weapon.GetMods()
 				mods.append( "fd_sword_upgrade" )
 				weapon.SetMods( mods )
-				break*/
+				break
 			case "fd_upgrade_ronin_weapon_tier_2":
 				entity weapon = titan.GetOffhandWeapon( OFFHAND_LEFT )
 				array<string> mods = weapon.GetMods()
 				mods.append( "fd_sword_block" )
 				weapon.SetMods( mods )
 				break
-			/*case "fd_upgrade_ronin_ultimate":
+			case "fd_upgrade_ronin_ultimate":
 				entity weapon = titan.GetOffhandWeapon( OFFHAND_EQUIPMENT )
 				array<string> mods = weapon.GetMods()
 				mods.append( "fd_duration" )
 				weapon.SetMods( mods )
-				break*/
+				break
 		}
 	}
 }
@@ -717,9 +701,6 @@ void function ApplyTitanWeaponPassives( entity titan, TitanLoadoutDef loadout )
 			weapon.SetMods( mods )
 		}
 	}
-
-	if( titan.GetModelName() == $"models/titans/light/titan_light_northstar_prime.mdl" )
-		return
 
 	foreach ( passive, value in soul.passives )
 	{
