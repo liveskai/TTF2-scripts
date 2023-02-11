@@ -1,6 +1,6 @@
 #base "mp_titanweapon_salvo_rockets.txt"
 WeaponData
-{
+{//强力导弹
 	"printname"   									"#WPN_TITAN_TRACKER_ROCKETS"
 	"description" 									"#WPN_TITAN_TRACKER_ROCKETS_DESC"
 	"shortprintname"								"#WPN_TITAN_TRACKER_ROCKETS"
