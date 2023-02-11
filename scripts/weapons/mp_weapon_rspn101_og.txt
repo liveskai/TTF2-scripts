@@ -1,13 +1,13 @@
 WeaponData
 {
 	// General
-	"printname"   									"#WPN_RSPN101"
-	"shortprintname"								"#WPN_RSPN101_SHORT"
-	"description" 									"#WPN_RSPN101_DESC"
-	"longdesc"										"#WPN_RSPN101_LONGDESC"
+	"printname"   									"#WPN_RSPN101_OG"
+	"shortprintname"								"#WPN_RSPN101_OG_SHORT"
+	"description" 									"#WPN_RSPN101_OG_DESC"
+	"longdesc"										"#WPN_RSPN101_OG_LONGDESC"
 
-	"menu_icon"										"r2_ui/menus/loadout_icons/primary_weapon/primary_r102"
-	"hud_icon"										"r2_ui/menus/loadout_icons/primary_weapon/primary_r102"
+	"menu_icon"										"r2_ui/menus/loadout_icons/primary_weapon/primary_r101_aog"
+	"hud_icon"										"r2_ui/menus/loadout_icons/primary_weapon/primary_r101_aog"
 
 	"weaponClass" 									"human"
 	"weaponSubClass"								"rifle"
@@ -27,9 +27,9 @@ WeaponData
 	"stat_rof"										"80"
 
 	// Models
-	"viewmodel"   									"models/weapons/rspn101/ptpov_rspn101.mdl"
-	"playermodel" 									"models/weapons/rspn101/w_rspn101.mdl"
-	"holstermodel"									"models/weapons/rspn101/w_rspn101_stow.mdl"
+	"viewmodel"   									"models/weapons/r101_sfp/ptpov_r101_sfp.mdl"
+	"playermodel" 									"models/weapons/r101_sfp/w_r101_sfp.mdl"
+	"holstermodel"									"models/weapons/r101_sfp/w_r101_sfp_stow.mdl"
 	"holster_type"									"rifle"
 
 	// Effects
@@ -225,7 +225,7 @@ WeaponData
 	"zoom_time_out"   								"0.2"
 	"zoom_fov"										"35"
 
-	"viewmodel_offset_ads"							"0 0 0"
+	"viewmodel_offset_ads"							"0 0 -0.85"
 
 	"dof_zoom_nearDepthStart"						"1.750"
 	"dof_zoom_nearDepthEnd"							"6.500"
@@ -323,7 +323,7 @@ WeaponData
 	"viewkick_scale_min_hipfire"  					"1.5"
 	"viewkick_scale_max_hipfire"  					"2.0"
 	"viewkick_scale_min_ads"  						"1.5"
-	"viewkick_scale_max_ads"  						"2.5"
+	"viewkick_scale_max_ads"  						"2.0"
 	"viewkick_scale_valuePerShot" 					"1.0"
 	"viewkick_scale_valueLerpStart"   				"0"
 	"viewkick_scale_valueLerpEnd" 					"2"
@@ -450,6 +450,8 @@ WeaponData
 	"bodygroup4_set"	"0"
 	"bodygroup5_name"	"proscreen"
 	"bodygroup5_set"	"0"
+	"bodygroup6_name"	"sight_aog_r1"
+	"bodygroup6_set"	"1"
 
 	"clip_bodygroup"						"r101_magazine"
 	"clip_bodygroup_index_shown"			"0"
@@ -478,6 +480,7 @@ WeaponData
 			"bodygroup2_set"	"0"
 			"bodygroup3_set"	"1"
 			"bodygroup4_set"	"0"
+			"bodygroup6_set"	"0"
 
 			"ui1_enable"		"0"
 			"ui5_enable"		"1"
@@ -506,6 +509,7 @@ WeaponData
 			"bodygroup2_set"	"1"
 			"bodygroup3_set"	"0"
 			"bodygroup4_set"	"0"
+			"bodygroup6_set"	"0"
 			"dof_zoom_nearDepthStart"						"5.691"
 			"dof_zoom_nearDepthEnd"							"6.745"
 			"viewmodel_offset_ads"							"0 -2.6 -.385"
@@ -521,6 +525,7 @@ WeaponData
 			"bodygroup2_set"	"0"
 			"bodygroup3_set"	"0"
 			"bodygroup4_set"	"1"
+			"bodygroup6_set"	"0"
 			"dof_zoom_nearDepthStart"						"5.737"
 			"dof_zoom_nearDepthEnd"							"6.226"
 			"viewmodel_offset_ads"							"0 -3 -.405"
@@ -602,8 +607,8 @@ WeaponData
 	"ui1_draw_cloaked"	"1"
 	UiData1
 	{
-		"ui"							"ui/r101_sights"
-		"mesh"					"models/weapons/attachments/r101_rui_upper"
+		"ui"							"ui/aog_multi_reticles"
+		"mesh"					"models/weapons/attachments/aog_rui_upper"
 		Args
 		{
 			vis							player_zoomfrac
