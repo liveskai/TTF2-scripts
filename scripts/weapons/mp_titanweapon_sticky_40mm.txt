@@ -1,5 +1,5 @@
 WeaponData
-{//强力炮
+{
 	"printname"   									"#WPN_TITAN_40MM_TRACKER"
     "shortprintname"                              	"#WPN_TITAN_40MM_TRACKER_SHORT"
 	"description" 									"#WPN_TITAN_40MM_TRACKER_DESC"

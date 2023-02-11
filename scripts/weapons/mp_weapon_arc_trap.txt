@@ -1,13 +1,16 @@
 WeaponData
 {
 	// General
-	"printname"   									"#WPN_DEPLOYABLE_COVER"
-	"shortprintname"								"#WPN_DEPLOYABLE_COVER_SHORT"
-	"description" 									"#WPN_DEPLOYABLE_COVER_DESC"
-	"longdesc" 										"#WPN_DEPLOYABLE_COVER_LONGDESC"
+	"printname"   									"#WPN_ARC_TRAP"
+	"shortprintname"								"#WPN_ARC_TRAP_SHORT"
+	"description" 									"#WPN_ARC_TRAP_DESC"
+	"longdesc" 										"#WPN_ARC_TRAP_LONGDESC"
 
-	"menu_icon"										"rui/pilot_loadout/tactical/pilot_tactical_hardcover"
-	"hud_icon"										"rui/pilot_loadout/tactical/pilot_tactical_hardcover"
+	"menu_icon"										"rui/menu/boosts/boost_icon_arc_trap"
+	"hud_icon"										"rui/menu/boosts/boost_icon_arc_trap"
+
+	"readymessage"              					"#HUD_BURNMETER_READY_ARC_TRAP"
+	"readyhint"                 					"#HUD_BURNMETER_READY_ARC_TRAP_HINT"
 
 	"weaponClass" 									"human"
 	"fire_mode"   									"offhand"
@@ -18,10 +21,10 @@ WeaponData
 
     "does_not_interrupt_cloak"							"1"
 
-	"OnWeaponAttemptOffhandSwitch"					"OnWeaponAttemptOffhandSwitch_weapon_deployable_cover"
-	"OnWeaponTossReleaseAnimEvent"					"OnWeaponTossReleaseAnimEvent_weapon_deployable_cover"
+	"OnWeaponAttemptOffhandSwitch"					"OnWeaponAttemptOffhandSwitch_weapon_arc_trap"
+	"OnWeaponTossReleaseAnimEvent"					"OnWeaponTossReleaseAnimEvent_weapon_arc_trap"
 	"OnProjectileCollision"							"OnProjectileCollision_weapon_deployable"
-	"OnWeaponTossPrep"								"OnWeaponTossPrep_weapon_deployable_cover"
+	"OnWeaponTossPrep"								"OnWeaponTossPrep_weapon_arc_trap"
 	"projectile_ignores_vortex"						"fall_vortex"
 
 	// Menu Stats
@@ -38,29 +41,30 @@ WeaponData
 	// Effects
 	"bounce_effect_table"							"deployable_cover_bounce_table"
 	"impact_effect_table" 							"exp_deployable_cover"
-	"projectile_trail_effect_0"						"wpn_grenade_frag"
-	"vortex_absorb_effect"							"wpn_vortex_projectile_satchel_FP"
-	"vortex_absorb_effect_third_person"				"wpn_vortex_projectile_satchel"
+	//"projectile_trail_effect_0"						"P_arcTrap_light"
+	//"projectile_trail_attachment" 					"fx_center"
+	"vortex_absorb_effect"							"wpn_vortex_projectile_prox_mine_FP"
+	"vortex_absorb_effect_third_person"				"wpn_vortex_projectile_prox_mine"
 	"vortex_absorb_sound"							"Vortex_Shield_AbsorbBulletLarge"
 	"vortex_absorb_sound_1p_vs_3p"					"Vortex_Shield_AbsorbBulletLarge_1P_VS_3P"
 	"projectile_adjust_to_gun_barrel"				"0"
 	"projectile_adjust_to_hand"						"1"
 
 	"grenade_disc_throw"							"1"
-	"projectile_gravity_scale"						"3"
+	"projectile_gravity_scale"						"1"
 
 	"projectile_visible_to_smart_ammo"				"0"
 
 	"critical_hit"									"0"
 
 	// Sounds
-	"sound_throw_1p"								"Pilot_Hardcover_Toss_1P"
+	"sound_throw_1p"								"Wpn_ArcTrap_Throw"
 	"sound_deploy_1p"								"weapon_sentryfragdrone_pinpull_1p"
 	"sound_throw_3p"								"weapon_sentryfragdrone_throw_3p"
 	"sound_deploy_3p"								"weapon_sentryfragdrone_pinpull_3p"
 	"sound_grenade_projectile"						"weapon_sentryfragdrone_warmup"
 	"sound_dryfire"									"coop_sentrygun_deploymentdeniedbeep"
-	"battle_chatter_event"							"bc_pAmpedWall"
+//	"battle_chatter_event"							"bc_pAmpedWall"
 
 	// Damage - When Used by Players
 	"damage_type" 									"burn"
@@ -127,11 +131,11 @@ WeaponData
 	{
 		"ammo_clip_size"   								"100"
 		"ammo_default_total"							"100"
-		"ammo_display"									"bar"
+		"ammo_display"									"count"
 		"ammo_min_to_fire"								"100"
 		"ammo_per_shot"									"100"
 		"ammo_stockpile_max"							"100"
-		"regen_ammo_refill_rate"						"5"
+		"regen_ammo_refill_rate"						"0"
 		"regen_ammo_refill_start_delay"					"0.0"
 
 		"enable_highlight_networking_on_creation"		"<KEEP_DEFAULT>"
@@ -174,20 +178,10 @@ WeaponData
 
 	Mods
 	{
-		amped_wall
-		{
+	    burn_card_weapon_mod
+        {
 
-		}
-		pas_power_cell
-		{
-			"regen_ammo_refill_rate"	"*1.35"
-		}
-
-		amped_tacticals
-		{
-			"ammo_min_to_fire"								"50"
-			"ammo_per_shot"									"50"
-		}
+        }
 	}
 
 	active_crosshair_count				"2"
