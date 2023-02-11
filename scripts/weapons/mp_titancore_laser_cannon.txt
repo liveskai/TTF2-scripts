@@ -1,5 +1,5 @@
 WeaponData
-{
+{//镭射核心
 	"printname"   									"#WPN_CHEST_LASER"
 	"shortprintname"   								"#WPN_CHEST_LASER_SHORT"
 	"description"									"#WPN_CHEST_LASER_DESC"
