@@ -1,61 +1,61 @@
 WeaponData
 {
 	// General
-	"printname"   									"#DEATH_TITAN_MELEE"
-	"shortprintname"								"#DEATH_TITAN_MELEE"
-	"description" 									"#DEATH_TITAN_MELEE"
-	"longdesc"										"#DEATH_TITAN_MELEE"
+	"printname"   									"Melee"
+	"shortprintname"								"Melee"
+	"description" 									"Description needed"
+	"longdesc"										"Description needed"
 
-	"menu_icon"										"ui/menu/items/passive_icons/titan_punch"
-	"hud_icon"										"ui/menu/items/passive_icons/titan_punch"
+	"menu_icon"										"ui/temp"
+	"hud_icon"										"ui/temp"
 
-	"weaponClass" 									"titan"
+	"weaponClass" 									"human"
 	"weaponType" 									"melee"
 	"body_type"										"battle_rifle"
 	"fire_mode"   									"offhand_melee"
 	"never_drop"									"1"
 
 	// Models
-	"viewmodel"   									"models/weapons/empty_handed/atpov_emptyhand.mdl"
-	"playermodel" 									"models/weapons/empty_handed/w_empty_handed_titan.mdl"
-
-	SP_BASE
-	{
-		"melee_range"									"260"
-		"melee_sound_attack_1p"							"scorch_melee_1p"
-		"melee_sound_attack_3p"							"scorch_melee_3p"
-		"melee_lunge_target_angle"						"30"
-		"melee_angle"									"30"
-	}
-	MP_BASE
-	{
-		"melee_range"									"280"
-		"melee_sound_attack_1p"							"scorch_melee_1p"
-		"melee_sound_attack_3p"							"scorch_melee_3p"
-		"melee_lunge_target_angle"						"20"
-		"melee_angle"									"20"
-	}
+	"viewmodel"   									"models/weapons/bolo_sword/ptpov_bolo_sword.mdl"
+	"playermodel" 									"models/weapons/bolo_sword/w_bolo_sword.mdl"
 
 	// Melee
 	"melee_can_hit_humansized"						"1"
-	"melee_can_hit_titans"							"1"
-	"melee_attack_animtime"							"0.8"
-	"melee_raise_recovery_animtime_normal"			"1.0"
-	"melee_raise_recovery_animtime_quick"			"1.0"
-	"melee_damage"									"500"
-	"melee_damage_heavyarmor"						"500"
-
-	"melee_rumble_on_hit"							"titan_melee_hit"
-	"melee_rumble_on_hit_partial"					"titan_melee_hit_partial"
-	"melee_freezelook_on_hit"						"0.25"
+	"melee_can_hit_titans"							"0"
+	"melee_raise_recovery_animtime_normal"			"0.25"
+	"melee_raise_recovery_animtime_quick"			"0.01"
+	"melee_range"									"40"
+	"melee_rumble_on_hit"							"pilot_melee_hit"
+	"melee_freezelook_on_hit"						"0.0"
+	"melee_sound_attack_1p"							"Player_Melee_Backhand_1P"
+	"melee_sound_attack_3p"							"player_melee_kick_3p"
 	"melee_anim_1p_number"							"1"								// ACT_VM_MELEE_ATTACK1, 2, or 3
-	"melee_anim_3p"									"ACT_GESTURE_MELEE_ATTACK1"
-	"damage_flags"									"DF_MELEE | DF_GIB"
-	"impact_effect_table"							"melee_titan"
-	"impulse_force"   								"1000000"
-	"offhand_keep_primary_in_hand"					"1"
+	"melee_anim_3p"									"ACT_MP_MELEE_KNIFE_FIRST"
+	"damage_flags"									"DF_MELEE | DF_KNOCK_BACK"
+	"impact_effect_table"							"melee_human"
+	"impulse_force"   								"25000"
 
 	"zoom_effects"									"0"
+
+	MP_BASE
+	{
+		"melee_lunge_target_range"						"130"
+		"melee_lunge_target_angle"						"30"
+		"melee_damage"									"300"
+		"melee_damage_heavyarmor"						"300"
+		"melee_attack_animtime"							"1.0"
+		"melee_lunge_time"								"0.125"
+	}
+
+	SP_BASE
+	{
+		"melee_lunge_target_range"						"200"
+		"melee_lunge_target_angle"						"40"
+		"melee_damage"									"130"
+		"melee_damage_heavyarmor"						"130"
+		"melee_attack_animtime"							"0.0"
+		"melee_lunge_time"								"0.2"
+	}
 
 	//
 	"ammo_suck_behavior"							"melee_weapons"
@@ -66,7 +66,7 @@ WeaponData
 	"viewkick_pitch_softScale"						"0.3"
 	"viewkick_pitch_hardScale"						"10.5"
 
-	"viewkick_yaw_base"   							"-0.65"
+	"viewkick_yaw_base"   							"-1.0"
 	"viewkick_yaw_random" 							"0.38"
 	"viewkick_yaw_softScale"  						"0.38"
 	"viewkick_yaw_hardScale"  						"30.5"
@@ -75,7 +75,7 @@ WeaponData
 	"viewkick_roll_randomMin" 						"0.6"
 	"viewkick_roll_randomMax" 						"0.8"
 	"viewkick_roll_softScale" 						"0.2"
-	"viewkick_roll_hardScale" 						"40.75"
+	"viewkick_roll_hardScale" 						"10.0"
 
 	//
 	"damage_rodeo" 									"100"
@@ -140,27 +140,40 @@ WeaponData
 
 	Mods
 	{
-		berserker
+		pm0
 		{
-			"melee_attack_animtime"						"1.23"
-			"melee_raise_recovery_animtime_normal"		"0.77"
-			"melee_raise_recovery_animtime_quick"		"0.77"
+			"melee_lunge_time"						"1.250"
+			"melee_lunge_target_angle"				"50"
+			"melee_lunge_target_range"				"150"
+			"melee_range"							"75"
+			"impulse_force"   						"150000"
 
-			"melee_lunge_target_range"					"500"
-			"melee_lunge_target_angle"					"15"
-
-			"melee_damage_heavyarmor"					"5000"
-			"melee_range"								"300"
-			"melee_anim_1p_number"						"3"			// ACT_VM_MELEE_ATTACK1, 2, or 3
-			"melee_anim_3p"								"ACT_GESTURE_MELEE_ATTACK3"
-			"damage_flags"								"DF_MELEE | DF_EXPLOSION | DF_CRITICAL | DF_KNOCK_BACK | DF_DOOM_FATALITY"
-			"impact_effect_table"						"40mm_splasher_rounds"
-
+			"impact_effect_table"					"titan_sniper" // titan_sniper
 		}
 
-		allow_as_primary
+		pm1
 		{
-			"fire_mode"									"offhand_melee_hybrid"
+			"melee_lunge_time"						"1.250"
+			"melee_lunge_target_angle"				"50"
+			"melee_lunge_target_range"				"768"
+			"melee_range"							"100"
+			"impulse_force"   						"200000"
+
+			"impact_effect_table"					"titan_sniper" // titan_sniper, melee_titan,
+		}
+
+		pm2
+		{
+			"melee_lunge_time"						"1.250"
+			"melee_lunge_target_angle"				"50"
+			"melee_lunge_target_range"				"768"
+			"melee_range"							"125"
+			"impulse_force"   						"250000"
+
+			"impact_effect_table"					"exp_arc_ball"
+
+			"melee_can_hit_titans"					"1"
+			"melee_damage_heavyarmor"				"1000"
 		}
 	}
 }

@@ -20,44 +20,36 @@ WeaponData
 	"playermodel" 									"models/weapons/empty_handed/w_empty_handed_human.mdl"
 
 	// Melee
+	"melee_lunge_time"								"0.125"
+	"melee_lunge_target_range"						"130"
+	"melee_lunge_target_angle"						"30"
 	"melee_can_hit_humansized"						"1"
 	"melee_can_hit_titans"							"0"
+	"melee_attack_animtime"							"1.0"
 	"melee_raise_recovery_animtime_normal"			"0.75"
 	"melee_raise_recovery_animtime_quick"			"0.4"
-	"melee_range"									"60"
+	"melee_range"									"40"
 	"melee_rumble_on_hit"							"pilot_melee_hit"
-	"melee_rumble_on_hit_partial"					"pilot_melee_hit_partial"
 	"melee_freezelook_on_hit"						"0.25"
-	//"melee_sound_attack_1p"						"Player_Melee_Backhand_1P"
+	"melee_sound_attack_1p"							"Player_Melee_Backhand_1P"
 	"melee_sound_attack_3p"							"player_melee_kick_3p"
+	"melee_anim_1p_number"							"1"								// ACT_VM_MELEE_ATTACK1, 2, or 3
 	"melee_anim_3p"									"ACT_MP_MELEE_KNIFE_FIRST"
 	"damage_flags"									"DF_MELEE | DF_KNOCK_BACK"
 	"impact_effect_table"							"melee_human"
-	"impulse_force"   								"35000"
+	"impulse_force"   								"50000"
 	"offhand_keep_primary_in_hand"					"1"
-
-	"zoom_effects"									"0"
 
 	MP_BASE
 	{
-		"melee_lunge_target_range"						"110"
-		"melee_lunge_target_angle"						"30"
-		"melee_damage"									"100"
-		"melee_damage_heavyarmor"						"0"
-		"melee_attack_animtime"							"0"
-		"melee_lunge_time"								"0.3"
-		"melee_anim_1p_number"							"2"
+		"melee_damage"									"50"
+		"melee_damage_heavyarmor"						"50"
 	}
 
 	SP_BASE
 	{
-		"melee_lunge_target_range"						"130"
-		"melee_lunge_target_angle"						"40"
-		"melee_damage"									"125"
-		"melee_damage_heavyarmor"						"125"
-		"melee_attack_animtime"							"0.0"
-		"melee_lunge_time"								"0.2"
-		"melee_anim_1p_number"							"1"								// ACT_VM_MELEE_ATTACK1, 2, or 3
+		"melee_damage"									"85"
+		"melee_damage_heavyarmor"						"85"
 	}
 
 	//
@@ -68,18 +60,18 @@ WeaponData
 	"viewkick_pitch_base" 							"-1.75"
 	"viewkick_pitch_random"   						"0.75"
 	"viewkick_pitch_softScale"						"0.3"
-	"viewkick_pitch_hardScale"						"5.5"
+	"viewkick_pitch_hardScale"						"10.5"
 
 	"viewkick_yaw_base"   							"1.0"
 	"viewkick_yaw_random" 							"0.38"
 	"viewkick_yaw_softScale"  						"0.38"
-	"viewkick_yaw_hardScale"  						"15.5"
+	"viewkick_yaw_hardScale"  						"30.5"
 
 	"viewkick_roll_base"  							"0"
 	"viewkick_roll_randomMin" 						"0.6"
 	"viewkick_roll_randomMax" 						"0.8"
 	"viewkick_roll_softScale" 						"0.2"
-	"viewkick_roll_hardScale" 						"20.75"
+	"viewkick_roll_hardScale" 						"40.75"
 
 	//
 	"damage_rodeo" 									"100"
@@ -134,9 +126,5 @@ WeaponData
 
 	Mods
 	{
-		rocket_arena
-		{
-			"melee_damage"									"33"
-		}
 	}
 }

@@ -1,19 +1,20 @@
 WeaponData
 {
-	"printname"										"#TITANCORE_SIEGE_MODE"
-	"shortprintname"								"#TITANCORE_SIEGE_MODE_SHORT"
-	"description"									"#TITANCORE_SIEGE_MODE_DESC"
-	"longdesc"										"#TITANCORE_SIEGE_MODE_DESC"
+	"printname"										"#WPN_TITAN_UPGRADE_CORE"
+	"shortprintname"								"#WPN_TITAN_UPGRADE_CORE_SHORT"
+	"description"									"#WPN_TITAN_UPGRADE_CORE_DESC"
+	"longdesc"										"#WPN_TITAN_UPGRADE_CORE_LONGDESC"
 
-	"menu_icon"										"rui/titan_loadout/core/titan_core_smart"
-	"hud_icon"										"rui/titan_loadout/core/titan_core_smart"
+	"menu_icon"										"rui/titan_loadout/core/titan_core_vanguard"
+	"hud_icon"										"rui/titan_loadout/core/titan_core_vanguard"
 
 	// General
 	"weaponClass" 									"titan"
 	"weaponType"									"titan_core"
 	"fire_mode"   									"offhand_instant"
 
-	"OnWeaponPrimaryAttack"							"OnWeaponPrimaryAttack_titancore_siege_mode"
+	"OnWeaponPrimaryAttack"							"OnWeaponPrimaryAttack_UpgradeCore"
+	"OnWeaponNpcPrimaryAttack"						"OnWeaponNpcPrimaryAttack_UpgradeCore"
 
 	// Ammo
 	"ammo_stockpile_max"							"200"
@@ -22,10 +23,10 @@ WeaponData
 	"ammo_no_remove_from_clip"						"1"
 
 	// Behavior
-	"core_build_time"								"150"
+	"core_build_time"								"100"
 	"chargeup_time"									"0.0"
-	"core_duration"									"12.0"
-	"passive"										"PAS_SMART_CORE"
+	"core_duration"									"0.5"
+	"passive"										"PAS_FUSION_CORE"
 
 	"fire_rate"										"30"
 	"deploy_time"									"0.0"
@@ -43,11 +44,11 @@ WeaponData
 	"npc_rest_time_between_bursts_min"				"30"
 	"npc_rest_time_between_bursts_max"				"30"
 
-	"readymessage"									"#HUD_CORE_ONLINE_SIEGE_MODE"
-	"readyhint"										"#HUD_CORE_ONLINE_SIEGE_MODE_HINT"
+	"readymessage"									"#HUD_CORE_ONLINE_UPGRADE"
+	"readyhint"										"#HUD_CORE_ONLINE_UPGRADE_HINT"
 
-	"dialog_core_online"							"smartCoreOnline"
-	"dialog_core_activated"							"smartCoreActivated"
+	"dialog_core_online"							"UpgradecoreOnline"
+	//"dialog_core_activated"						"UpgradecoreActivated" controlled in script
 
 	"colorCorrectionWeight"							"0.5"
 
@@ -64,10 +65,7 @@ WeaponData
 
 	Mods
 	{
-		pas_legion_smartcore
-		{
-			"core_duration"									"18.0"
-		}
+
 	}
 }
 

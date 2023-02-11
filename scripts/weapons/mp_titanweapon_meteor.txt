@@ -1,5 +1,5 @@
 WeaponData
-{//烈焰铝热剂
+{
 	// General
 	"printname"   									"#WPN_TITAN_METEOR"
 	"shortprintname"								"#WPN_TITAN_METEOR_SHORT"

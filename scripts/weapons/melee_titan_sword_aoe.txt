@@ -6,74 +6,29 @@ WeaponData
 	"description" 									"#WPN_TITAN_SWORD_DESC"
 	"longdesc"										"#WPN_TITAN_SWORD_LONGDESC"
 
-	"menu_icon"										"r2_ui/menus/loadout_icons/titan_weapon/titan_weapon_sword"
-	"hud_icon"										"r2_ui/menus/loadout_icons/titan_weapon/titan_weapon_sword"
+	"menu_icon"										"ui/menu/items/passive_icons/titan_punch"
+	"hud_icon"										"ui/menu/items/passive_icons/titan_punch"
 
 	"weaponClass" 									"titan"
-	"weaponType"									"melee"
-	"body_type"										"battle_rifle"
-	"fire_mode"   									"offhand_melee"
+	"fire_mode"   									"semi-auto"
 	"never_drop"									"1"
 
-	"offhand_holster_primary"						"1"
-	"holster_type"									"pistol"
-	"offhand_transition_has_attach_detach_anim_events" "1"
 	"allow_empty_click"   							"1"
-
-	"OnWeaponActivate"								"OnWeaponActivate_titanweapon_sword"
-	"OnWeaponDeactivate"							"OnWeaponDeactivate_titanweapon_sword"
-
-	SP_BASE
-	{
-		"melee_range"									"325"
-		"melee_attack_animtime"							"1.2"
-
-		"melee_damage"									"625"
-		"melee_damage_heavyarmor"						"625"
-	}
-	MP_BASE
-	{
-		"melee_range"									"325"
-		"melee_attack_animtime"							"0.9"
-
-		"melee_damage"									"800"
-		"melee_damage_heavyarmor"						"800"
-	}
-
-	"npc_max_engage_range"							"250"
-	"npc_max_engage_range_heavy_armor"				"250"
-
-	"npc_min_burst"									"0"
-	"npc_max_burst"									"0"
 
 	// Models
 	"viewmodel"   									"models/weapons/titan_sword/atpov_titan_sword.mdl"
 	"playermodel" 									"models/weapons/titan_sword/w_titan_sword.mdl"
 	"holstermodel"    								"models/weapons/titan_sword/w_titan_sword.mdl"
 
-	// Melee
-	"melee_lunge_time"								"0.5"
-	"melee_raise_recovery_animtime_normal"			"0.5"
-	"melee_raise_recovery_animtime_quick"			"0.5"
-	"melee_can_hit_humansized"						"1"
-	"melee_can_hit_titans"							"1"
-	"melee_rumble_on_hit"							"titan_melee_hit_sword"
-	"melee_rumble_on_hit_partial"					"titan_melee_hit_partial"
-	"melee_freezelook_on_hit"						"0.25"
-	"melee_sound_attack_1p"							"ronin_sword_melee_1p"
-	"melee_sound_attack_3p"							"ronin_sword_melee_3p"
-	"melee_anim_1p_number"							"1"								// ACT_VM_MELEE_ATTACK1, 2, or 3
-	"melee_anim_3p"									"ACT_GESTURE_MELEE_ATTACK3"
-	"damage_flags"									"DF_MELEE | DF_GIB"
+	"damage_flags"									"DF_MELEE"
 	"impact_effect_table"							"titan_sword"
 	"impulse_force"   								"5000"
 
-	"clear_fx_on_new_view_model"					"1"
-
-	"zoom_effects"									"0"
-
 	"melee_lunge_target_range"						"100"
 	"melee_lunge_target_angle"						"45"
+	"melee_damage"									"750"
+	"melee_damage_heavyarmor"						"750"
+	"flyoutEnabled"									"0"
 
 	//
 	"ammo_suck_behavior"							"melee_weapons"
@@ -94,6 +49,9 @@ WeaponData
 	"viewkick_roll_randomMax" 						"0.8"
 	"viewkick_roll_softScale" 						"0.2"
 	"viewkick_roll_hardScale" 						"40.75"
+
+	//"melee_sound_attack_1p"							"ronin_sword_melee_1p"
+	//"melee_sound_attack_3p"							"ronin_sword_melee_3p"
 
 	//
 	"damage_rodeo" 									"100"
@@ -154,47 +112,9 @@ WeaponData
 
 	// WeaponED Unhandled Key/Values and custom script Key/Values
 	"deployfirst_time"								"1.25"
-	//"sprintcycle_time"								".55"
-
-	"npc_max_range"   								"100"	// prevent COND_CAN_RANGE_ATTACK1
+	"sprintcycle_time"								".55"
 
 	Mods
 	{
-		super_charged
-		{
-			"fire_mode"											"offhand_melee_hybrid"
-			"melee_damage"										"++1400"
-			"melee_damage_heavyarmor"							"++1400"
-			"attack_button_presses_melee"						"1"
-			"impact_effect_table"								"titan_sword"
-			"melee_rumble_on_hit"								"titan_melee_hit_swordcore"
-			"offhand_transition_has_attach_detach_anim_events"	"0"
-			"activitymodifier"									"melee_titan_sword_super_charged"
-			"melee_angle"										"45"
-			"clear_fx_on_new_view_model"						"0"
-		}
-
-		fd_sword_upgrade
-		{
-			"melee_damage"									"*1.25"
-			"melee_damage_heavyarmor"						"*1.25"
-		}
-
-		super_charged_SP
-		{
-			"melee_damage"										"*2.25"
-			"melee_damage_heavyarmor"							"*2.25"
-			"offhand_transition_has_attach_detach_anim_events" 	"0"
-			"activitymodifier"									"melee_titan_sword_super_charged"
-			"melee_angle"										"45"
-			"clear_fx_on_new_view_model"						"0"
-		}
-
-		modelset_prime
-		{
-            "viewmodel"   									"models/weapons/titan_sword/atpov_titan_sword_prime.mdl"
-            "playermodel" 									"models/weapons/titan_sword/w_titan_sword_prime.mdl"
-            "holstermodel"    								"models/weapons/titan_sword/w_titan_sword_prime.mdl"
-		}
 	}
 }

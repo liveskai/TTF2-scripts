@@ -1,27 +1,19 @@
 WeaponData
 {
 	// General
-	"printname"   									"#WPN_TITAN_TRIPWIRE"
-	"shortprintname"                              	"#WPN_TITAN_TRIPWIRE_SHORT"
-	"description" 									"#WPN_TITAN_TRIPWIRE_DESC"
-	"longdesc"										"#WPN_TITAN_TRIPWIRE_LONGDESC"
+	"printname"   									""
+	"shortprintname"                              	""
+	"description" 									""
+	"longdesc"										""
 
-	"menu_icon"										"rui/titan_loadout/tactical/titan_tactical_laser_tripwire_menu"
-	"hud_icon"										"rui/titan_loadout/tactical/titan_tactical_laser_tripwire"
+	"menu_icon"										"rui/titan_loadout/core/titan_core_nuke"
+	"hud_icon"										"rui/titan_loadout/core/titan_core_nuke"
 
 	"weaponClass" 									"titan"
-	"weaponType"									"tactical"
-	//"npc_use_check_type"							"while_evasive"
-	"npc_use_check_type"							"shared_energy"
-	"npc_target_armor_type"							"heavy"
 	"fire_mode"   									"offhand_instant"
 	"minimap_reveal_distance"						"32000"
 
-	"OnWeaponOwnerChanged"							"OnWeaponOwnerChanged_titanweapon_laser_trip"
-	"OnWeaponPrimaryAttack"							"OnWeaponPrimaryAttack_titanweapon_laser_trip"
-	"OnWeaponNPCPrimaryAttack"						"OnWeaponNPCPrimaryAttack_titanweapon_laser_trip"
-	"OnProjectileCollision"							"OnProjectileCollision_weapon_deployable"
-	"OnWeaponAttemptOffhandSwitch" 					"OnWeaponAttemptOffhandSwitch_titanweapon_laser_trip"
+	"OnWeaponPrimaryAttack"							"OnWeaponPrimaryAttack_nuke_eject"
 
 	"projectile_ignores_vortex"						"fall_vortex"
 
@@ -47,6 +39,12 @@ WeaponData
 
 	"critical_hit"									"0"
 	"grenade_show_indicator_to_owner"				"0"
+
+	// Needed for Core Ability Slot
+	"core_build_time"								"150"
+	"chargeup_time"									"1.85"
+	"core_duration"									"5.5"
+	"passive"										"PAS_FUSION_CORE"
 
 	MP_BASE
 	{
