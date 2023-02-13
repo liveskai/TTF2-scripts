@@ -182,7 +182,7 @@ var function OnWeaponPrimaryAttack_UpgradeCore( entity weapon, WeaponPrimaryAtta
 			entity ordnance = owner.GetOffhandWeapon( OFFHAND_RIGHT )
 			array<string> mods
 			if ( ordnance.HasMod( "missile_racks") )
-				mods = [ "upgradeCore_MissileRack_Vanguard" ]
+				mods = [ "SP_BASE" ]
 			else
 				mods = [ "upgradeCore_Vanguard" ]
 
