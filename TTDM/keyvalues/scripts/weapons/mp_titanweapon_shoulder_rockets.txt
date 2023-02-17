@@ -1,0 +1,35 @@
+WeaponData
+{//追踪导弹
+	Mods
+	{
+		mod_ordnance_core
+		{
+		}
+
+		dev_mod_low_recharge
+		{
+		}
+
+		extended_smart_ammo_range
+		{
+		}
+
+		burn_mod_titan_shoulder_rockets
+		{
+		}
+
+		upgradeCore_Vanguard
+		{
+		}
+
+		upgradeCore_MissileRack_Vanguard
+		{
+		}
+
+		fd_balance
+		{
+			"damage_near_value_titanarmor"					"*1"
+			"damage_far_value_titanarmor"					"*1"
+		}
+	}
+}
