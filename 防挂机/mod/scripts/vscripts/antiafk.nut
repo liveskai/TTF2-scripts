@@ -2,9 +2,9 @@ untyped
 global function antiafkInit
 
 void function antiafkInit() {
-    AddPrivateMatchModeSettingArbitrary("#MODE_SETTING_CATEGORY_SERVERTOOLS", "antiafk_grace", "30.0" )
-    AddPrivateMatchModeSettingArbitrary("#MODE_SETTING_CATEGORY_SERVERTOOLS", "antiafk_gracedead", "30.0" )
-    AddPrivateMatchModeSettingArbitrary("#MODE_SETTING_CATEGORY_SERVERTOOLS", "antiafk_warn", "10.0" )
+    AddPrivateMatchModeSettingArbitrary("#MODE_SETTING_CATEGORY_SERVERTOOLS", "antiafk_grace", "60.0" )
+    AddPrivateMatchModeSettingArbitrary("#MODE_SETTING_CATEGORY_SERVERTOOLS", "antiafk_gracedead", "60.0" )
+    AddPrivateMatchModeSettingArbitrary("#MODE_SETTING_CATEGORY_SERVERTOOLS", "antiafk_warn", "20.0" )
     AddPrivateMatchModeSettingArbitrary("#MODE_SETTING_CATEGORY_SERVERTOOLS", "antiafk_interval", "2.0" )
 
     if ( GetConVarBool( "antiafk_enabled" ) ) {
@@ -47,12 +47,12 @@ void function Playing(){
 
 int function GetAfkState( entity player ){
 
-    float localgrace = GetCurrentPlaylistVarFloat("antiafk_grace", 30.0)
-    float warn = GetCurrentPlaylistVarFloat("antiafk_warn", 10.0)
+    float localgrace = GetCurrentPlaylistVarFloat("antiafk_grace", 60.0)
+    float warn = GetCurrentPlaylistVarFloat("antiafk_warn", 20.0)
 
     // different grace when dead
     if ( !IsAlive(player) ){
-        localgrace = GetCurrentPlaylistVarFloat("antiafk_gracedead", 30.0)
+        localgrace = GetCurrentPlaylistVarFloat("antiafk_gracedead", 60.0)
     }
 
     if ( player in file.lastmoved){
