@@ -1,4 +1,0 @@
-WeaponData
-{//克莱博
-"ammo_no_remove_from_clip"						"1"
-}
