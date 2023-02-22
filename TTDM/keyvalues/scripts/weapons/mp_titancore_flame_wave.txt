@@ -1,8 +1,0 @@
-WeaponData
-{//火焰核心
-	MP_BASE
-	{
-		"damage_near_value_titanarmor"					"5000"
-		"damage_far_value_titanarmor"					"5000"
-	}
-}
