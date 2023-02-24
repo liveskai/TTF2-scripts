@@ -1,6 +1,0 @@
-+setplaylist fd_master
-+mp_gamemode fd_master
-+setplaylistvaroverrides "earn_meter_pilot_multiplier 100 earn_meter_titan_multiplier 10 titan_shield_regen 1 pilot_health_multiplier 10 custom_air_accel_pilot 50000"
-+map mp_homestead
-+net_compresspackets 1 +net_compresspackets_minsize 64 +sv_maxrate 127000
-+ns_server_reg_token 
