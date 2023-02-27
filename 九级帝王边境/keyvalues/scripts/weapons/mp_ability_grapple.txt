@@ -1,4 +1,0 @@
-WeaponData
-{//钩爪
-	"grapple_power_use_rate"						"1"
-}
