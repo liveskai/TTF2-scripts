@@ -1,7 +1,0 @@
-WeaponData
-{//电烟雷
-	MP_BASE
-	{
-		"regen_ammo_refill_rate"						"100"
-	}
-}

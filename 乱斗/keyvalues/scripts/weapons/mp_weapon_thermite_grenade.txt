@@ -1,7 +1,0 @@
-WeaponData
-{//飞火星
-	MP_BASE
-	{
-		"regen_ammo_refill_rate"						"100"
-	}
-}
