@@ -1,5 +1,5 @@
 WeaponData
-{
+{//相位
 	// General
 	"printname"   									"#WPN_TITAN_PHASE_DASH"
 	"shortprintname"   								"#WPN_TITAN_PHASE_DASH_SHORT"
