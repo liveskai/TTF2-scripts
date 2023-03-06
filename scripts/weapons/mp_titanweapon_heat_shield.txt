@@ -1,5 +1,5 @@
 WeaponData
-{
+{//火盾
 	// General
 	"printname"   									"#WPN_TITAN_HEAT_SHIELD"
 	"shortprintname"   								"#WPN_TITAN_HEAT_SHIELD_SHORT"
