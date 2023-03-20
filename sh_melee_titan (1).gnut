@@ -340,7 +340,21 @@ function TitanAttackTitan( entity titan, entity meleeWeapon, entity enemyTitan, 
 
 		if ( enemyTitan.IsPlayer() && enemyTitan.PlayerMelee_IsAttackActive() )
 		{
-			enemyTitan.PlayerMelee_EndAttack()
+			// never end bison's attack
+			bool shouldCounter = true
+			entity enemyMelee = enemyTitan.GetMeleeWeapon()
+			if( IsValid( meleeWeapon ) )
+			{
+				if( meleeWeapon.HasMod( "berserker" ) )
+					shouldCounter = false
+			}
+			if( IsValid( enemyMelee ) )
+			{
+				if( enemyMelee.HasMod( "berserker" ) )
+					shouldCounter = false
+			}
+			if( shouldCounter )
+				enemyTitan.PlayerMelee_EndAttack()
 		}
 	}
 
