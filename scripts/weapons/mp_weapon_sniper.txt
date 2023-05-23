@@ -1,5 +1,5 @@
 WeaponData
-{
+{//克莱博
 	// General
 	"printname"   									"#WPN_SNIPER"
 	"shortprintname"								"#WPN_SNIPER_SHORT"
