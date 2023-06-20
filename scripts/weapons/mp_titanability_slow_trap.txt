@@ -1,5 +1,5 @@
 WeaponData
-{
+{//煤气罐
 	// General
 	"printname"   									"#WPN_TITAN_SLOW_TRAP"
 	"shortprintname"                              	"#WPN_TITAN_SLOW_TRAP_SHORT"
