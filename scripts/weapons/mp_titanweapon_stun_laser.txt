@@ -1,5 +1,5 @@
 WeaponData
-{
+{//能量吸收
 	"printname"   									"#WPN_TITAN_STUN_LASER"
 	"shortprintname"   								"#WPN_TITAN_STUN_LASER_SHORT"
 	"description"									"#WPN_TITAN_STUN_LASER_DESC"
