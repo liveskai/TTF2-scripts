@@ -1,5 +1,5 @@
 WeaponData
-{
+{//北极星拌线
 	"printname"   									"#WPN_TITAN_TETHER_TRAP"
 	"shortprintname"								"#WPN_TITAN_TETHER_TRAP_SHORT"
 	"description" 									"#WPN_TITAN_TETHER_TRAP_DESC"
