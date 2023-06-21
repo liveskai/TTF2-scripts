@@ -1,5 +1,5 @@
 WeaponData
-{
+{//集束炸弹
 	// General
 	"printname"   									"#WPN_TITAN_DUMB_SHOULDER_ROCKETS"
 	"description" 									"#WPN_TITAN_DUMB_SHOULDER_ROCKETS_DESC"
