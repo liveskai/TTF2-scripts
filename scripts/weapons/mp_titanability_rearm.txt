@@ -1,5 +1,5 @@
 WeaponData
-{
+{//重新武装
 	// General
 	"printname"   									"#WPN_TITANABILITY_REARM"
 	"shortprintname"   								"#WPN_TITANABILITY_REARM"
