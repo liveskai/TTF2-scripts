@@ -1,5 +1,5 @@
 WeaponData
-{
+{//多重炮火
 	// General
 	"printname"   									"#WPN_ORBITAL_STRIKE"
 	"description" 									"#WPN_ORBITAL_STRIKE_DESC"
