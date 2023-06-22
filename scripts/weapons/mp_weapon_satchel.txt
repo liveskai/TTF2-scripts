@@ -1,5 +1,5 @@
 WeaponData
-{
+{//C4
 	// General
 	"cooldown_type"									"ammo_deployed"
 	"printname"   									"#WPN_SATCHEL"
