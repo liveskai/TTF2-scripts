@@ -1,5 +1,5 @@
 WeaponData
-{
+{//镭射绊线
 	// General
 	"printname"   									"#WPN_TITAN_TRIPWIRE"
 	"shortprintname"                              	"#WPN_TITAN_TRIPWIRE_SHORT"
