@@ -1,5 +1,5 @@
 WeaponData
-{
+{//分裂枪
 	// General
 	"printname"   									"#WPN_TITAN_PARTICLE_ACCEL"
 	"shortprintname"								"#WPN_TITAN_PARTICLE_ACCEL_SHORT"
