@@ -1,5 +1,5 @@
 WeaponData
-{
+{//飞火星
 	// General
 	"printname"										"#WPN_THERMITE_GRENADE"
 	"shortprintname"								"#WPN_THERMITE_GRENADE_SHORT"
