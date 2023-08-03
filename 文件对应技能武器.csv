@@ -58,3 +58,12 @@ mp_titanweapon_predator_cannon,加特林
 mp_titanweapon_dumbfire_rockets,集束炸弹
 mp_titanability_basic_block,剑锋
 mp_titanweapon_arc_wave,电弧波
+mp_ability_burncardweapon,战术强化
+burn_card_weapon_mod,必须配件
+burnmeter_amped_weapons,强化武器
+burnmeter_phase_rewind,相位回溯
+burnmeter_maphack,骇图
+burnmeter_emergency_battery,电池
+burnmeter_smart_pistol,智障手枪
+burnmeter_radar_jammer,雷达干扰
+burnmeter_nuke_titan,核武泰坦
