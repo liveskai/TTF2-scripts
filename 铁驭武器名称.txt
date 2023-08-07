@@ -28,6 +28,7 @@ burnmeter_holopilot_nova            全像幻影铁驭
 burnmeter_radar_jammer              雷达干扰
 burnmeter_maphack                   骇图
 burnmeter_hard_cover                强化掩体
+burnmeter_nuke_titan	核武泰坦
 
 ------------------------武器------------------------
 - 冲锋枪：
