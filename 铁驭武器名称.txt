@@ -16,6 +16,8 @@ mp_weapon_satchel                   炸弹包
 mp_weapon_thermite_grenade          飞火星
 
 -----------------------强化卡-----------------------
+mp_ability_burncardweapon	战术强化
+burn_card_weapon_mod	必须配件
 burnmeter_amped_weapons             强化武器
 burnmeter_phase_rewind              相位回溯
 burnmeter_ap_turret_weapon          铁驭哨兵
