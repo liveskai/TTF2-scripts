@@ -37,3 +37,6 @@ Q
 		array<string> mods = weapon.GetMods()
 		mods.append( "pas_ion_lasercannon" )
 		weapon.SetMods( mods )
+
+player.SetActiveWeaponByName(player.GetMainWeapons()[1].GetWeaponClassName())
+player.SetActiveWeaponByName("mp_weaoon_car")
