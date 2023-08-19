@@ -40,3 +40,5 @@ Q
 
 player.SetActiveWeaponByName(player.GetMainWeapons()[1].GetWeaponClassName())
 player.SetActiveWeaponByName("mp_weaoon_car")
+	Riff_ForceTitanAvailability( eTitanAvailability.Never ) 禁用泰坦
+	Riff_ForceBoostAvailability( eBoostAvailability.Disabled ) 禁用强化
