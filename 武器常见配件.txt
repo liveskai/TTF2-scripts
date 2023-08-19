@@ -1,9 +1,0 @@
-extended_ammo 扩容弹夹
-aog ACOG圆形瞄准镜
-threat_scope 盲人镜
-redline_sight 游侠三倍镜
-pas_fast_reload 快速换弹 
-pas_fast_ads 快速瞄准 
-pas_fast_swap 快速切换
-pas_run_and_gun 跑射
-tactical_cdr_on_kill 战术击杀 
