@@ -43,7 +43,6 @@
 			fd_health_upgrade
 			{
 				health			2500++	[$mp]
-				dodgeSpeed			*1.5	
 			}
 			turbo_titan
 			{
