@@ -59,7 +59,7 @@
 |	mp_weapon_softball	|	垒球榴弹炮	|
 |	mp_weapon_epg	|	EPG-1	|
 |	mp_weapon_shotgun_pistol	|	莫桑比克	|
-|	mp_weapon_wingman_n	|	菁英小帮手	|
+|	mp_weapon_wingman_n	|	精英小帮手	|
 |	mp_weapon_autopistol	|	RE-45	|
 |	mp_weapon_semipistol	|	P2016	|
 |	mp_weapon_wingman	|	小帮手	|
