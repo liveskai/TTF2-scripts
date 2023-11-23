@@ -1,5 +1,5 @@
 WeaponData
-{//切换远近程模式
+{
 	// General
 	"printname"   									"#WPN_TITAN_ROCKET_AMMO_SWAP"
 	"shortprintname"  								"#WPN_TITAN_ROCKET_AMMO_SWAP_SHORT"
