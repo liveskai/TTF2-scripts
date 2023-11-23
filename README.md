@@ -135,6 +135,8 @@
 |	mp_titanweapon_stun_laser	|	能量吸收	|
 |	mp_titanweapon_xo16_vanguard	|	帝王步枪	|
 |	mp_titanweapon_xo16	|	远征步枪	|
+|	mp_titanweapon_vortex_shield	|	旋涡防护罩	|
+|	mp_titanweapon_vortex_shield_ion	|	离子盾	|
 
 ## NPC
 |	名字	|	文件	|
