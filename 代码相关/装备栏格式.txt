@@ -20,3 +20,4 @@ player.SetActiveWeaponByName("mp_weaoon_car")
 	player.SetPlayerSettingsWithMods( player.GetPlayerSettings(), [ "disable_wallrun", "disable_doublejump"])
 ReplacePlayerOrdnance( player, "mp_weapon_grenade_gravity" )手雷
 ReplacePlayerOffhand 技能
+TakeAllWeapons( titan ) 
