@@ -22,3 +22,4 @@ ReplacePlayerOrdnance( player, "mp_weapon_grenade_gravity" )手雷
 ReplacePlayerOffhand 技能
 TakeAllWeapons( titan ) 
 TakeAllPassives( titan )
+GiveTitanPassiveLifeLong( soul, passive )
