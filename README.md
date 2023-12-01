@@ -70,9 +70,7 @@
 |	mp_weapon_smart_pistol	|	智慧手枪	|
 |	mp_weapon_arc_trap	|	电弧陷阱	|
 |	mp_weapon_frag_drone	|	炸蛛	|
-|	mp_titanweapon_sniper	|	电磁炮	|
-|	mp_titanweapon_dumbfire_rockets	|	集束炸弹	|
-|	mp_titanability_basic_block	|	剑锋	|
+
 
 ## 战术强化
 |	名字	|	文件	|
