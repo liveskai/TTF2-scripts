@@ -20,7 +20,7 @@ const string FLAME_WALL_GROUND_MIDDLE_SFX = "flamewall_flame_burn_middle"
 const string FLAME_WALL_GROUND_END_SFX = "flamewall_flame_burn_end"
 
 global const float FLAME_WALL_THERMITE_DURATION = 5.2
-global const float PAS_SCORCH_FIREWALL_DURATION = 9.9
+global const float PAS_SCORCH_FIREWALL_DURATION = 5.2
 global const float SP_FLAME_WALL_DURATION_SCALE = 1.75
 
 void function MpTitanweaponFlameWall_Init()
@@ -51,6 +51,18 @@ var function OnWeaponPrimaryAttack_FlameWall( entity weapon, WeaponPrimaryAttack
 			return 1
 	#endif
 
+	// float missileSpeed = 1200.0
+	// bool doPopup = false
+	// entity grenade = weapon.FireWeaponGrenade( attackParams.pos, attackParams.dir * missileSpeed, < 200,0,0 >, 99, damageTypes.projectileImpact, damageTypes.explosive, shouldPredict, true, true )
+	// vector angles = VectorToAngles( attackParams.dir )
+	// #if SERVER
+	// 	float chargeTime = weapon.GetWeaponChargeTime()
+	// 	if ( chargeTime > ChargeBall_GetChargeTime() )
+	// 		grenade.proj.isChargedShot = true
+	// 	grenade.proj.trackedEnt = weapon
+	// #endif
+	// return weapon.GetWeaponInfoFileKeyField( "ammo_min_to_fire" )
+
 	vector[ 3 ] anglesToRotate = [ <0,0,0>, < 0, 15, 0 >, < 0, -15, 0 > ]
 
 	entity weaponOwner = weapon.GetOwner()
@@ -63,24 +75,15 @@ var function OnWeaponPrimaryAttack_FlameWall( entity weapon, WeaponPrimaryAttack
 	#endif
 
 	const float FUSE_TIME = 99.0
-	// Modified block, by Simmo
-	array<float> offsets = weapon.HasMod( "pas_scorch_firewall" ) ? [ -1.0, 0.0, 1.0 ] : [ 0.0 ]
-	foreach ( off in offsets )
+	entity projectile = weapon.FireWeaponGrenade( attackParams.pos, attackParams.dir, < 0,0,0 >, FUSE_TIME, damageTypes.projectileImpact, damageTypes.explosive, shouldPredict, true, true )
+	if ( projectile )
 	{
-		vector right = CrossProduct( attackParams.dir, <0,0,1> )
-		right = Normalize( right )
-		vector offset = off * right * 128
-		entity projectile = weapon.FireWeaponGrenade( attackParams.pos + offset, attackParams.dir, < 0,0,0 >, FUSE_TIME, damageTypes.projectileImpact, damageTypes.explosive, shouldPredict, true, true )
-		if ( projectile )
-		{
-			projectile.SetModel( $"models/dev/empty_model.mdl" )
-			EmitSoundOnEntity( projectile, FLAME_WALL_PROJECTILE_SFX )
-			#if SERVER
-				weapon.EmitWeaponNpcSound( LOUD_WEAPON_AI_SOUND_RADIUS_MP, 0.5 )
-				// !!!Warning!!! This modify MAY let the server crash
-				thread BeginFlameWave( projectile, 0, inflictor, attackParams.pos + offset, attackParams.dir )
-			#endif
-		}
+		projectile.SetModel( $"models/dev/empty_model.mdl" )
+		EmitSoundOnEntity( projectile, FLAME_WALL_PROJECTILE_SFX )
+		#if SERVER
+			weapon.EmitWeaponNpcSound( LOUD_WEAPON_AI_SOUND_RADIUS_MP, 0.5 )
+			thread BeginFlameWave( projectile, 0, inflictor, attackParams, attackParams.dir )
+		#endif
 	}
 
 	#if CLIENT
@@ -101,8 +104,7 @@ void function OnProjectileCollision_FlameWall( entity projectile, vector pos, ve
 }
 
 #if SERVER
-// !!!Modified!!! USE pos DIRECTLY
-void function BeginFlameWave( entity projectile, int projectileCount, entity inflictor, vector pos, vector direction )
+void function BeginFlameWave( entity projectile, int projectileCount, entity inflictor, WeaponPrimaryAttackParams attackParams, vector direction )
 {
 	projectile.EndSignal( "OnDestroy" )
 	projectile.SetAbsOrigin( projectile.GetOrigin() )
@@ -113,8 +115,7 @@ void function BeginFlameWave( entity projectile, int projectileCount, entity inf
 	projectile.Hide()
 	projectile.NotSolid()
 	projectile.proj.savedOrigin = < -999999.0, -999999.0, -999999.0 >
-	// waitthread WeaponAttackWave( projectile, projectileCount, inflictor, attackParams.pos + direction * 25.0, direction, CreateThermiteWallSegment )
-	waitthread WeaponAttackWave( projectile, projectileCount, inflictor, pos + direction * 25.0, direction, CreateThermiteWallSegment )
+	waitthread WeaponAttackWave( projectile, projectileCount, inflictor, attackParams.pos + direction * 25.0, direction, CreateThermiteWallSegment )
 	projectile.Destroy()
 }
 
@@ -131,7 +132,7 @@ bool function CreateThermiteWallSegment( entity projectile, int projectileCount,
 		if ( mods.contains( "pas_scorch_flamecore" ) )
 		{
 			damageSource = eDamageSourceId.mp_titancore_flame_wave_secondary
-			duration = 3.5
+			duration = 1.5
 		}
 		else
 		{
