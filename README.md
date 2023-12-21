@@ -137,6 +137,7 @@
 |	mp_titanweapon_vortex_shield_ion	|	离子盾	|
 |	mp_titanability_power_shot	|	军团重火力	|
 |	mp_titanability_rearm	|	快速武装	|
+|	mp_titanweapon_sniper	|	电磁炮	|
 
 ## NPC
 |	名字	|	文件	|
