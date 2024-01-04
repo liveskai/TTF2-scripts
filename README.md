@@ -138,6 +138,7 @@
 |	mp_titanability_power_shot	|	军团重火力	|
 |	mp_titanability_rearm	|	快速武装	|
 |	mp_titanweapon_sniper	|	电磁炮	|
+|	mp_titanweapon_dumbfire_rockets	|	集束炸弹	|
 
 ## NPC
 |	名字	|	文件	|
