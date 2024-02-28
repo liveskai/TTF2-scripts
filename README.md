@@ -139,7 +139,7 @@
 |	mp_titanability_rearm	|	快速武装	|
 |	mp_titanweapon_sniper	|	电磁炮	|
 |	mp_titanweapon_dumbfire_rockets	|	集束炸弹	|
-
+|	mp_titanability_basic_block	|	剑锋	|
 ## NPC
 |	名字	|	文件	|
 |	-----------	|	-----------	|
