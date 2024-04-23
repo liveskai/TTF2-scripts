@@ -143,6 +143,7 @@
 
 ## 废案武器/NPC武器
 |	名字	|	文件	|
+|	-----------	|	-----------	|
 |	mp_weapon_arena1	|	L星	|
 |	mp_weapon_arena2	|	SMR模型的能源炮	|
 |	mp_weapon_arena3	|	极速电笔	|
