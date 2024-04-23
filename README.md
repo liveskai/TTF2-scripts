@@ -140,6 +140,22 @@
 |	mp_titanweapon_sniper	|	电磁炮	|
 |	mp_titanweapon_dumbfire_rockets	|	集束炸弹	|
 |	mp_titanability_basic_block	|	剑锋	|
+
+## 废案武器/NPC武器
+|	名字	|	文件	|
+|	mp_weapon_arena1	|	L星	|
+|	mp_weapon_arena2	|	SMR模型的能源炮	|
+|	mp_weapon_arena3	|	极速电笔	|
+|	mp_weapon_dronebeam	|	三连发电笔	|
+|	mp_weapon_dronerocket	|	null	|
+|	mp_weapon_engineer_combat_drone	|	null	|
+|	mp_weapon_engineer_turret	|	废案炮塔机枪	|
+|	mp_weapon_gunship_turret	|	40炮	|
+|	mp_weapon_gunship_missile	|	null	|
+|	mp_weapon_mega_turret	|	废案炮塔机枪	|
+|	mp_weapon_turretplasma	|	null	|
+|	mp_weapon_turretplasma_mega	|	null	|
+
 ## NPC
 |	名字	|	文件	|
 |	-----------	|	-----------	|
