@@ -1,7 +1,7 @@
 @echo off
-:loop
-echo (%time%) ttf2 server started.
+:server
+echo [%date%]  -  [%time%]   Server Start
 echo n| start /wait NorthstarLauncher.exe -dedicated -multiple
-echo (%time%) WARNING: Server closed or crashed, restarting....
-timeout 10
-goto loop
+echo [%date%]  -  [%time%] WARNING: Server closed or crashed, restarting....
+timeout 9
+goto server
