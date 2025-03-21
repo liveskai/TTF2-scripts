@@ -92,7 +92,7 @@
 |	melee_titan_sword	|	浪人剑	|
 |	melee_titan_punch_fighter	|	野牛近战	|
 |	melee_titan_punch	|	泰坦近战	|
-|	mp_titanability_ammo_swap	|	军团切换远进程模式	|
+|	mp_titanability_ammo_swap	|	军团切换远近程模式	|
 |	mp_titanability_electric_smoke	|	电子烟（道具）	|
 |	mp_titanability_smoke	|	电子烟（技能）	|
 |	mp_titanability_gun_shield	|	枪盾	|
