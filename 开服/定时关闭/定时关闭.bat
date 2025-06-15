@@ -1,0 +1,1 @@
+start powershell -ExecutionPolicy Bypass -File 定时关闭.ps1
