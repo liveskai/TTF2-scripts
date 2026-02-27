@@ -66,7 +66,7 @@
 |	mp_weapon_mgl	|	磁能榴弹炮	|
 |	mp_weapon_arc_launcher	|	雷电炮	|
 |	mp_weapon_rocket_launcher	|	射手飞弹	|
-|	mp_weapon_defender	|	电能步枪	|
+|	mp_weapon_defender	|	电能步枪 电笔	|
 |	mp_weapon_smart_pistol	|	智慧手枪	|
 |	mp_weapon_arc_trap	|	电弧陷阱	|
 |	mp_weapon_frag_drone	|	炸蛛	|
