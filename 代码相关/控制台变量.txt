@@ -1,0 +1,3067 @@
+BindToggle" - Performs a bind <key> "increment var <cvar> 0 1 1" 
+BlendBonesMode" "2
+BuildAINFile" - Build and Save the AI Node Graph (restarts map) 
+CTeam_DontSave" "1
+DebugPrintUsedTextures
+GenerateObjFile
+MemTrackDeltaSnapshot" - Debug command compares two snapshots. Takes indices into the snapshot array, negative means from end 
+MemTrackPrintStats" - Debug command prints current mem stats & creates a named snapshot - first param is snapshot name 
+NextMap" - Go to the next map 
+PhysPMC" "0
+ReloadAimAssistSettings" - Reloads aimassist config files. 
+ScriptDisallowedToUsePersistenceOnSP" "0
+ScriptSaveAllowed" "1
+Test_InitRandomEntitySpawner
+Test_Loop" - Test_Loop <loop name> - loop back to the specified loop start point unconditionally. 
+Test_LoopCount" - Test_LoopCount <loop name> <count> - loop back to the specified loop start point the specified # of times. 
+Test_LoopForNumSeconds" - Test_LoopForNumSeconds <loop name> <time> - loop back to the specified start point for the specified # of seconds. 
+Test_RandomChance" - Test_RandomChance <percent chance, 0-100> <token1> <token2...> - Roll the dice and maybe run the command following the percentage chance. 
+Test_RandomizeInPVS
+Test_RemoveAllRandomEntities
+Test_RunFrame
+Test_SpawnRandomEntities
+Test_StartLoop" - Test_StartLoop <loop name> - Denote the start of a loop. Really just defines a named point you can jump to. 
+Test_StartScript" - Start a test script running.. 
+Test_Wait
+Test_WaitForCheckPoint
+_fov" "0" - Automates fov command to server. 
+_playerSettings_reparse_Server" - Load class settings from .set files on the server 
+_record" - Record a demo incrementally. 0x00020000
+_restart" - Shutdown and restart the engine. 
+_setClassVarServer" - Set a class var on the server 
+adminmsg" - Send text to the current community (if you are an admin) 
+ai_ainRebuildOnMapStart" "0" - Values >= 1 means the game will build the .ain file when the map loads. Value 1 means this ConVar will reset to 0 after building. Value 2 means this ConVar will NOT reset after building 
+ai_ain_crc_debug" "0
+ai_anim_overlay_debug" "0
+ai_auto_contact_solver" "1
+ai_choose_new_enemy_max_time" "1.5" - The maximum amount of seconds that can pass before an AI must attempt to choose a new enemy 
+ai_cloaked_enemy_free_knowledge_duration" "0.6
+ai_cluster_select" "-1
+ai_collide_other_ai" "1
+ai_current_enemy_bonus" "15" - The AI's current enemy is given a bonus distance heuristic so that he is likely to pick them again 
+ai_debug_corpse" "0
+ai_debug_directnavprobe" "0
+ai_debug_doors" "0
+ai_debug_draw_depth_test" "1" - Toggle depth test for some AI debug draw functionality 
+ai_debug_draw_nav_dist" "1024
+ai_debug_dyninteractions" "0" - Debug the NPC dynamic interaction system. 
+ai_debug_efficiency" "0
+ai_debug_enemies" "0
+ai_debug_enemy_memory" "0
+ai_debug_engagement_dist" "0
+ai_debug_follow" "0
+ai_debug_info_node_spectre" "0
+ai_debug_los" "0" - NPC Line-Of-Sight debug mode. If 1, solid entities that block NPC LOC will be highlighted with white bounding boxes. If 2, it'll show non-solid entities that would do it if they were solid. 
+ai_debug_move_script" "0
+ai_debug_move_transitions" "0
+ai_debug_node_connect" - Debug the attempted connection between two nodes 
+ai_debug_nodes" "1
+ai_debug_obstacle_avoid" "0
+ai_debug_pieoff" "0
+ai_debug_poseparameters" "0
+ai_debug_savePosition" "
+ai_debug_search_paths" "0
+ai_debug_shoot_positions" "-1
+ai_debug_squads" "0
+ai_debug_stats" "0
+ai_debug_test_anim_path" "0
+ai_debug_think_ticks" "0
+ai_debug_weapons" "
+ai_default_efficient" "0
+ai_default_free_knowledge_dist" "512
+ai_default_free_knowledge_duration" "1.0
+ai_disable_task_announce_attack" "1
+ai_draw_motor_movement" "0
+ai_dump_hints
+ai_efficiency_override" "0
+ai_enable_corpse_manager" "0
+ai_enemy_discard_time" "60
+ai_excluded_clusters" "0
+ai_find_lateral_cover" "1
+ai_find_lateral_los" "1
+ai_follow_use_points" "1
+ai_follow_use_points_when_moving" "1
+ai_frametime_limit" "50" - frametime limit for min efficiency AIE_NORMAL (in sec's). 
+ai_grenade_default_weapon" "
+ai_grenade_enabled" "1" - Allow AI to throw grenades 
+ai_grenade_forced_weapon" "
+ai_grenade_fuse_time" "2
+ai_grenade_initial_contact_delay" "10" - When an AI first sees an enemy it must wait this long before possibly throwing a grenade at them 
+ai_grenade_max_throw_speed" "1500
+ai_grenade_target_debounce_default" "22" - Whenever a grenade is thrown at an entity, how long before another grenade can be thrown at them again 
+ai_grenade_target_horizontal_offset" "15
+ai_grenade_target_variance_dist_scalar" "0.03
+ai_grenade_target_variance_min" "8
+ai_grenade_throw_debounce" "15" - After an AI throws a grenade, how long until it can throw another one 
+ai_local_step_size" "1024
+ai_max_corpse_detect_dist" "1024
+ai_max_look_at_friendly_dist" "512
+ai_max_node_drop" "2048
+ai_max_triangulation_attempts" "2
+ai_max_triangulation_dist" "384
+ai_melee_kill_sound_radius" "250
+ai_min_signal_dist" "512
+ai_missFastPlayer_sideWindowYMax" "80
+ai_missFastPlayer_sideWindowYMin" "30
+ai_missFastPlayer_sideWindowZMax" "80
+ai_missFastPlayer_sideWindowZMin" "-20
+ai_missFastPlayer_topWindowYMax" "50
+ai_missFastPlayer_topWindowYMin" "-50
+ai_missFastPlayer_topWindowZMax" "40
+ai_missFastPlayer_topWindowZMin" "20
+ai_move_do_short_probe" "1
+ai_move_probe_delay" "0.25
+ai_move_sanity_check" "0
+ai_moveprobe_debug" "0
+ai_moveprobe_jump_debug" "0
+ai_moveprobe_usetracelist" "0
+ai_nav_debug_experimental_pathing" "0" - Draw paths tried during search for bodysnatcher pathing 
+ai_navigator_generate_spikes" "0
+ai_navigator_generate_spikes_strength" "8
+ai_near_node_for_hull_box_extent" "800
+ai_no_local_ground_paths" "0
+ai_no_local_paths" "0
+ai_no_node_cache" "0
+ai_no_select_box" "0
+ai_no_steer" "1
+ai_node_draw_safety" "0
+ai_node_select" "-1
+ai_pain_death_sound_radius" "250
+ai_pain_on_repeat_damage_threshold" "0.5
+ai_pain_on_repeated_damage" "1
+ai_path_adjust_speed_on_immediate_turns" "1
+ai_path_dangerous_cluster_cost_scalar" "70" - When cluster path finding the given cost of a cluster will be incremented by: its absolute danger time remaining multiplied by this value. Larger values = More avoidance of dangerous clusters 
+ai_path_dangerous_cluster_death_time_inc" "35.0" - When an AI dies it increments danger expiration time on the cluster it is near by X. More deaths = longer time 
+ai_path_dangerous_cluster_exclude_dist" "2200" - Maximum distance threshold between AI's start cluster and candidate cluster X, for cluster X to use any danger related logic 
+ai_path_dangerous_cluster_look_ahead" "2" - How many clusters an AI should examine ahead in its current path to look for dangerous clusters. AI will attempt to avoid one if it is found. 
+ai_path_dangerous_cluster_min_time" "40" - The minimum amount of danger time left for a cluster to be considered dangerous 
+ai_path_insert_pause_at_est_end" "1
+ai_path_insert_pause_at_obstruction" "1
+ai_physics_shadow" "0
+ai_pos_debug" "-1
+ai_radial_max_link_dist" "512
+ai_range_attack_twitch_debounce" "6
+ai_react_far_dist" "2000
+ai_reasonable_facing_min_dist" "120
+ai_rebalance_thinks" "1
+ai_recent_enemy_damage_dist_bonus" "1000" - AI will given distance bonus priority to enemies who have attacked them recently when they are picking a best enemy 
+ai_recent_enemy_damage_expire_time" "3.0" - AI will given distance bonus priority to enemies who have attacked them recently when they are picking a best enemy 
+ai_require_pvs" "0
+ai_route_simplify_interval" "0.5
+ai_run_from_enemy_retry" "10
+ai_run_from_enemy_try_shoot_chance" "60" - Chance of AI that needs to run away taking a few shots at enemy before running 
+ai_schedule_reset_conditions_on_gather" "1
+ai_schedule_selector_debug" "0
+ai_script_assault_points_validation_debug" "30
+ai_script_nodes_draw" "0
+ai_set_move_height_epsilon" - Set how high AI bumps up ground walkers when checking steps 
+ai_shooting_cover_ammo_required_to_advance" "0.3" - Minimum % of ammo left in magazine required to advance from cover 
+ai_shooting_cover_chance_use_sidelean_anim" "0.5" - When either forward or sidelean advance is possible what chance is it to use sidelean. ex. 0.5 = 50% 
+ai_shooting_cover_idle_to_move_retry_debounce" "3
+ai_shooting_cover_max_wait_after_advance_no_los" "0.75
+ai_shooting_cover_no_path_retry_debounce" "4
+ai_shooting_cover_recently_used_cover_debounce" "0" - When searching for cover to use an AI won't pick a piece of cover that they had already used within this many seconds ago 
+ai_shot_bias" "1.0
+ai_shot_stats_term" "100
+ai_show_hull_attacks" "0
+ai_show_path_search_nodes" "0
+ai_show_think_tolerance" "0
+ai_sight_npc_search_time" "0.45" - How often AI look for other NPC enemies 
+ai_simplify_path_dist" "1024
+ai_simplify_path_quick_dist" "1024
+ai_solid_spawn_script_error" "0
+ai_sprint_min_enemy_dist" "256" - Don't sprint if enemy is within this distance 
+ai_squad_cache_path_max_dest_diff" "1500
+ai_squad_cache_path_max_start_diff" "1000
+ai_squad_clear_assigned_node_time" "5
+ai_squad_enemy_notify_delay" "0.7
+ai_squad_keep_dist_increment" "800
+ai_squad_keep_dist_start" "1200
+ai_squad_min_cache_path_length" "1500
+ai_squad_min_salute_interval" "20" - AI squad will not salute friendly player more frequently than this 
+ai_squad_move_spread_factor" "10" - Allow this times hull width from squad centroid before slowing down or speeding up members 
+ai_squad_num_LOFs" "2
+ai_squad_num_chasers" "2
+ai_squad_stay_close_radius" "500
+ai_stepsize" "18
+ai_strong_optimizations" "0
+ai_strong_optimizations_no_checkstand" "0
+ai_team_enemy_notify_interval" "3.0" - Interval for notifying teammates of my current enemy. Should be more than ai_squad_enemy_notify_delay 
+ai_team_enemy_notify_max_dist" "3000" - maximum distance for notifying teammates about enemies 
+ai_test_hull_model_name" "models/robots/drone_frag/drone_frag.mdl
+ai_titan_grapple_max_len" "3000
+ai_use_cached_squad_paths" "1
+ai_use_clipped_paths" "0
+ai_use_cluster_path" "1
+ai_use_efficiency" "1
+ai_use_frame_think_limits" "1
+ai_use_think_optimizations" "1
+ai_use_visibility_cache" "1
+air_density" - Changes the density of air for drag computations. 
+airslowmo_enabled" "0" - Enables air slowmo 
+airslowmo_enter_time" "0.25" - Duration it takes to reach full slowmo 
+airslowmo_ground_immediate_end" "0" - Controls whether air slowmo fades out after landing or immediately stops 
+airslowmo_leave_time" "1.0" - Duration it takes to leave full slowmo 
+airslowmo_when_hovering" "1" - Replaces hovering with air slowmo 
+aisettings_reparse" - Reloads the AI settings files 
+aisettings_reparse_client" - Reloads the AI settings files 
+alias" - Alias a command. 
+animEvent_debug" "0" - 1 = sparse, 2 = verbose 
+animEvent_debugEnt" "0
+animEvent_debug_cl" "0" - 1 = sparse, 2 = verbose 
+anim_estimateVelocity" "0
+anim_playerMovementAngleMargin" "10
+anim_print_transition_overflow" "0
+anim_runGestureAnimEventsToCompletionOnReset_client" "0
+anim_showPoseParamErrors" "0
+anim_showstate" "-1" - Show the (client) animation state for the specified entity (-1 for none). 
+anim_showstatelog" "0" - 1 to output anim_showstate to Msg(). 2 to store in AnimState.log. 3 for both. 
+anim_transitionsequences" "1" - Enables blended transitions between sequences. 
+announcement" "
+announcementImage" "
+announcementVersion" "0
+applyVideoChangesDeferred" - Workaround for applying video changes using controller buttons shortcuts. 
+assert_test" - Cause the engine to fail an assert. 
+async_allow_held_files" "1" - Allow AsyncBegin/EndRead() 
+async_mode" "0" - Set the async filesystem mode (0 = async, 1 = synchronous) 
+async_resume
+async_serialize" "0" - Force async reads to serialize for profiling 
+async_showErrors" "0
+async_simulate_delay" "0" - Simulate a delay of up to a set msec per file operation 
+async_suspend
+automantle_backoff_anim_maxfrac" "0.7" - Fraction of mantle after which pulling back simply aborts the mantle 
+automantle_cooldown" ".25" - Minimum time between mantles 
+automantle_dangle_required_space" "60" - Required space under the ledge to dangle 
+automantle_debug" "0" - Debugs player auto-mantle behavior 
+automantle_duration_above" "0.5" - Duration of "above" mantle animation 
+automantle_duration_below" "1.11" - Duration of "below" mantle animation 
+automantle_duration_high" "0.35" - Duration of "high" mantle animation 
+automantle_duration_level" "1.0" - Duration of "level" mantle animation 
+automantle_enable" "1" - Enables player auto-mantle behavior 
+automantle_forwarddist" "30.f" - Distance forward to do the ground check from when auto-mantling 
+automantle_gun_enable_height" "33" - Eye height above ledge at which gun is reenabled 
+automantle_height" "80.f" - Maximum step height to auto-mantle player 
+automantle_height_above" "30" - Mantle height above ledge below which the "above" animation is used and above which the "high" animation is used 
+automantle_height_below" "-10" - Mantle height above ledge below which the "below" animation is used 
+automantle_height_level" "10" - Mantle height above ledge below which the "level" animation is used 
+automantle_jumpoff_anim_maxfrac" "0.5" - Maximum fraction of mantle at which jump off animation is played 
+automantle_jumpoff_duration" "0.1" - Duration of jump off animation when jumping off 
+automantle_max_frac" "0.5" - Fractional amount (0-1) player can move forward without hitting jump. 
+automantle_maxangle_push" "50" - Max angle the player can be pushing from the wall normal to auto-mantle 
+automantle_maxangle_view" "50" - Max angle the player can be facing from the wall to auto-mantle 
+automantle_min_frac" "0.1" - Fractional amount (0-1) player can move backward without hitting jump. 
+automantle_mindist" "18.f" - Minimum forward distance when auto-mantling 
+automantle_rest_frac" "0.4" - Fractional amount (0-1) player will tend toward when no input is given. 
+automantle_rest_frac_below" "0.3" - Replaces rest_frac when using the "below" animation 
+automantle_searchdist" "5.f" - Forward distance within which to look for a ledge to auto-mantle 
+automantle_view_correction_speed" "180" - Speed at which view direction is clamped when mantling 
+automantle_view_high_yaw_max" "90" - Max view yaw when mantling with the "high" mantle animation 
+automantle_view_pitch_max" "35" - Max view pitch when mantling 
+automantle_view_pitch_min" "-80" - Min view pitch when mantling 
+automantle_view_yaw_max" "60" - Max view yaw when mantling 
+automantle_wallrun_maxangle_view" "45" - Max angle the player can be facing from the wall to auto-mantle while wall running 
+autosprint_type" "0" - Automatically sprint when walking forward.  0: off, 1: on, 2: on (pilots only), 3: on (titans only) 0x01000208
+base_tickinterval_mp" "0.016666667" - The tick interval used by the MP games. 
+base_tickinterval_sp" "0.05" - The tick interval used by the SP games. 
+baselines_print" "0
+bbox_draw_vphysics" "0" - Draws physics data when showing ent_bbox 
+benchframe" - Takes a snapshot of a particular frame in a time demo. 
+bind" - Bind a key. 
+bind_list" - List all current bindings. 
+bink_dump_precached_movies" - Dumps information about all precached Bink movies 
+bink_preload_videopanel_movies" "1" - Preload Bink movies used by VideoPanel. 
+boost_jetwash_prediction_factor" "20.0f" - Factor used to scale player's velocity when finding jetwash trace point. 
+bot_lagOut" "0" - Cause bots to lag out 
+bot_loadout" - Override bot loadout 
+bot_loadout_server" - Override bot loadout. 
+box" - Draw a debug box. 
+breakable_disable_gib_limit" "0
+budget_animatingEntities" "2000
+budget_animationOverlayEntities" "130
+budget_combatCharEntities" "120
+budget_weaponEntities" "450
+bug_reproNum" "0
+buildcubemaps" - Rebuild cubemaps. 
+buildcubemaps_async" "1
+buildcubemaps_index" "-1
+buildcubemaps_pvs_start_early" "1
+buildcubemaps_single_step" "0
+building_cubemaps" "0
+bulletPredictionDebug" "0
+c_dropship_ground_fx_dist_interval" "256
+c_dropship_ground_fx_time_interval" "0.25
+c_dropship_rope_debug" "0" -  Used to visualize the drop ship rope interaction. 
+c_dropship_rope_events" "1" - Turn on client side drop ship rope interaction detection. 
+c_dropship_rope_magnitude" "128" - Used to scale the interaction of a drop ship and a rope. 
+c_dropship_rope_range" "1024" - Max distance away from a drop ship that a Rope is effected. 
+c_maxdistance" "400
+c_maxpitch" "90
+c_maxyaw" "135
+c_mindistance" "30
+c_minpitch" "0
+c_minyaw" "-135
+c_orthoheight" "100
+c_orthowidth" "100
+c_thirdpersonshoulder" "false
+c_thirdpersonshoulderaimdist" "120.0
+c_thirdpersonshoulderdist" "40.0
+c_thirdpersonshoulderheight" "5.0
+c_thirdpersonshoulderoffset" "20.0
+cache_print" - cache_print [section]
+Print out contents of cache memory. 
+cache_print_lru" - cache_print_lru [section]
+Print out contents of cache memory. 
+cache_print_summary" - cache_print_summary [section]
+Print out a summary contents of cache memory. 
+cam_collision" "1" - When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls. 
+cam_command" - Tells camera to change modes 
+cam_idealdelta" "4.0" - Controls the speed when matching offset to ideal angles in thirdperson view 
+cam_idealdist" "150
+cam_idealdistright" "0
+cam_idealdistup" "0
+cam_ideallag" "4.0" - Amount of lag used when matching offset to ideal angles in thirdperson view 
+cam_idealpitch" "0
+cam_idealyaw" "0
+cam_showangles" "0" - When in thirdperson, print viewangles/idealangles/cameraoffsets to the console. 
+camortho" - Switch to orthographic camera. 
+cancelselect" -  0x10000008
+cast_hull" - Tests hull collision detection 
+cast_ray" - Tests collision detection 
+cc_captiontrace" "1" - Show missing closecaptions (0 = no, 1 = devconsole, 2 = show in hud) 
+cc_emit" - Emits a closed caption 
+cc_findsound" - Searches for soundname which emits specified text. 
+cc_flush" - Flushes async'd captions. 
+cc_global_norepeat" "5" - How often a caption can repeat, unless overriden by norepeat. (or 0) 
+cc_lang" "" - Current close caption language (emtpy = use game UI language) 
+cc_linger_time" "1.0" - Close caption linger time in seconds. 
+cc_max_duration" "30.0" - The max duration in seconds for a closed caption if event doesn't stop playing. 
+cc_minvisibleitems" "1" - Minimum number of caption items to show. 
+cc_predisplay_time" "0.25" - Close caption delay in seconds before showing caption. 1" - Use RUI to draw closecaption text. 
+cc_showblocks" - Toggles showing which blocks are pending/loaded async. 
+cc_timeshift_norepeat" "5" - How often a caption can repeat, unless overriden by norepeat. (timeshift only) (or 0) 
+centerview
+changelevel" - Change server to the specified map 0x00020000
+chat" - Send text to the current chatroom 
+chatroom_adminsOnly" - Set the chatroom to be admins-only 
+chatroom_away" - Tell the chatserver you are away from the room 
+chatroom_doRealNameLookups" "0
+chatroom_freetalk" - Set the chatroom to be free talk 
+chatroom_min_status_send_interval" "16
+chatroom_nameLength" "-1
+chatroom_namePaddingX" "12
+chatroom_nameWidth" "-1
+chatroom_onlyWhenActive" "1
+chatroom_present" - Tell the chatserver you are present in the room 
+chatroom_ptt" "1
+chatroom_useSlopSpace" "0
+chatroom_voiceMode" "0
+chatserver" - Connect to a chatserver 
+cheap_captions_fadetime" "0.5
+cheap_captions_test" "0
+checkstuck_nonworld" "0" - Checks for the player being stuck in non-world entities and disallows movement when they are stuck. 
+cl_NotifyAllLevelAssetsLoaded_endframe" "1
+cl_RunClientConnectScripts_Before_ProcessOnDataChangedEvents" "1
+cl_SetupAllBones" "0
+cl_ShowBoneSetupEnts" "0" - Show which entities are having their bones setup each frame. 
+cl_aggregate_particles" "1
+cl_allowABSCalculationDuringSnapshotScriptCalls" "1
+cl_allowABSDuringSnapshotScriptCalls" "1
+cl_allowAnimsToInterpolateBackward" "0
+cl_always_draw_3p_player" "0" - Always draw the 3p player model, even when in first-person view 
+cl_always_ragdoll_radius" "500" - Always create client ragdoll if within this distance to viewer 
+cl_anglespeedkey" "0.67
+cl_anim_blend_transition_dist" "2500
+cl_anim_detail_dist" "1500
+cl_anim_face_dist" "250
+cl_anim_sounds_seek" "1
+cl_apply_ent_invalidate_threaded" "1
+cl_apply_ent_invalidate_threaded_background" "0
+cl_approx_footstep_origin" "1
+cl_approx_tracer_origin" "1
+cl_async_bone_setup" "1
+cl_base_entity_effect_lock" "0
+cl_bones_incremental_blend" "0" - Don't reblend bones which we don't need to in SetupBones. 
+cl_bones_incremental_transform" "1" - Don't retransform bones which we don't need to in SetupBones. 
+cl_bones_oldhack" "0" - Redo all previously transformed bones in SetupBones--old 'hack'. 
+cl_bones_speculative" "1" - When animating bones, do everything needed last frame. 
+cl_bounds_show_errors" "0
+cl_burninggibs" "0" - A burning player that gibs has burning gibs. 
+cl_clock_correction" "1" - Enable/disable clock correction on the client. 
+cl_clock_correction_ahead_correct_interval" "20" - Minimum interval over which the clock will try to correct to ideal when it's ahead 
+cl_clock_correction_behind_correct_interval" "200" - Interval over which the clock will try to correct to ideal when it's behind 
+cl_clock_correction_force_server_tick" "999" - Force clock correction to match the server tick + this offset (-999 disables it). 
+cl_cloud_settings" "-1" - Cloud enabled from (from HKCU\Software\Valve\Steam\Apps\appid\Cloud) 
+cl_cloudmaskoverview" "0
+cl_cloudmaskoverviewheight" "0" - If not 0, overrides top height of cloudmask overview 
+cl_cloudmaskoverviewsize" "512" - Size of the overview in pixels (should fit within screen resolution, 1024 recommended) 
+cl_cloudmaskoverviewuseview" "0" - Make cloudmask overview use the view origin XY (eg, freecam) 
+cl_cmdbackup" "2" - Number of redundant usercmds to send, to cover client->server packet loss 
+cl_cmdrate" "60" - Max number of command packets sent to server per second 
+cl_colorfastpath" "0
+cl_configversion" "1" - Configuration layout version. 
+cl_configversion_dummy" "0" - Configuration layout version dummy. 
+cl_cull_weapon_fx" "1
+cl_deathhints_enabled" "1" -  0x01000008
+cl_debug_deferred_trace" "0
+cl_debug_deferred_trace_overlay" "0
+cl_debug_model_fx_sounds" "0
+cl_decal_alwayswhite" "1" - Force FX decals to white (1), or white full alpha (2). 
+cl_decal_backoff" "4" - Amount to back off FX decal trace by. 
+cl_deferred_effects" "1
+cl_demoviewoverride" "0" - Override view during demo playback 
+cl_disable_ragdolls" "0
+cl_disable_splitscreen_cpu_level_cfgs_in_pip" "1
+cl_disconnectOnTooManySnapshotFrames" "0" - Disconnect when the client gets too many snapshot messages from the server without the server getting any messages from the client. 
+cl_doNetworkAsserts" "0" - Turn off to disable some client asserts that fail rarely, presumably due to network bugs. 
+cl_draw_player_model" "1
+cl_drawhud" "1" - Enable the rendering of the hud 
+cl_drawmonitors" "1
+cl_dump_particle_stats" - dump particle profiling info to particle_profile.csv 
+cl_ejectbrass" "1
+cl_enable_remote_splitscreen" "0" - Allows viewing of nonlocal players in a split screen fashion 
+cl_entCreateDeleteDebug" "0" - If true, print out when we create or delete an entity on the client 
+cl_ent_absbox" - Displays the client's absbox for the entity under the crosshair. 
+cl_ent_bbox" - Displays the client's bounding box for the entity under the crosshair. 
+cl_ent_rbox" - Displays the client's render box for the entity under the crosshair. 
+cl_events_ignore_invalidate" "1
+cl_extrapolate" "0" - Enable/disable extrapolation if interpolation history runs out.  This can cause extreme extrapolation if there is a teleport in the history. 
+cl_failremoteconnections" "0" - Force connection attempts to time out 
+cl_fasttempentcollision" "5
+cl_find_ent" - Find and list all client entities with classnames that contain the specified substring.
+Format: cl_find_ent <substring>
+ 
+cl_find_ent_index" - Display data for clientside entity matching specified index.
+Format: cl_find_ent_index <index>
+ 
+cl_flip_vis_bits" "0
+cl_flip_visibility" - Flips the visibilityBits of all Entities 
+cl_flushentitypacket" "0" - For debugging. Force the engine to flush an entity packet. 
+cl_footstep_event_max_dist" "2500
+cl_footstep_event_max_dist_titan" "4000
+cl_fovScale" "1.0
+cl_fullupdate" - Forces the server to send a full update packet 
+cl_gib_allow" "1
+cl_gib_attack_dir_scale" "1.0
+cl_gib_lifetime" "3
+cl_hold_to_rodeo_enable" "0
+cl_idealpitchscale" "0" - 0 to turn off. 0.8 is a good starting value 
+cl_ignorepackets" "0" - Force client to ignore packets (for debugging). 
+cl_interp_all" "0" - Disable interpolation list optimizations. 
+cl_interp_forceFullInterpolationAmount" "0
+cl_interpolate" "1.0" - Interpolate entities on the client. 
+cl_interpolateSoAllAnimsLoop" "1
+cl_interpolation_before_prediction" "1" - Interpolate entities before doing prediction 
+cl_is_softened_locale" "0
+cl_jiggle_bone_debug" "0" - Display physics-based 'jiggle bone' debugging information 
+cl_jiggle_bone_debug_pitch_constraints" "0" - Display physics-based 'jiggle bone' debugging information 
+cl_jiggle_bone_debug_yaw_constraints" "0" - Display physics-based 'jiggle bone' debugging information 
+cl_jiggle_bone_invert" "0
+cl_jiggle_bone_sanity" "1" - Prevent jiggle bones from pointing directly away from their target in case of numerical instability. 
+cl_lagcompensation" "1" - Perform server side lag compensation of weapon firing events. 
+cl_language" "english" - Language 
+cl_leafsystemvis" "0
+cl_lerpIfChildrenLerp" "1
+cl_leveloverview" "0" - Enables level overview (top down) at the given scale. Use -1 for automatic scaling 
+cl_leveloverviewheight" "0" - If not 0, overrides top height of level overview 
+cl_leveloverviewsize" "512" - Size of the overview in pixels (should fit within screen resolution, 1024 recommended) 
+cl_matchmaking_timeout" "1" - Total time allowed for the client to resend the 'connect' attempt when matchmaking 0x00080000
+cl_minimal_rtt_shadows" "1
+cl_model_fx_gib_cull_front_dist" "3000
+cl_model_fx_gib_cull_radius" "1000
+cl_mouseenable" "1
+cl_move_use_dt" "1" - Use the actual delta time for motion instead some super complicated system based on the server frame rate. 
+cl_noTimeoutLocalHost" "1
+cl_panelanimation" - Shows panel animation variables: <panelname | blank for all panels>. 
+cl_parallelParticlePreDrawWork" "1
+cl_parallel_clientside_animations" "1
+cl_particle_batch_mode" "1
+cl_particle_fallback_base" "0" - Base for falling back to cheaper effects under load. 
+cl_particle_fallback_multiplier" "1" - Multiplier for falling back to cheaper effects under load. 
+cl_particle_limiter_display_killed" "0" - Display a red box around killed fx. 
+cl_particle_limiter_hide_killable" "0" - Hide fx than could be killed if over limit. 
+cl_particle_limiter_max_particle_count" "10000" - Limit the total number of active particles. 0 to not limit. 
+cl_particle_limiter_max_system_count" "0" - Limit the total number of active particle systems. 0 to not limit. 
+cl_particle_limiter_min_kill_distance" "4000" - Only kill fx that are further than this distance from the player. 
+cl_particle_limiter_overlay" "0" - Display particle limiter infos. 
+cl_particle_max_count" "0
+cl_particle_sim_fallback_base_multiplier" "5" - How aggressive the switch to fallbacks will be depending on how far over the cl_particle_sim_fallback_threshold_ms the sim time is.  Higher numbers are more aggressive. 
+cl_particle_sim_fallback_threshold_ms" "6.0" - Amount of simulation time that can elapse before new systems start falling back to cheaper versions 
+cl_particle_snoozetime" "0.166667" - Particle snooze time in seconds (0 is off) 
+cl_particles_dump_effects
+cl_particles_dumplist" - Dump all new particles, optional name substring. 
+cl_particles_show_bbox" "0
+cl_particles_show_controlpoints" "0" - 1 to show parent effects, 2 shows all children effects too 
+cl_pclass" "" - Dump entity by prediction classname. 
+cl_pdump" "-1" - Dump info about this entity to screen. 
+cl_phys_block_dist" "1.0
+cl_phys_block_fraction" "0.1
+cl_phys_maxCollisionsPerFrame" "1200
+cl_phys_maxticks" "3" - Sets the max number of physics ticks allowed for client-side physics (ragdolls) 
+cl_phys_show_active" "0
+cl_phys_timescale" "1.0" - Sets the scale of time for client-side physics (ragdolls) 
+cl_physics_invalidate_ents" "0
+cl_physics_maxvelocity" "4000.0" - Max velocity of a vphysics object on the client 
+cl_physicsshadowupdate_render" "0
+cl_pitchspeed" "225
+cl_playback_screenshots" "0" - Allows the client to playback screenshot and jpeg commands in demos. 
+cl_player_fullupdate_predicted_origin_fix" "1
+cl_player_touch_triggers" "0
+cl_postSnapshotTransitionBlockCount" "20
+cl_preSnapshotTransitionBlockCount" "10
+cl_precacheinfo" - Show precache info (client). 
+cl_pred_error_verbose" "0" - Show more field info when spewing prediction errors. 
+cl_pred_optimize" "1" - Optimize for not rerunning prediction if there was no difference between what we predicted and the incoming networked state 
+cl_predict" "1" - Perform client side prediction. 
+cl_predict_basetoggles" "1
+cl_predict_cmdlimit" "300" - Artificially limits the number of remembered commands that can be used for prediction 
+cl_predict_motioncontrol" "0
+cl_predict_viewangles" "1" - Predict view angles even if cl_predict is 0. 
+cl_prediction_error_timestamps" "0
+cl_predictionlist" "0" - Show which entities are predicting
+ 
+cl_predictweapons" "1" - Perform client side prediction of weapon effects. 
+cl_prevent_weapon_text_hints" "1" - stops weapon text hints from appearing 
+cl_printServerQueryInfo" "0
+cl_ragdoll_force_fade_time" "5" - Fade out ragdoll even if in players view after this many seconds 
+cl_ragdoll_force_fade_time_local_view_player" "20" - If the ragdoll is of the local view player then use the max of this and cl_ragdoll_force_fade_time for the fade time 
+cl_ragdoll_force_fade_time_on_moving_geo" "5" - Fade out ragdoll even if in players view after this many seconds when touching moving geo. 
+cl_ragdoll_force_fade_time_titan" "5" - Fade out titan ragdoll even if in players view after this many seconds 
+cl_ragdoll_gravity" "750" - Sets the gravity client-side ragdolls 
+cl_ragdoll_maxcount" "8
+cl_ragdoll_self_collision" "1
+cl_removedecals" - Remove the decals from the entity under the crosshair. 
+cl_resend" "0.5" - Delay in seconds before the client will resend the 'connect' attempt 0x00080000
+cl_resend_timeout" "10" - Total time allowed for the client to resend the 'connect' attempt 0x00080000
+cl_retire_low_priority_lights" "0" - Low priority dlights are replaced by high priority ones 
+cl_safearea" "0" -  0x01000008
+cl_screenshotname" "" - Custom Screenshot name 
+cl_script_perf_dump_on_shutdown" "0
+cl_shadowupdatespacing" "10.0
+cl_show_splashes" "1
+cl_showdemooverlay" "0" - How often to flash demo recording/playback overlay (0 - disable overlay, -1 - show always) 
+cl_showents" - Dump entity list to console. 
+cl_showerror" "0" - Show prediction errors, 2 for above plus detailed field deltas. 
+cl_showfiredbullets" "0
+cl_showfps" "0" - Draw fps meter (1 = fps, 2 = smooth, 3 = server, 4 = Show+LogToFile, +10 = detailed ) 0x00080008
+cl_showfps_altframetime" "1" - Use the showfps_enabled time instead of the old cl_showfps time. 0x00080008
+cl_showpausedimage" "1" - Show the 'Paused' image when game is paused. 
+cl_showpos" "0" - Draw current position at top of screen 0x00080008
+cl_showsounds" "0" - Print server to client networked sounds to the console 
+cl_showtime" "0" - Draw current demo time if recording a demo 0x00080008
+cl_simdbones_slerp" "0" - Use SIMD bone slerping. 
+cl_simulationtimefix" "1
+cl_skipfastpath" "0" - Set to 1 to stop all models that go through the model fast path from rendering 
+cl_smooth" "1" - Smooth view/eye origin after prediction errors 
+cl_smooth_debug" "0" - Show prediction errors that are being smoothed 
+cl_smoothtime" "0.15" - Smooth client's view after prediction error over this many seconds 
+cl_soundscape_flush" - Flushes the client side soundscapes 0x10004008
+cl_sticksCountAgainstIdle" "0
+cl_threaded_bone_setup" "1" - Enable parallel processing of C_BaseAnimating::SetupBones() 
+cl_updatedirty_async" "0" - Call UpdateDirtySpatialPartitionEntities on a worker thread. 
+cl_updatedirty_early" "0
+cl_updaterate_mp" "20" - Number of packets per second of updates you are requesting from the server in mp 0x00010202
+cl_updaterate_sp" "20" - Number of packets per second of updates you are requesting from the server in sp 0x00010202
+cl_updatevisibility" - Updates visibility bits. 
+cl_upspeed" "320
+cl_useLobbyTypeForChatroom" "1
+cl_use_calculate_local_player" "1
+cl_use_simd_bones" "1" - 1 use SIMD bones 0 use scalar bones. 
+cl_use_view_cone" "1" - Enable clamping view to animated/scripted viewcone 
+cl_validateModelThreaded" "0
+cl_viewmodel_pre_animate" "1
+cl_wind_dir" - sets wind direction and strength 
+cl_yawspeed" "210
+clear_debug_overlays" - clears debug overlays 
+clear_loading_progress_detente" - Clears the detente for the load screen. 0x00020000
+clear_loading_progress_sp_text" - Clears the sp text for the load screen. 0x00020000
+client_deferredSnapshotScriptCalls" "1
+clientport" "37005" - Host game client port 0x00080000
+cloak_enabled" "1
+cloak_pilotAberrationScale" "0.012" - How far apart the pilot cloak samples should be 
+cloak_pilotBrightenAdd" "0.02" - Amount to add to the combined pilot cloak samples 
+cloak_pilotBrightenMul" "1.2" - Factor to brighten the combined pilot cloak samples 
+cloak_pilotDesaturate" "0.6" - Amount to desaturate the combined pilot cloak samples (1.0 = greyscale) 
+cloak_pilotNoiseFactor" "0.25" - Intensity of noise in pilot cloak aberration 
+cloak_pilotTint1" "0.35" - Brightness factor for center-left sample 
+cloak_pilotTint2" "0.5" - Brightness factor for upper-right sample 
+cloak_pilotTint3" "0.65" - Brightness factor for lower-right sample 
+clock_bias_mp" "-18.0
+clock_bias_sp" "-2.0
+clock_showcorrections" "0
+clock_showdebuginfo" "0
+closecaption" "0" - Enable close captioning. 1 = dialogue only, 2 = dialogue and sound effects. 0x01000000
+cmd" - Forward command to server. 
+cmd1" - sets userinfo string for split screen player in slot 1 
+cmd2" - sets userinfo string for split screen player in slot 2 
+cmd3" - sets userinfo string for split screen player in slot 3 
+cmd4" - sets userinfo string for split screen player in slot 4 
+cockpitDrift_scalePitch" "0.0
+cockpitDrift_scaleYaw" "0.0
+cockpitDrift_speedPitch" "0.0
+cockpitDrift_speedYaw" "0.0
+cockpitShake_sourceRollRange" "3" - The range of weapon kick roll that will be sampled for cockpit shake. 
+cockpitShake_translateRange" "0.6" - Max amount of cockpit shake. 
+cockpit_damage_chroma_scale" "0.4
+cockpit_hit_chroma_max_time" "0.6" - Time to get rid of the most recent hit_chroma adjustment when at near 0 health. 
+cockpit_hit_chroma_scale" "0.2
+cockpit_pitch_down_frac" "1.0" - fractional amount that cockpit pitches as you look down 
+cockpit_pitch_up_frac" "1.0" - fractional amount that cockpit pitches as you look up 
+cockpit_screen_boot_chroma_scale" "0.0
+cockpit_screen_boot_delay_bottom" "1.25
+cockpit_screen_boot_delay_left" "0.25
+cockpit_screen_boot_delay_mid" "0.5
+cockpit_screen_boot_delay_right" "0.75
+cockpit_screen_boot_delay_top" "1.0
+collision_debug" - Sends a collision ray from player and gathers info. 
+collision_test" - Tests collision system 
+colorblind_mode" "0" -  0x01000008
+colorcorrectionui" - Show/hide the color correction tools UI. 
+communities_doRealNameLookupsForCommunityCreators" "0
+communities_enabled" "1" - Enable communities 
+communities_hostname" "
+community" "" - Our current community 
+community_abortCommunitySettingsTime" "20
+community_abortUserInfoTime" "20
+community_browse" - Browse available communities 
+community_browse_excludeMine" "0
+community_clantags" "1" - put community name in the clan tag 
+community_doRealNameLookupsForInbox" "0
+community_frame_run" "1" - Communities should run it's frame update. 
+community_getPendingJoinRequest" - Get a random pending join request to answer 
+community_join" - Join a community 
+community_leave" - Leave a community 
+community_list" - list my communities 
+community_queryServerWhenOrphaned" "1
+community_replaceInboxTokens" "1
+community_report" - Report a community 
+community_resolveNames" "1
+community_send_server_voice" "1" - Communities will route voice data to the chat server! 
+community_spam" "0" - Whether communities should spam to the console log 
+community_staleCommunitySettingsTime" "60
+community_staleUserInfoTime" "120
+con_logfile" "" - Console output gets written to this file 
+con_timestamp" "0" - Prefix console.log entries with timestamps 
+condump" - dump the text currently in the console to condumpXX.log 
+connect" - Connect to specified server. 0x00020000
+connectWithKey" - Connect to specified server with an explicit encryption key. 0x00020000
+connectwithtoken" - Connect to specified server with a reservation token. 0x00020000
+consoleSetPos" - x, y, wide, tall  [0,1] 
+convar_differences" - Show all convars which are not at their default values. 
+convar_findByFlags" - Find concommands by flags. 
+convar_list" - Show the list of convars/concommands. 
+cpu_level" "2" - CPU Level - Default: High 
+crash_test" - Cause the engine to crash. 
+createentitydecals" "1
+createparty" - Create a party 
+csm_auto_entity" "1
+csm_cascade_res" "1024" - Set the cascading shadow maps rendertarget resolution 
+csm_culling_use_base_planes" "1
+csm_culling_use_exclusion_planes" "1
+csm_culling_use_inclusion_planes" "1
+csm_culling_use_planes" "1
+csm_debug_2d" "0
+csm_debug_culling" "0
+csm_debug_vis_hi_range" "1.0
+csm_debug_vis_lo_range" ".35
+csm_depth_bias" "-0.000005f
+csm_enabled" "1" - Set whether to render cascading shadow maps 
+csm_fadeModels" "1
+csm_force_no_csm_in_reflections" "0
+csm_ignore_edge_planes" "0
+csm_ignore_face_planes" "0
+csm_max_z_offset" "10000
+csm_min_z_offset" "-10000
+csm_quality_level" "1" - Set the cascading shadow maps cascade layout mode 
+csm_renderable_shadows" "1
+csm_rope_shadows" "1
+csm_rot_override" "0" - map_settings_override MUST BE ENABLED FOR THIS TO BE FUNCTIONAL. 
+csm_rot_x" "50" - map_settings_override MUST BE ENABLED FOR THIS TO BE FUNCTIONAL. 
+csm_rot_y" "43" - map_settings_override MUST BE ENABLED FOR THIS TO BE FUNCTIONAL. 
+csm_server_status" - Usage:
+ csm_server_status
+ 
+csm_shadow_split_lerp_factor_range" ".1
+csm_status" - Usage:
+   csm_status
+ 
+csm_texel_size_cascade_0" "0.25
+csm_texel_size_cascade_1" "1.0
+csm_texel_size_cascade_2" "4.0
+csm_texel_size_cascade_onecascade" "2.0
+csm_use_env_light_direction" "1
+csm_viewmodels" "0
+csm_world_shadow_meshes" "1
+csm_world_shadows" "1
+curl_allowHTTPS" "1
+curl_preloadDlls" "0
+cursorWide" "2
+damageIndicatorReplayTimeOffset" "0.0" - Artificial delay of damage indicator in replay 
+damage_debug" "0
+damage_indicator_style_pilot" "0" -  0x01000008
+damage_indicator_style_titan" "1" -  0x01000008
+damagedefs_reparse" - Reloads the damage defs 
+damagedefs_reparse_client" - Reloads the damage defs 
+data_map_do_display" "0
+data_map_do_validate" "1
+dbg_demofile" "0
+death_velocityScale" "100" - Scales the death velocity per point of damage 
+debugFootstepEffects" "0
+debugModelPurge" - Debug command to purge unused models... 
+debugPlayerWeaponInfo" "0" - 0 = off, 1 == client, 2 == server 
+debugPlayerWeaponInfoSlot" "-1" - Set to player # to see weapon values. 
+debug_debug_overlay" "0" - Enable debug of the debug overlays 
+debug_draw_all_entity_links" "0" - Draw all entity links 
+debug_draw_box_depth_test" "1" - Toggle depth test for debug draw box functionality 
+debug_force_EAAccess" "-1
+debug_force_textRestriction" "-1
+debug_force_ugcRestriction" "-1
+debug_force_voiceRestriction" "-1
+debug_map_crc" "0" - Prints CRC for each map lump loaded 
+debug_overlay_fullposition" "0
+debug_physimpact" "0
+debug_touchlinks" "0" - Spew touch link activity 
+debug_visibility_monitor" "0
+debugvpkprecache" "0" - Set to the name of the map that you want to precache.
+ 
+decalfrequency" "10
+dedi_sendPrintsToClient" "-1
+demo_autoRecord" "1
+demo_autoRecordName" "demo
+demo_avellimit" "2000" - Angular velocity limit before eyes considered snapped for demo playback. 
+demo_connect_string" "" - Connect string for demo UI 
+demo_debug" "0" - Demo debug info. 
+demo_debugCmdDrift" "0" - If demo_playOneUserCmdPerTick is active, prints a warning when it had to correct for drift. 
+demo_enabledemos" "0" - Enable recording demos (must be set true before loading a map) 
+demo_fastforward" "0
+demo_fastforwardfinalspeed" "20" - Go this fast when starting to hold FF button. 
+demo_fastforwardramptime" "5" - How many seconds it takes to get to full FF speed. 
+demo_fastforwardstartspeed" "2" - Go this fast when starting to hold FF button. 
+demo_gototick" - Skips to a tick in demo. 
+demo_info" - List demo file contents. 
+demo_interplimit" "4000" - How much origin velocity before it's considered to have 'teleported' causing interpolation to reset. 
+demo_interpolateview" "1" - Do view interpolation during dem playback. 
+demo_legacy_rollback" "1" - Use legacy view interpolation rollback amount in demo playback. 
+demo_pause" - Pauses demo playback. 
+demo_pauseatservertick" "0" - Pauses demo playback at server tick 
+demo_playOneUserCmdPerTick" "1" - Plays back one cmd per tick, regardless of the tick timestamp on the cmd. This has an effect only if demo_playbackexactframes is off. 
+demo_playbackexactframes" "0" - Play back exactly the number of frames as recorded. Playback speed will vary with framerate. Turned off, the demo will sync to the clock, and be smoother by dropping frames and inserting frames as needed. But that could cause playback to diverge from recording and cause errors. 
+demo_quitafterplayback" "0" - Quits game after demo playback. 
+demo_recordcommands" "1" - Record commands typed at console into .dem files. 
+demo_resume" - Resumes demo playback. 
+demo_timedemonumitersremaining" "0
+demo_timescale" - Sets demo replay speed. 
+demo_togglepause" - Toggles demo playback. 
+demo_ui_enable" "" - Suffix for the demo UI 
+demo_userCmdDriftBias" "3
+demo_userCmdDriftTolerance" "3
+demo_writeLocalFile" "0" - Demos write to a local file when recording a demo. 
+demo_writeSeparateServerStream" "0" - Record server packets in a separate file, to help make playback smoother when playing back at a higher framerate, by interleaving user cmds with server packets. 
+demolist" - Print demo sequence list. 
+demos" - Demo demo file sequence. 
+devStats" "0" - True if game should report dev stats. 
+developer" "0" - Set developer message level 
+devshots_nextmap" - Used by the devshots system to go to the next map in the devshots maplist. 
+devshots_screenshot" - Used by the -makedevshots system to take a screenshot. For taking your own screenshots, use the 'screenshot' command instead. 0x00020000
+disconnect" - Disconnect game from server. 0x08000000
+display_elapsedtime" - Displays how much time has elapsed since the game started 
+dlight_debug" - Creates a dlight in front of the player 
+dlight_default_falloff" "0.3" - default half-distance fraction for legacy dlights. 
+dlight_enable" "1
+dlight_overlay" "0" - Draw debug overlay of dlight array 
+dodge_cockpitHack" "0" - Hack to avoid eye moving too far back in cockpit 
+dodge_cockpitOffsetMax" "3" - Cockpit translation while dodging 
+dodge_cockpitTiltMax" "4" - Additional view tilt applied to the cockpit while dodging 
+dodge_no_movement_forward_enable" "1" - Defaults dodge to go forward if there is no movement 
+dodge_vertical_enable" "0" - Enables vertical dodge 
+dodge_vertical_horzspeedscale" "0.5" - Horizontal speed retained when dodging vertically 
+dodge_vertical_in_air" "1" - Allow dodge to still apply vertical acceleration when player is in the air 
+dodge_vertical_threshold" "0.1" - Stick deflection before dodge becomes vertical 
+dodge_viewTiltDecreaseSpeed" "2.5" - Speed at which view tilt decreases while dodging (degrees/sec) 
+dodge_viewTiltFalloffTime" ".7" - Time during which view tilt decays to zero while dodging 
+dodge_viewTiltIncreaseSpeed" "5" - Speed at which view tilt increases while dodging (degrees/sec) 
+dodge_viewTiltMax" "10" - Amount of view tilt while dodging in degrees 
+dof_enable" "1
+dof_farDepthEnd" "3000
+dof_farDepthStart" "2000
+dof_nearDepthEnd" "7.7
+dof_nearDepthStart" "7.5
+dof_overrideParams" "0
+dof_variable_blur" "0
+dormant_debug" "0
+downloadPlaylists" - Re-download the playlists
+ 
+drawBeams" "1
+drawline" - Draws line between two 3D Points.
+	Green if no collision
+	Red is collides with something
+	Arguments: x1 y1 z1 x2 y2 z2 
+dropped_weapon_limit" "8
+dtwatchclass" "" - Watch all fields encoded with this table. 
+dtwatchdecode" "1" - When watching show decode. 
+dtwatchencode" "1" - When watching show encode. 
+dtwatchent" "-1" - Watch this entities data table encoding. 
+dtwatchvar" "" - Watch the named variable. 
+dumpClientStringTable" - Dump the contents of the client's game string table to the console. 
+dumpServerStringTable" - Dump the contents of the server's game string table to the console. 
+dump_entity_sizes" - Print sizeof(entclass) 
+dump_generic_key_values
+dump_globals" - Dump all global entities/states 
+dumpentityfactories" - Lists all entity factory names. 
+dumpeventqueue" - Dump the contents of the Entity I/O event queue to the console. 
+dumpstringtables" - Print string tables to console. 
+dvs_enable" "1" - Enable dynamic viewport scaling. 
+dvs_gpuframetime_max" "16250" - GPU frametime threshold above which DVS will start decreasing the scale. Specified in microseconds. 
+dvs_gpuframetime_min" "15000" - GPU frametime threshold below which DVS will start increasing the scale. Specified in microseconds. 
+dvs_scale_min" "0.5f" - Smallest scale the viewport dimensions can be scaled by. 
+echo" - Echo text to console. 0x10000000
+edge_override_depth" "-1" - edge_override_depth -1|0|1 
+edge_override_silhouette" "-1" - edge_override_silhouette -1|0|1 
+editor_toggle" - Disables the simulation and returns focus to the editor 
+enable_debug_overlays" "1" - Enable rendering of debug overlays 
+enable_skeleton_draw" "0" - Render skeletons in wireframe 
+encrypt_multiKey" "1
+endmovie" - Stop recording movie frames. 0x00020000
+ent_absbox" - Displays the total bounding box for the given entity(s) in green.  Some entites will also display entity specific overlays.
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at  
+ent_animdump" - Dumps the animation each frame the given entity(ies) in red.
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at  
+ent_attachments" - Displays the attachment points on an entity.
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at  
+ent_bbox" - Displays the movement bounding box for the given entity(ies) in orange.  Some entites will also display entity specific overlays.
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at  
+ent_cancelpendingentfires" - Cancels all ent_fire created outputs that are currently waiting for their delay to expire. 
+ent_create" - Creates an entity of the given type where the player is looking. 
+ent_create_debug" "0
+ent_debugkeys" "
+ent_dump" - Usage:
+   ent_dump <entity name>
+ 
+ent_entitylinks" - Displays all incoming and outgoing links to the given entity.
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at  
+ent_fire" - Usage:
+   ent_fire <target> [action] [value] [delay]
+ 
+ent_info" - Usage:
+   ent_info <class name>
+ 
+ent_keyvalue" - Applies the comma delimited key=value pairs to the entity with the given Hammer ID.
+	Format: ent_keyvalue <entity id> <key1>=<value1>,<key2>=<value2>,...,<keyN>=<valueN>
+ 
+ent_lightweightEnts" "1
+ent_messages" - Toggles input/output message display for the selected entity(ies).  The name of the entity will be displayed as well as any messages that it sends or receives.
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at 
+ent_messages_draw" "0" - Visualizes all entity input/output activity. 
+ent_name
+ent_orient" - Orient the specified entity to match the player's angles. By default, only orients target entity's YAW. Use the 'allangles' option to orient on all axis.
+	Format: ent_orient <entity name> <optional: allangles> 
+ent_pause" - Toggles pausing of input/output message processing for entities.  When turned on processing of all message will stop.  Any messages displayed with 'ent_messages' will stop fading and be displayed indefinitely. To step through the messages one by one use 'ent_step'. 
+ent_pivot" - Displays the pivot for the given entity(ies).
+	(y=up=green, z=forward=blue, x=left=red). 
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at  
+ent_remove" - Removes the given entity(s)
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at  
+ent_remove_all" - Removes all entities of the specified type
+	Arguments:   	{entity_name} / {class_name}  
+ent_repack_threshhold" "0.0001
+ent_script_dump" - Dumps the names and values of this entity's script scope to the console
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at  
+ent_setname" - Sets the targetname of the given entity(s)
+	Arguments:   	{new entity name} {entity_name} / {class_name} / no argument picks what player is looking at  
+ent_step" - When 'ent_pause' is set this will step through one waiting input / output message at a time. 
+ent_teleport" - Teleport the specified entity to where the player is looking.
+	Format: ent_teleport <entity name> 
+ent_text" - Displays text debugging information about the given entity(ies) on top of the entity (See Overlay Text)
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at  
+ent_text_mode" "0" - 0: Full,  1: Brief 
+ent_text_no_player_ents" "0" - If true then filter out all entities that are players, parented to players or owned by players
+ 
+ent_text_only_transmitted_ents" "0" - If true then only show entities that are transmitted from server to client. Eg. server only entities are filtered out
+ 
+ent_text_pick_type" "0" - 0: All, 1: NPCs and Players 
+ent_text_radius" - Displays text debugging information about the given entity(ies) on top of the entity (See Overlay Text)
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at  
+ent_text_radius_default" "100" - The default radius to use when finding entities to toggle ent_text on
+ 
+ent_throw" - Throws an entity of the given type where the player is looking. 
+ent_viewoffset" - Displays the eye position for the given entity(ies) in red.
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at  
+entity_useNetworkFieldBuffer" "1
+envmap
+error_if_non_standard_ent_create" "0
+error_test" - Cause the engine to call Error(). 
+escape" - Escape key pressed. 0x40000000
+eula_version_accepted" "0" -  0x01000008
+eventseq_debug" "0
+everything_unlocked" "0
+exec" - Execute script file. 
+execPlayerConfig" - Load player settings. 
+execifexists" - Execute script file if file exists. 
+exit" - Exit the engine. 
+explosion_debug" "0
+explosion_orientation_debug" "0
+eyeInfo" - gets info about the current view
+ 
+fair_fight_damage_check_interval" "0.0
+fair_fight_debug" "0
+fair_fight_key" "
+fair_fight_port" "0
+fair_fight_ssl" "0
+fast_iteration" "0
+fast_poly_convert" "1
+fatal_script_error_prompt" "
+fatal_script_errors" "1
+fatal_script_errors_client" "-1" - Enable fatal errors for client script. -1 will revert to using "fatal_script_errors" 
+fatal_script_errors_server" "-1" - Enable fatal errors for server script. -1 will revert to using "fatal_script_errors" 
+filesystem_buffer_size" "0" - Size of per file buffers. 0 for none 
+filesystem_max_stdio_read" "16
+filesystem_native" "1" - Use native FS or STDIO 
+filesystem_report_buffered_io" "0
+filesystem_unbuffered_io" "1
+filesystem_use_overlapped_io" "1
+find_ent" - Find and list all entities with classnames or targetnames that contain the specified substring.
+Format: find_ent <substring>
+ 
+find_ent_index" - Display data for entity matching specified index.
+Format: find_ent_index <index>
+ 
+firetarget
+fireteam_catchup_max_speed_scale" "1.2" - Maximum speed scale on top of animation speed change 
+fireteam_catchup_sprint_dist" "250" - Sprint if more than this distance from goal 
+fireteam_cover_search_tolerance" "100" - Distance leader moves for triggering new cover search 
+fireteam_leader_cover_max_speed_threshold" "0.9" - If speed is above max run speed * this, fireteam doesn't search for cover 
+fireteam_leader_runtime_tolerance" "0" - If the leader is running for this amount of time, start moving with the leader 
+fireteam_member0_angle" "180
+fireteam_member0_offset_x" "-145
+fireteam_member0_offset_y" "40
+fireteam_member1_angle" "60
+fireteam_member1_offset_x" "180
+fireteam_member1_offset_y" "80
+fireteam_member2_angle" "-60
+fireteam_member2_offset_x" "180
+fireteam_member2_offset_y" "-80
+fireteam_move_delay" "0.4" - Amount of delay between each fireteam member starting to move 
+fireteam_move_tolerance" "20" - Distance target must move to reset formation 
+fireteam_use_cover_hints" "0
+fireteam_use_offsets" "1" - Use offsets for fireteam formation. Requires map restart 
+first_person_bullet_delay" "0.1f" - Set the amount of additional delay for first person bullets fired with net_optimize_weapons in seconds. Required so bullets match animations with cl_predict 0 and in kill replay 
+first_person_proxy_blend_distance" "100
+first_person_proxy_debug" "0
+first_person_proxy_predicted" "0
+firstperson" - Switch to firstperson camera. 
+firsttime_mp_message" "0" - first time joining multiplayer 0x01000008
+flush" - Flush unlocked cache memory. 
+flush_locked" - Flush unlocked and locked cache memory. 
+fog_enable" "1" - map_settings_override MUST BE ENABLED FOR THIS TO BE FUNCTIONAL. 
+fog_enable_water_fog" "1
+fog_enableskybox" "1
+fog_volume_debug" "0" - If enabled, prints diagnostic information about the current fog volume 
+force3PLaserAttachment" "HEADFOCUS
+force_centerview
+forcebind" - Bind a command to an available key. (forcebind command opt:suggestedKey) 
+fps_max" "-1" - Frame rate limiter. -1 indicates use the desktop refresh. 0 is unlocked. 
+fps_max_use_refresh" "0" - Use refresh rate for fps_max. 
+fps_max_vsync" "0" - Frame rate limiter with vsync is enabled. 
+fps_stats_dump
+fps_stats_reset
+fps_stats_start
+fps_stats_stop
+freecam_swallowButtonInput" "1
+freefall_sound_autoplay_time" "1.0" - If the player falls for longer than this amount of time freefall sounds will automatically start playing. 
+freefall_sound_height" "200.0" - Height player must be falling from to trigger freefall sound effects. 
+fs_clear_open_duplicate_times" - Clear the list of files that have been opened. 
+fs_dump_open_duplicate_times" - Set fs_report_long_reads 1 before loading to use this. Prints a list of files that were opened more than once and ~how long was spent reading from them. 
+fs_fios_cancel_prefetches" - Cancels all the prefetches in progress. 
+fs_fios_flush_cache" - Flushes the FIOS HDD cache. 
+fs_fios_prefetch_file" - Prefetches a file: </PS3_GAME/USRDIR/filename.bin>.
+The preftech is medium priority and persistent. 
+fs_fios_prefetch_file_in_pack" - Prefetches a file in a pack: <portal2/models/container_ride/fineDebris_part5.ani>.
+The preftech is medium priority and non-persistent. 
+fs_fios_print_prefetches" - Displays all the prefetches currently in progress. 
+fs_intralevel_reads" "0" - Internal var to tell the file system that we are in an intraread state... 
+fs_monitor_read_from_pack" "0" - 0:Off, 1:Any, 2:Sync only 
+fs_printopenfiles" - Show all files currently opened by the engine. 
+fs_report_intra_level_readopens" "0" - 0:Off, 1:NotAudio, 2:All 
+fs_report_long_reads" "0" - 0:Off, 1:All (for tracking accumulated duplicate read times), >1:Microsecond threshold 
+fs_report_sync_opens" "0" - 0:Off, 1:Always, 2:Not during map load 
+fs_report_sync_opens_callstack" "0" - 0 to not display the call-stack when we hit a fs_report_sync_opens warning. Set to 1 to display the call-stack. 
+fs_report_sync_opens_fatal" "0
+fs_showAllReads" "0" - 0:Off, 1:On 
+fs_vpk_file_open" "0" - 0: No reporting, 1: Patch:VPKFilePath, 2: Patch:VPKFilePath:PartialPath 
+fs_warning_level" - Set the filesystem warning level. 
+fs_warning_mode" "0" - 0:Off, 1:Warn main thread, 2:Warn other threads 
+func_break_max_pieces" "15
+func_break_reduction_factor" ".5
+func_breakdmg_bullet" "0.5
+func_breakdmg_club" "1.5
+func_breakdmg_explosive" "1.25
+fx_debug" "0
+fx_deferWorldTraceConstraint" "1" - 'Collision via traces' ops using collision mode 0 use deferred traces. 
+fx_glass_velocity_cap" "0" - Maximum downwards speed of shattered glass particles 
+fx_impact_ally" "0.49 0.76 1.0 1.0
+fx_impact_enemy" "0.91 0.26 0.26 1.0
+fx_impact_neutral" "0.86 0.86 0.86 1.0
+fx_impact_reparse" - Reloads the weapon impact effect table files 
+fx_screenspacepass" "1
+g_Language" "0
+g_debug_constraint_sounds" "0" - Enable debug printing about constraint sounds. 
+g_debug_doors" "0
+g_debug_flying_ai" "0
+g_debug_melee" "0
+g_debug_ragdoll_removal" "0
+g_debug_trackpather" "0
+g_ragdoll_fadespeed" "600
+g_ragdoll_important_maxcount" "2
+g_ragdoll_lvfadespeed" "100
+gamepad_aim_speed" "2" -  0x01000008
+gamepad_aim_speed_ads" "-1" -  0x01000008
+gamepad_button_layout" "0" - Gamepad button layout (used by menus) 0x01000008
+gamepad_buttons_are_southpaw" "0" - Gamepad button layouts should use southpaw variants (used by menus) 0x01000008
+gamepad_custom_ads_pitch" "75.0" -  0x01000008
+gamepad_custom_ads_turn_delay" "0.25" -  0x01000008
+gamepad_custom_ads_turn_pitch" "30.0" -  0x01000008
+gamepad_custom_ads_turn_time" "1.0" -  0x01000008
+gamepad_custom_ads_turn_yaw" "30.0" -  0x01000008
+gamepad_custom_ads_yaw" "110.0" -  0x01000008
+gamepad_custom_assist_on" "1" -  0x01000008
+gamepad_custom_curve" "10.0" -  0x01000008
+gamepad_custom_deadzone_in" "0.15" -  0x01000008
+gamepad_custom_deadzone_out" "0.02" -  0x01000008
+gamepad_custom_enabled" "0" -  0x01000008
+gamepad_custom_hip_pitch" "120.0" -  0x01000008
+gamepad_custom_hip_turn_delay" "0.0" -  0x01000008
+gamepad_custom_hip_turn_pitch" "0.0" -  0x01000008
+gamepad_custom_hip_turn_time" "0.33" -  0x01000008
+gamepad_custom_hip_turn_yaw" "220.0" -  0x01000008
+gamepad_custom_hip_yaw" "160.0" -  0x01000008
+gamepad_deadzone_index_look" "1" -  0x01000008
+gamepad_deadzone_index_move" "1" -  0x01000008
+gamepad_look_curve" "0" -  0x01000008
+gamepad_stick_layout" "0" - Gamepad stick layout (used by menus) 0x01000008
+gameui_activate" - Shows the game UI 
+gameui_allowescape" - Escape key allowed to hide game UI 
+gameui_allowescapetoshow" - Escape key allowed to show game UI 
+gameui_hide" - Hides the game UI 
+gameui_preventescape" - Escape key doesn't hide game UI 
+gameui_preventescapetoshow" - Escape key doesn't show game UI 
+gameui_xbox" "0
+gamma_adjusted" "0" - Whether player has done gamma adjustment 0x01000008
+getNewAuthToken" - Ask for a new auth token. 
+getfov" - Gets info about the current FOV 
+gethttpdatacenterlist" - Gets the list of datacenters 
+getpos" - dump position and angles to the console 
+getpos_bind" - Binds the given key to a setpos/setang command of your current position. 
+getposvec" - dump position and angles to the console in 'Vector( x, y, z ), Vector( pitch, yaw, roll )' format 
+give" - Give weapon to player. 
+give_server" - Give weapon to player. 
+givecurrentammo" - Give a supply of ammo for current weapon..
+ 
+gl_clear_color_buffer" "0" - Enable or disable the clearing of the main color buffer. 
+gl_clear_fogcolor" "1
+gl_clear_randomcolor" "0" - Clear the back buffer to random colors every frame. Helps spot open seams in geometry. 
+glass_break_required_speed" "150
+glass_shatter_attack_speed_scale" "300
+glass_shatter_direction_force_scale" "1.0
+glass_shatter_drop_speed" "100
+glass_shatter_explosive_scale" "1
+glass_shatter_force_scale" "1.0
+glass_shatter_size_scale" "1.0
+glass_shatter_use_real_direction" "0
+globalNonRewindingObject_DontSave" "1
+global_event_log_enabled" "0" - Enables the global event log system 
+global_lighting_partial_update" "1" - Allow partial uploads of GPU lights (optimization.) 
+gpu_count" "0
+gpu_level" "3" - GPU Level - Default: High 
+gpu_mem_level" "0" - Memory Level - Default: Normal 
+gpu_vram_size_mb" "0
+grapple_accel_human" "1000" - Speed added per second from grapple, up to the grapple_speedRamp* speed 
+grapple_accel_titan" "1800" - Speed added per second from grapple, up to the grapple_speedRamp* speed 
+grapple_around_obstacle_accel" "1000" - Acceleration around obstacles while grappling 
+grapple_autoMeleeConvergeTime" "1.0" - Simplify relative velocities when the enemy is this many seconds away from hitting us (increases chances of a hit) 
+grapple_autoMeleeOnDetach" "1" - Starts a melee sequence when the grapple detaches. 
+grapple_autoMeleePredict" "0" - Whether to run grapple melee logic on the client (tends to mispredict anyway) 
+grapple_autoMeleePredictTime" "0.13" - Melee begins when the enemy is this many seconds away from hitting us 
+grapple_autoMeleeViewRotateSpeedFar" "1" - Speed at which view rotates toward grapple melee target 
+grapple_autoMeleeViewRotateSpeedNear" "3" - Speed at which view rotates toward grapple melee target 
+grapple_debug" "0" - Show grapple debug info 
+grapple_decelMeleeStrength" "1" - Strength of extra deceleration that forces melee targets to come to you 
+grapple_decel_human" "425" - Deceleration of player's speed that doesn't go toward the grapple point 
+grapple_decel_titan" "200" - Deceleration of player's speed that doesn't go toward the grapple point 
+grapple_disableMeleeWhenActive" "0" - Disallows melee when the grapple is out. 
+grapple_dontFightGravity" "1" - Ignores downward speed when applying deceleration, so that gravity continues to pull you down 
+grapple_fallSpeed" "300" - Fall speed of the grapple hook while it's returning 
+grapple_forcedRetractVel" "3000" - Return speed of grapple hook when grapple is finished or cancelled 
+grapple_gracePeriod" "0.25" - Length of time player can grapple without using a charge, in case they mess up 
+grapple_gravityPushUnderContribution" "2" - Pushing forward while looking "under" the grapple point increases gravity this much 
+grapple_initialImpulseOffGround_human" "50" - Initial launch speed off the ground when grapple connects 
+grapple_initialImpulseOffGround_human_npc" "150" - Initial launch speed off the ground when grapple connects 
+grapple_initialImpulseOffGround_titan" "0" - Initial launch speed off the ground when grapple connects 
+grapple_initialImpulse_human" "350" - Initial launch speed when grapple connects 
+grapple_initialImpulse_titan" "350" - Initial launch speed when grapple connects 
+grapple_initialSlowFracVert_human" "0.4" - Fraction of vertical speed that is retained when grapple connects 
+grapple_initialSlowFracVert_titan" "0.1" - Fraction of vertical speed that is retained when grapple connects 
+grapple_initialSlowFrac_human" "1" - Fraction of XY speed that is retained when grapple connects 
+grapple_initialSlowFrac_titan" "0.5" - Fraction of XY speed that is retained when grapple connects 
+grapple_initialSpeedMin_human" "0" - When grapple connects, player speed is immediately set to at least this value (negative = away, positive = towards) 
+grapple_initialSpeedMin_titan" "0" - When grapple connects, player speed is immediately set to at least this value (negative = away, positive = towards) 
+grapple_jumpFrac" "1.0" - Jump velocity multiplier when grappled 
+grapple_letGravityHelpCosAngle" "0.8" - Don't ignore gravity when grappling downward this much (0 is horizontal, 1 is straight down) 
+grapple_lift" "25" - Distance above grapple hook that player is pulled to 
+grapple_pullDelay_human" "0.2" - Grapple delay between attachment and acceleration 
+grapple_pullDelay_titan" "0.2" - Grapple delay between attachment and acceleration 
+grapple_retractVel" "6000" - Return speed of grapple hook when it hasn't hit anything yet 
+grapple_rodeoVerticalImpulse" "750" - Vertical impulse applied to the player when grappling off of a rodeo. 
+grapple_shootVel" "3000" - Outward speed of grapple hook 
+grapple_speedRampMax_human" "800" - Player will accelerate to this speed after grapple_speedRampTime has passed 
+grapple_speedRampMax_titan" "750" - Player will accelerate to this speed after grapple_speedRampTime has passed 
+grapple_speedRampMin_human" "50" - Player will accelerate to this speed while grappling; lerps to grapple_speedRampMax over grapple_speedRampTime 
+grapple_speedRampMin_titan" "400" - Player will accelerate to this speed while grappling; lerps to grapple_speedRampMax over grapple_speedRampTime 
+grapple_speedRampTime_human" "1.5" - Time from grapple_speedRampMin to grapple_speedRampMax 
+grapple_speedRampTime_titan" "1.0" - Time from grapple_speedRampMin to grapple_speedRampMax 
+grapple_titanEmbarkDist" "250" - Distance at which to begin embark when grappling to your own titan. 
+grapple_windowCheckDist" "150" - Check for window hints at this distance from grapple point 
+gravity_grenade_decel" "20000" - Deceleration applied by gravity grenade to nearby objects 
+gravity_grenade_projectile_min_speed" "1000" - Gravity grenade never slows projectiles below this speed 
+ground_debug" "0
+groundlist" - Display ground entity list <index> 
+hasMic" "0
+help" - Find help about a convar/concommand. 
+hibernation_assumed_max_player_speed" "1400" - Assumed max player speed for estimating how long until we need to reevaluate hibernation 
+hibernation_debounce_dist" "256" - Entities that stop hibernating must go this far outside of the required distance to start hibernating again 0x08000004
+hibernation_enable" "1" - Enables entity hibernation 0x08000004
+hibernation_far_dist" "8000" - Far distance for entity hibernation 0x08000004
+hibernation_medium_dist" "3000" - Medium distance for entity hibernation 0x08000004
+hibernation_min_reevaluate_time" "1" - Entities always wait at least this long before their next reevaluation of whether they should be hibernating 
+hibernation_near_dist" "1000" - Near distance for entity hibernation 0x08000004
+hidehud" "0
+hidepanel" - Hides a viewport panel <name> 
+high_perf_dev_server" "0
+highlight_draw" "1" - highlight_draw 0|1 
+highlight_lazy_clear_buffers" "0" - highlight_lazy_clear_buffers 0|1 
+highlight_log" - Log Highlight 
+highlight_object_max_count" "255" - highlight_object_max_count OBJECT_MAX_COUNT 
+hitbox_bodygroup_check" "0
+hitch_alert_active" "1
+hitch_alert_color" "255 255 0 255" - The hitch/choke allerts will use this color. 
+hitch_alert_show_large_snapshots" "0
+host_RunFrameServerAlways" "0
+host_ShowIPCCallCount" "0" - Print # of IPC calls this number of times per second. If set to -1, the # of IPC calls is shown every frame. 
+host_flush_threshold" "12" - Memory threshold below which the host should flush caches between server instances 0x00080000
+host_framerate" "0" - Set to lock per-frame time elapse. 
+host_limitlocal" "0" - Apply cl_cmdrate and cl_updaterate to loopback connection 
+host_map" "" - Current map name. 0x00080000
+host_preload_shaders" "1
+host_print_frame_times" "0
+host_profile" "0
+host_runframe_input_parcelremainder" "1
+host_runofftime" - Run off some time without rendering/updating sounds
+ 
+host_server_thread_min_ticks" "1" - Only run the server thread when it needs this many ticks. 
+host_skip_client_dll_crc" "0
+host_sleep" "0" - Force the host to sleep a certain number of milliseconds each frame. 
+host_speeds" "0" - Show general system running times. 
+host_syncfps" "0" - Synchronize real render time to host_framerate if possible. 
+host_thread_join_fast" "0" - If true we force the server thread join before existing '_Host_RunFrame' 
+host_thread_mode" "1" - Run the host in threaded mode, (0 == off, 1 == if multicore, 2 == force) 
+host_threaded_sound" "0" - Run the sound on a thread (independent of mix) 
+host_timescale" "1.0" - Prescale the clock by this amount. 
+hostip" "" - Host game server ip 0x00080000
+hostname" "" - Hostname for server. 0x00080000
+hostport" "37015" - Host game server port 0x00080000
+http_StryderKey" "LABj38NWSTxHUhdYaP62ZU6HtutCas3L
+http_debug" "0
+http_debug_forceFailRate" "0
+http_debug_forceFailStatus" "429
+http_failuresAsErrors" "0
+http_sandbox" "EARW.50
+http_showQueries" "0
+hud_autoreloadscript" "0" - Automatically reloads the animation script each time one is ran 
+hud_setting_adsDof" "1" -  0x01000008
+hud_setting_showButtonHints" "1" -  0x01000008
+hud_setting_showCallsigns" "1" -  0x01000008
+hud_setting_showLevelUp" "1" -  0x01000008
+hud_setting_showMedals" "1" -  0x01000008
+hud_setting_showMeter" "1" -  0x01000008
+hud_setting_showObituary" "1" -  0x01000008
+hud_setting_showTips" "1" -  0x01000008
+hud_setting_showWeaponFlyouts" "1" -  0x01000008
+hud_subtitles" - Plays the Subtitles: <filename> 
+hud_takesshots" "0" - Auto-save a scoreboard screenshot at the end of a map. 
+hudchat_dead_can_only_talk_to_other_dead" "0
+hudchat_new_message_fade_duration" "1.0" - How long messages added to the text chat will take to fade from opaque to not visible 
+hudchat_new_message_shown_duration" "12" - How long messages added to the text chat stick around with the panel not focused 
+hudchat_transition_message_mode_fade_duration" "0.25" - When switching message mode of the text chat panel how long it takes to transition visibility 
+hudwarp_chopsize" "60.0" - Number of pixels to a primitive before chopping for warping. 
+hudwarp_override" "0" - Use convar settings for hud warp (instead of script-provided settings) 
+hudwarp_viewDist" "1.0" - Distance back from sphere center to use when 2d projecting. 
+hudwarp_xScale" "1.2" - Final scale for X (after projecting sphere surface to 2d.) 
+hudwarp_xWarp" "45.0" - Degrees of arc of sphere to use (0-90, low distortion to high.) 
+hudwarp_yScale" "1.1" - Final scale for Y (after projecting sphere surface to 2d.) 
+hudwarp_yWarp" "30.0" - Degrees of arc for Y warp (0-90, low distortion to high.) 
+idcolor_ally" "0.34 0.59 0.86 8
+idcolor_ally_cb1" "0.24 0.50 0.96 8
+idcolor_ally_cb2" "0.0 0.58 0.77 8
+idcolor_ally_cb3" "0.28 0.52 0.97 8
+idcolor_enemy" "0.8 0.25 0.15 8
+idcolor_enemy_cb1" "0.89 0.78 0.0 8
+idcolor_enemy_cb2" "1.0 0.627 0.68 8
+idcolor_enemy_cb3" "0.82 0.74 0.06 8
+idcolor_neutral" "1.0 1.0 1.0 0.6
+idleKickTime_min_alive_seconds" "40" - Dead players' idle timers will never go below this many seconds, so they have a chance to recover after spawning 
+idleKickTime_minutes" "3" - Time after which idle players in a game are kicked 
+idleKickTime_party_minutes" "15" - Time after which idle players in a party are kicked (all party members must be idle) 
+idleKickTime_privatematch_game_minutes" "10" - Time after which idle players in a private match game are kicked 
+idleKickTime_privatematch_lobby_minutes" "15" - Time after which idle players in a private match lobby are kicked (all players must be idle) 
+idleKick_enable" "1" - Enables kicking idle players 
+ik_debug" "0" - Enables debug lines for IK 
+ik_debug_chain" "" - Allows specifying a single IK chain name for IK debugging 
+ik_debug_ent" "" - Allows specifying a single entity for IK debugging 
+ik_debug_text" "0" - Enables IK debug text; requires ik_debug 
+ik_enable" "1" - Enables IK 
+ik_enable_client" "1" - Enables IK on the client 
+ik_enable_server" "1" - Enables IK on the server 
+ik_height_adjust" "1" - Enable ik height adjustment 
+ik_height_adjust_debug" "0" - Debugging for ik height adjustment 
+ik_height_adjust_move_speed" "2.0" - IK height adjustment speed per unit of horizontal velocity in units per second 
+ik_height_adjust_sine" "0" - Test ik height adjustment with a sine wave 
+ik_height_adjust_speed" "2.0" - IK height adjustment speed as a fraction of step size per second 
+ik_latch" "1" - Enables IK latching to ground during footsteps 
+ik_normal_lerp_rate" "100" - Rate at which feet adjust to a new ground orientation in angles per second 
+ik_unlatch_max_rate" "5" - Maximum rate an IK'd bone can unlatch; prevents pop on animation transition 
+impact_allow" "1
+impact_debug_info" "0
+impact_victim_offset_dist" "256" - Distance to offset impact sounds from the victim, when requested 
+impulse
+impulse_low_decel_duration_scalar" "0.003" - Impulse magnitude is multiplied by this to give a length of time that the player can't decelerate 
+inPartyChat" "0
+in_forceuser" "0" - Force user input to this split screen player. 
+in_syncRT" "0
+in_usekeyboardsampletime" "1" - Use keyboard sample time smoothing. 
+incrementvar" - Increment specified convar value. 0x00020000
+info_spawnpoint_human_classname" "pilot_medium_male" - Class settings used to get size of info_spawnpoint_human 
+info_spawnpoint_titan_classname" "titan_atlas" - Class settings used to get size of info_spawnpoint_titan 
+infoblock_requestInterval" "300" - Time between info block requests 
+ingamemenu_activate" - Shows the in-game menu 
+initMatchmaking
+interpolate_on_parent_change" "0
+intro_viewed" "0" - Whether the introduction video has been viewed by this player 0x01000008
+invnext
+ip" "localhost" - Overrides IP for multihomed hosts 0x00080000
+joinopeninvite" - Join the active open invite in the chat room 
+joy_advaxisr" "2
+joy_advaxisu" "4
+joy_advaxisv" "0
+joy_advaxisx" "3
+joy_advaxisy" "1
+joy_advaxisz" "0
+joy_inverty" "0" - Whether to invert the Y axis of the joystick for looking. 0x01000008
+joy_legacy" "0" - Turn on/off 'Legacy' mapping for control sticks. 
+joy_movement_stick" "0" - Which stick controls movement (0 is left stick) 
+joy_requireFocus" "1
+joy_rumble" "1" - Controller rumble. 0x01000008
+joy_xcontroller_cfg_loaded" "0" - If 0, the 360controller.cfg file will be executed on startup & option changes. 
+joystick" "1" - True if the joystick is enabled, false otherwise. 
+joystick_initialize" -  0x40000008
+jpeg" - Take a jpeg screenshot:  jpeg <filename> <quality 1-100>. 
+jpeg_quality" "90" - jpeg screenshot quality. 
+jump_graceperiod" "0.2" - Extra time during which a player can jump after falling off a ledge 
+jump_keyboardgrace_max" "0.7" - Amount of velocity change allowed during jump_keyboardgraceperiod, as a fraction of sprinting speed 
+jump_keyboardgrace_strength" "0.7" - Fraction of change toward the new direction when pressing a direction during jump_keyboardgraceperiod 
+jump_keyboardgraceperiodmax" "0.5" - Extra time during which a player can change their direction with keyboard input after jumping (fades to 0 strength at this time) 
+jump_keyboardgraceperiodmin" "0.2" - Extra time during which a player can change their direction with keyboard input after jumping (at full strength) 
+kdtree_test" - Tests spatial partition for entities queries. 
+key_listboundkeys" - List bound keys with bindings. 
+key_updatelayout" - Updates game keyboard layout to current windows keyboard setting. 
+kick" - Kick a player by name. 
+kick_all_bots" - Kick all fake (bot) players. 
+kick_connecting" - Kick any players that are not fully connected/active. 
+kickid" - Kick a player by uniqueid, with a message. 
+killReplay_lagCompensate" "1" - Adjust player timing to try to match what the client saw rather than what the server saw. 
+killReplay_playNonReplayRemoteCallsOnLocalClientPlayer" "1
+lagcompensation_debug_ent" "0
+launchplaylist" - Launch the current playlist
+ 
+leaf_threadedRecompute" "1
+leaf_threadedRecompute_batchSize" "12
+leaveopeninvite" - Leave the active open invite in the chat room 
+leech_lagcompensate" "1
+leech_npc_angle_cos" "-1" - Cos(angle) allowed for leeching npcs 
+lerp_careAboutAttachmentBonePosition" "0
+lerp_debugEnt" "-2
+lerp_debugEntAnim" "-2
+lerp_debugEnt_server" "1
+lerp_interpolateCycleAcrossSequenceChanges" "0
+lerp_threaded" "1
+lerp_threaded_numEntsPerTask" "12
+light_maxcone" "85" - Max light cone limit.  Cone limit is half angle in degrees. 
+lightmap_realtimelight" "1" - If true use the real-time light lightmap for selecting real-time lights. 
+lightmap_realtimeshadows" "1
+listClientFXScriptHandles" - Lists all active effects tracked by script. 
+listmodels" - List loaded models. 
+load" - Load a saved game. 
+loadPlaylists" - Reload the playlists
+ 
+load_during_video" "1
+loaderrorsCount" "0
+loaderrorsNeedShown" "0
+localClientPlayerCachedLevel" "1" -  0x01000018
+locator_background_border_color" "255 255 255 15" - The default color for the border. 
+locator_background_border_thickness" "3" - How many pixels the background borders the left and right. 
+locator_background_color" "255 255 255 5" - The default color for the background. 
+locator_background_shift_x" "3" - How many pixels the background is shifted right. 
+locator_background_shift_y" "1" - How many pixels the background is shifted down. 
+locator_background_style" "0" - Setting this to 1 will show rectangle backgrounds behind the items word-bubble pointers. 
+locator_background_thickness_x" "8" - How many pixels the background borders the left and right. 
+locator_background_thickness_y" "0" - How many pixels the background borders the top and bottom. 
+locator_fade_time" "0.3" - Number of seconds it takes for a lesson to fully fade in/out. 
+locator_icon_max_size_non_ss" "2" - Minimum scale of the icon on the screen 
+locator_icon_min_size_non_ss" "1.0" - Minimum scale of the icon on the screen 
+locator_lerp_rest" "2.25f" - Number of seconds before moving from the center. 
+locator_lerp_speed" "5.0f" - Speed that static lessons move along the Y axis. 
+locator_lerp_time" "1.75f" - Number of seconds to lerp before reaching final destination 
+locator_pulse_time" "1.0f" - Number of seconds to pulse after changing icon or position 
+locator_split_len" "0.5f
+locator_split_maxwide_percent" "0.80f
+locator_start_at_crosshair" "0" - Start position at the crosshair instead of the top middle of the screen. 
+locator_target_offset_x" "0" - How many pixels to offset the locator from the target position. 
+locator_target_offset_y" "0" - How many pixels to offset the locator from the target position. 
+locator_topdown_style" "0" - Topdown games set this to handle distance and offscreen location differently. 
+lookspring" "0
+lookstrafe" "0
+m_acceleration" "0" - Mouse acceleration. 
+m_forward" "1.0" - Mouse forward factor. 
+m_invert_pitch" "0" - Whether to invert the pitch axis of the mouse. 0x01000008
+m_sensitivity" - Old name of 'mouse_sensitivity'. For smoothly upgrading players to the new sensitivity setting convars. 1.0" - Mouse side factor. 
+map" - Start playing on specified map. 0x00020000
+map_background" - Runs a map as the background to the main menu. 0x00020000
+map_settings_override" "0" - If this is enabled then the following ConVars will be functional and override the maps current value: fog_enable, mat_bloomscale 
+map_wants_save_disable" "0
+maps" - Displays list of maps. 
+mat_antialias_mode" - Set antialias mode 
+mat_autoexposure_force_value" "0.0
+mat_autoexposure_max" "2
+mat_autoexposure_max_multiplier" "1.0
+mat_autoexposure_min" "0.5
+mat_autoexposure_min_multiplier" "1.0
+mat_autoexposure_override_min_max" "0" - When this is not zero, mat_autoexposure_min and mat_autoexposure_max override any existing setting in the map. 
+mat_autoexposure_speed" "0.1" - Changes the speed at which exposure adapts to changes in scene luminance. 
+mat_autoexposure_uncap" "0" - mat_autoexposure_min and mat_autoexposure_max are ignored when this is set. 
+mat_bloom_exponent_post" "1.0
+mat_bloom_exponent_pre" "1.0f
+mat_bloom_max_lighting_value" "5.0
+mat_bloom_scalefactor_scalar" "1.0
+mat_bloom_streak_amount" "0.5
+mat_bloom_streak_cutoff" "5.0f
+mat_bloom_streak_exponent_post" "1.0
+mat_bloom_streak_exponent_pre" "1.0f
+mat_bloom_wide_amount" "0.2
+mat_bloom_wide_exponent_post" "0.7
+mat_bloom_wide_exponent_pre" "2.0f
+mat_bloomamount_rate" "0.05f
+mat_bloomscale" "1" - map_settings_override MUST BE ENABLED FOR THIS TO BE FUNCTIONAL. 
+mat_blur_b" "0.7
+mat_blur_desaturate" "0.4
+mat_blur_g" "0.7
+mat_blur_r" "0.7
+mat_checkStalls" "0" - If true, flushes then syncs the render thread to the GPU at various spots of code to find hidden GPU stalls. 
+mat_cloudmask" "1
+mat_colcorrection_disableentities" "0" - Disable map color-correction entities 
+mat_colcorrection_editor" "0
+mat_colcorrection_forceentitiesclientside" "0" - Forces color correction entities to be updated on the client 
+mat_colorcorrection" "1
+mat_configcurrent" - show the current video control panel config for the material system 
+mat_crosshair" - Display the name of the material under the crosshair 
+mat_crosshair_edit" - open the material under the crosshair in the editor defined by mat_crosshair_edit_editor 
+mat_crosshair_edit_all" - open the material under the crosshair (using an engine ray trace) in the editor defined by mat_crosshair_edit_editor 
+mat_crosshair_explorer" - open the material under the crosshair in explorer and highlight the vmt file 
+mat_crosshair_printmaterial" - print the material under the crosshair 
+mat_crosshair_reloadmaterial" - reload the material under the crosshair 
+mat_debug_postprocessing_effects" "0" - 0 = off, 1 = show post-processing in top left corner of screen 
+mat_debug_shader_enabled" "0
+mat_debug_tonemapping" "0
+mat_debug_tonemapping_disable" "0
+mat_debug_tonemapping_mid1" "10.0
+mat_debug_tonemapping_mid2" "1.5
+mat_debug_tonemapping_shoulder" "0.5
+mat_debug_tonemapping_toe" "0.3
+mat_debugalttab" "0
+mat_depthbias_decal" "-16
+mat_depthbias_normal" "0
+mat_depthbias_shadowmap" "0.000025
+mat_depthbias_zfill" "16
+mat_depthbiasclamp_decal" "-0.001
+mat_depthbiasclamp_normal" "0
+mat_depthbiasclamp_shadowmap" "0
+mat_depthbiasclamp_zfill" "0
+mat_depthfeather_enable" "1
+mat_detail_tex" "1
+mat_diffuse" "1
+mat_disable_bloom" "0
+mat_disable_lightmaps" "0
+mat_disable_model_ambient" "0
+mat_drawTitleSafe" "0" - Enable title safe overlay 
+mat_drawflat" "0
+mat_dxlevel" "0
+mat_dynamic_tonemapping" "1
+mat_envmap_scale" "1.0
+mat_envmaptgasize" "CUBEMAP_SCREENSHOT_RES" - Final envmap size for "envmap" console command; should be <= 128. 
+mat_fastnobump" "0
+mat_fastspecular" "1" - Enable/Disable specularity for visual testing.  Will not reload materials and will not affect perf. 
+mat_filterlightmaps" "1
+mat_filtertextures" "1
+mat_force_bloom" "0
+mat_forceaniso" "2
+mat_forcemanagedtextureintohardware" "0
+mat_frame_color_bias" "0.0" - Add a constant value to the average frame color. 
+mat_frame_color_enabled" "1" - Update the average frame color each frame. 
+mat_frame_color_scale" "5.0" - Scale the average frame color. 
+mat_frame_color_spot_metering_screen_ratio" "0.8" - Use a percentage of the screen around the center to compute the average frame color. 
+mat_fullbright" "0
+mat_fxaa_enable" "0
+mat_gamma" - Set gamma ramp 
+mat_global_lighting" "0
+mat_hdr_enabled" - Report if HDR is enabled for debugging 
+mat_hdr_level" "2" - Set to 0 for no HDR, 1 for LDR+bloom on HDR maps, and 2 for full HDR on HDR maps. 
+mat_hide_sun_in_last_cascade" "0
+mat_instancing" "1
+mat_letterbox_aspect_goal" "1.6" - Letterbox when the window aspect ratio is below this threshold 
+mat_letterbox_aspect_threshold" "1.59" - Letterbox when the window aspect ratio is below this threshold 
+mat_levelflush" "1
+mat_light_edit" "0" - Used by light edit to turn on overrides. 
+mat_lightcull_subview" "0
+mat_lightcull_subviews" "0" - Re-cull lighting for subviews (monitors etc.) 
+mat_local_contrast_edge_scale_override" "-1000.0
+mat_local_contrast_midtone_mask_override" "-1.0
+mat_local_contrast_scale_override" "0.0
+mat_local_contrast_vignette_end_override" "-1.0
+mat_local_contrast_vignette_start_override" "-1.0
+mat_lpreview_mode" "-1
+mat_materialmip_character_0" "0 0 0 0
+mat_materialmip_character_1" "0 0 1 1
+mat_materialmip_character_2" "1 0 1 1
+mat_materialmip_character_3" "1 1 2 2
+mat_materialmip_character_4" "3 3 3 3
+mat_materialmip_cockpit_0" "0 0 0 0
+mat_materialmip_cockpit_1" "0 0 0 0
+mat_materialmip_cockpit_2" "0 0 0 0
+mat_materialmip_cockpit_3" "1 0 0 1
+mat_materialmip_cockpit_4" "3 3 3 3
+mat_materialmip_model_0" "0 0 0 0
+mat_materialmip_model_1" "1 0 1 1
+mat_materialmip_model_2" "1 1 1 1
+mat_materialmip_model_3" "1 1 2 2
+mat_materialmip_model_4" "3 3 3 3
+mat_materialmip_other_0" "0 0 0 0
+mat_materialmip_other_1" "1 1 1 1
+mat_materialmip_other_2" "1 1 1 1
+mat_materialmip_other_3" "1 1 1 1
+mat_materialmip_other_4" "3 3 3 3
+mat_materialmip_world_0" "0 0 0 0
+mat_materialmip_world_1" "0 0 1 1
+mat_materialmip_world_2" "0 1 1 1
+mat_materialmip_world_3" "1 1 2 2
+mat_materialmip_world_4" "3 3 3 3
+mat_maxframelatency" "1
+mat_mip_linear" "1
+mat_mipmaptextures" "1
+mat_norendering" "0
+mat_normalmaps" "0
+mat_object_motion_blur_enable" "0
+mat_object_motion_blur_model_scale" "1.2
+mat_phong" "1
+mat_picmip" "0
+mat_postprocess_enable" "1
+mat_printLiveTex" - Print stats of all known live textures. 
+mat_processtoolvars" "0
+mat_proxy" "0
+mat_reducefillrate" "0
+mat_reduceparticles" "0
+mat_reloadmaterial" - Reloads a single material 
+mat_reloadtextures" - Reloads all textures 
+mat_remoteshadercompile" "0
+mat_report_queue_status" "0
+mat_reversedepth" "0
+mat_savechanges" - saves current video configuration 
+mat_screen_blur_override" "-1.0
+mat_setvideomode" - sets the width, height, windowed state of the material system 
+mat_shadercount" - display count of all shaders and reset that count 
+mat_shadowstate" "1
+mat_sharpen_amount" "1.0
+mat_sharpen_threshold" "0.5
+mat_sharpen_width" "1.0
+mat_show_texture_memory_usage" "0" - Display the texture memory usage on the HUD. 
+mat_showaspectratioinfo" - Spew info about the hardware aspect ratio 
+mat_showenvmapmask" "0
+mat_showlowresimage" "0
+mat_showmaterials" - Show materials. 
+mat_showmaterialsverbose" - Show materials (verbose version). 
+mat_showmiplevels" "0" - color-code miplevels 2: normalmaps, 1: everything else 
+mat_showtextures" - Show used textures. 
+mat_skipid" "-1" - Don't draw a particular mesh id. Helps track down which mesh you care about. 
+mat_sky_color" "0.0 0.0 0.0 0.0" - forces the color of sky ambient; the alpha value of 0 means no override. 
+mat_sky_scale" "1.0" - scales all sky ambient light by a constant factor 
+mat_slopescaledepthbias_decal" "-2
+mat_slopescaledepthbias_normal" "0.0f
+mat_slopescaledepthbias_shadowmap" "2
+mat_slopescaledepthbias_zfill" "2
+mat_spewalloc" "0
+mat_spewvertexandpixelshaders" - Print all vertex and pixel shaders currently loaded to the console 
+mat_sun_color" "0.0 0.0 0.0 0.0" - forces the color of the sun directional light; the alpha value of 0 means no override. 
+mat_sun_highlight_size" "1.0" - If mat_light_edit is true, this forces the size of the specular highlight of the sun directional light 
+mat_sun_scale" "1.0" - scales all sun direct light by a constant factor 
+mat_suppress" - Supress a material from drawing 
+mat_surfacefilter" "" - If set, limits surfaces shown by mat_surfaceid and mat_surfacemat to those containing the substring. 
+mat_surfaceid" "0" - Draws the index of world surfaces. Can be filtered with mat_surfacefilter. 
+mat_surfacemat" "0" - Draws the material name of world surfaces. Can be filtered with mat_surfacefilter. 
+mat_syncGPU" "0" - If true, syncs the render thread to the GPU at the end of each frame, instead of letting the render thread get one frame ahead. 
+mat_syncInterval" "1" - Number of frames to skip per sync. 0 = novsync, 1 = 60 fps, 2 = 30, 3 == 20, 4 = 15, etc. 
+mat_sync_rt" "0" - Sync the render thread after each queued call. This is really slow, but makes debugging much easier. 
+mat_sync_rt_flushes_gpu" "0
+mat_texture_list" "0" - For debugging, show a list of used textures per frame 
+mat_texture_list_view" "1" - If this is nonzero, then the texture list panel will render thumbnails of currently-loaded textures. 
+mat_translucency_errors" "0
+mat_use_compressed_hdr_textures" "1
+mat_viewportscale" "1.0" - Scale down the main viewport (to reduce GPU impact on CPU profiling) 
+mat_viewportupscale_tsaa" "1
+mat_vignette_enable" "0
+mat_vsync" - Set vsync enabled 
+mat_warn_texture_convert" "0" - Print warnings for textures that had to be converted at load time, slowing down loads. 0 = off, 1 = old size not smaller, 2 = any change 
+match_abortAllSearches
+match_backingOutMaxTimeToWait" "60
+match_backoutslow" "0" - Forces empty server queries (for backing out of a lobby) to take this long 
+match_connect" "1" - If set to 0, we won't actually connect to any matchmaking results we get back 
+match_defaultMap" "mp_lobby" - Default map to load if the dedicated server is empty 
+match_dir" "" - What dir to look in for the matchmaking scripts 
+match_dumpSearchResults" "0" - Dumps search result text to the console 
+match_emptyUpdateRate" "30
+match_enabled" "1
+match_fakePort" "-1" - Lie about our port number (so players can't connect) 
+match_fakeS2SPort" "-1" - Lie about our s2s port number (so servers can't connect) 
+match_forceGoalsChangingFrequency" "0
+match_forceVerboseSearches" "0
+match_goodReputation" "1
+match_maxPingsSent" "8
+match_myDatacenter" "west us" - Which datacenter we prefer 0x00080200
+match_myTeam" "0
+match_partyChangeNum" "" - The int that represents the change num of our party struct (did it change?) 
+match_partySize" "" - The size of our party 
+match_partySub" "" - The name of our party subscription 
+match_pingWaveInterval" "0.5
+match_playlist" "" - The playlist we are looking for 0x00080200
+match_searchForPartyServer
+match_searchInterval" "2" - How often to repeat searches 0x00080000
+match_searching" "0" - Whether or not we want the system to be actively searching right now 0x00080200
+match_showAllSearches
+match_teamsDisplayAsBalanced" "0
+match_updateNotableRate" "5
+match_updateRate" "30
+match_useMatchmaking" "0" - This dedi is a matchmaking dedi 
+match_warningLifetime" "15" - The maximum lifetime of a search before we start warning people about it 
+matchmake
+matchmake_cancel
+matchmaking_hostname" "
+max_explosive_damage_mass" "100" - Anything heavier than this will be clamped. (units kg) 
+max_explosive_damage_velocity" "200" - inches/sec 
+maxplayers" - Change the maximum number of players allowed on this server. 
+melee_debug_execution" "0
+mem_compact
+mem_dump" - Dump memory stats to text file. 
+mem_dumpstats" "0" - Dump current and max heap usage info to console at end of frame ( set to 2 for continuous output )
+ 
+mem_eat
+mem_force_flush" "0" - Force cache flush of unlocked resources on every alloc 
+mem_force_flush_section" "" - Cache section to restrict mem_force_flush 
+mem_incremental_compact
+mem_incremental_compact_rate" ".5" - Rate at which to attempt internal heap compaction 
+mem_level" "2" - Memory Level - Default: High 
+mem_max_heapsize" "1024" - Maximum amount of memory to dedicate to engine hunk and datacache (in mb) 
+mem_max_heapsize_dedicated" "64" - Maximum amount of memory to dedicate to engine hunk and datacache, for dedicated server (in mb) 
+mem_min_heapsize" "48" - Minimum amount of memory to dedicate to engine hunk and datacache (in mb) 
+mem_runheapchecks" "0
+mem_test
+mem_test_each_frame" "0" - Run heap check at end of every frame
+ 
+mem_test_every_n_seconds" "0" - Run heap check at a specified interval
+ 
+mem_test_quiet" "0" - Don't print stats when memtesting 
+mem_textures
+mem_vcollide" - Dumps the memory used by vcollides 
+mem_verify" - Verify the validity of the heap 
+mem_vram
+memory" - Print memory stats. 
+menu_faq_patchnotes_version" "-1" -  0x01000008
+menu_faq_viewed" "0" -  0x01000008
+migrate_attempt_interval" "5.0f
+migrateme" - Ask your server to migrate you over to another server 0x10000000
+miles_actor_occlusion_radius" "8.0" - Distance which must be penetrated for one of the entity check points to be considered occluded. 
+miles_channels" "0" - Number of audio channels, commonly 2(stereo), 6(5.1), 8(7.1). (0 is default) 
+miles_event_info" - Shows information about a particular event. 
+miles_flip_active_window_logic" "0" - Only hear audio when NOT the active window. 
+miles_force_current_angles" "0" - Always keep active event angles up-to-date, even when not using CurrentAngle controller. 
+miles_force_emitter_environment" "" - Force Environment on played sounds and entities (per-event controllers and suffixes.) 
+miles_force_listener_environment" "" - Force environment on listener (i.e., global controller changes only) 
+miles_freeze" "0" - When 1, sound is paused and incoming play events are ignored. 
+miles_initial_occlusion_defer" "1" - Defer traces on new sounds. 
+miles_initial_occlusion_delay" "0" - Time (in msec) to delay new sounds when we defer their traces. 
+miles_language" "" - Language to use for audio (requires a restart to change.) 
+miles_listener_freeze" "0" - When 1, stop updating listener position. 
+miles_map_begin_fade_start_db" "-72.0" - Initial DB to fade from when beginning a level. (Should be negative.) 
+miles_map_begin_fade_time" "1.5" - Seconds of fade time when beginning a level. 
+miles_map_begin_silence_time" "0.5" - Seconds of silence before fade time when beginning a level. 
+miles_max_sounds_per_server_frame" "50
+miles_nonactor_occlusion" "1" - Do traces to determine when non-entity sounds are occluded. 
+miles_nonactor_occlusion_radius" "8.0" - Distance which must be penetrated for a non-entity sound to be considered occluded. 
+miles_nopandist" "10" - Distance at which panning is forced to center-front. 
+miles_occlusion" "1" - When nonzero, perform occlusion checks 0x01000008
+miles_occlusion_force" "-1" - -1 - Normal, 0 - Force all unoccluded, 1 - Force all occluded 
+miles_play" - Plays a given alias at an optional given position 
+miles_reboot" - restarts the audio engine 
+miles_samplerate" "0" - Sample rate, commonly 48000, 44100, 22050, or 11025 (0 is default) 
+miles_server_sounds_debug" "0
+miles_server_sounds_print" "0
+miles_solo_ents" "" - Only play sounds from this entity index (or space-separated list of indices.) 
+miles_stop_all" - stops all playing sounds 
+miles_suffixes" "1" - Use emitter suffixed versions of sounds. 
+min_explosive_damage_mass" "20" - Anything lighter than this will be clamped. (units kg) 
+miniprofiler_dump" "0
+missile_debug_draw" "0
+missile_default_life_time" "3.0
+missile_default_speed" "2500
+missile_homing_speed" "150
+mmdevinit
+mod_check_vcollide" "0" - Check all vcollides on load 
+mod_trace_load" "0
+model_collision_errors" "0
+model_defaultFadeDistMin" "400" - Default minimum fade distance. 
+model_defaultFadeDistScale" "40" - Factor that is multiplied by the model's radius to get the default fade distance. 
+model_fadeRangeFraction" "0.1" - Fraction of the fade distance to fade over. 
+modeldecals_forceAllowed" "-1" - If 0 don't generate decal data for any models. If 1 generate decal data for all models. Otherwise do according to the qc. 
+motd" "
+mouse_sensitivity" "5" - Mouse sensitivity. 
+mouse_sensitivity_zoomed" "5" - Mouse sensitivity. 
+move_one_cmd_per_client_frame" "1" - Force clients to generate exactly one user command per client frame. There will not be a one-to-one relationship between cmds and ticks. 
+movement_anim_playback_maxrate" "10
+movement_anim_playback_minrate" "0.25
+movement_anim_sprint_playback_maxrate" "1.25
+mp_allowNPCs" "1
+mp_allowed" "-1
+mp_autocrosshair" "1
+mp_bodyyawrate" "400
+mp_class_max_dronecontroller" "-1" - Max allowed dronecontrollers. 
+mp_class_max_fireteam" "-1" - Max allowed fireteams. 
+mp_class_max_pilot" "-1" - Max allowed pilots. 
+mp_class_max_titan" "-1" - Max allowed titans. 
+mp_defaultteam" "0
+mp_enablematchending" "1" - When set to 0, match will not end 
+mp_enabletimelimit" "1" - enable mp_timelimit timer in games 
+mp_footsteps" "1
+mp_fraglimit" "20000
+mp_friendlyfire" "1" - Allows team members to injure other members of their team 
+mp_gamemode" "" - Current game mode name 0x00012008
+mp_maxbodyyaw" "60
+mp_permission_requestInterval" "30
+mp_player_level" "0" - To read mp player level in SP 0x01000008
+mp_scaleAnimationSpeeds" "1
+mp_showgestureslots" "-1" - Show multiplayer client/server gesture slot information for the specified player index (-1 for no one). 
+mp_teamlist" "hgrunt;scientist
+mp_teamoverride" "1
+mp_weaponstay" "0
+multvar" - Multiply specified convar value. 0x00020000
+muteWeaponSounds" "0
+muteroom" - Mute the chatroom 
+name" "unnamed" - Current user name 0x10000680
+navmesh_move_along_surface_asserts" "0
+navmesh_normal_links_only" "0
+net_RunInvalidatePhysics" "1
+net_async_sendto" "0
+net_autoUnthrottle" "0
+net_bindToSpecificAddress" "0" - Only bind to a certain interface 0x00080000
+net_blockmsg" "none" - Discards incoming message: <0|1|name> 
+net_channels" - Shows net channel info 
+net_chatThroughChatserver" "0
+net_chokeloop" "0" - Apply bandwidth choke to loopback packets 
+net_client_side_weapon_animations" "1" - Enable/disable client side weapon animations. Only apply to already optimized weapons, eg. rapid fire instant hit weapons like xo16, r101 etc. 
+net_compresspackets" "0" - Use lz compression on game packets. 
+net_compresspackets_minsize" "1000" - Don't bother compressing packets below this size. 
+net_connectingDataRate" "128000
+net_createUndoDeltas" "1
+net_data_block_enabled" "1" - Enable/disable net data block optimization for load times. When disabled large chunks are sent down via existing netchan reliability system instead of net data blocks. 
+net_debugLerping" "-1
+net_deltaFieldEntityBlockSize" "5
+net_drawslider" "0" - Draw completion slider during signon 
+net_droppackets" "0" - Drops next n packets on client 
+net_dumpChangesPrecise" "0" - Prints floats at full precision 
+net_fakelag" "0" - Lag all incoming network data (including loopback) by this many milliseconds. 
+net_fakelag_clientOnly" "1" - Fakelag won't affect the server, only clients 
+net_fakelagjitter" "0" - Jitter net_fakelag packet time 
+net_fakeloss" "0" - Simulate packet loss as a percentage (negative means drop 1/n packets) 
+net_forceDeltaBufferToOverflow" "0
+net_forceUnnecessaryUndoDeltas" "0
+net_forcetimeout" "0
+net_fullyConnectedDataRate" "128000
+net_ignoreAllSnapshots" "0" - Drop all snapshot messages 
+net_lerpFields" "1
+net_lowBandwidthConnect" "1
+net_maxcleartime" "4.0" - Max # of seconds we can wait for next packets to be sent based on rate setting (0 == no limit). 
+net_maxfilesize" "16" - Maximum allowed file size for uploading in MB 
+net_maxfragments" "1200" - Max fragment bytes per packet 
+net_maxroutable" "1200" - Requested max packet size before packets are 'split'. 
+net_minroutable" "16" - Forces larger payloads. 
+net_noPostDataForDeletedEnts" "1
+net_old_seed_generation" "0
+net_optimize_persistent_data" "1
+net_optimize_playlists" "1
+net_optimize_weapons" "2" - Enable/disable bandwidth optimizations made to weapons. Additional experimental optimizations can be enabled values 2 (weapon player data) and 3 (client side weapon animation) 
+net_predictParentEntities" "0
+net_predictedEntsUseFirstAvailableSnapshot" "1
+net_predictionDebug" "0
+net_pretendSnapshotArrayFull" "0" - Pretend the client snapshot array is full even when it isn't 
+net_printOutOfSnapshots" "1
+net_printUnnecessaryDeltas" "0
+net_propSkipPrintThreshold" "1000" - Show prop skips more than this many apart 
+net_public_adr" "" - For servers behind NAT/DHCP meant to be exposed to the public internet, this is the public facing ip address string: ("x.x.x.x" ) 0x00080000
+net_queue_trace" "0" -  0x02000000
+net_queuedPackets_PrintOversleeps" "0
+net_queuedPackets_SkipSmallSleeps" "2
+net_queued_packet_thread" "1" - Use a high priority thread to send queued packets out instead of sending them each frame. 
+net_recreateScriptInstanceOnReplayTransition" "1
+net_recv_dumpChanges" "0
+net_recv_watchEnt" "-1
+net_recv_watchField1" "
+net_recv_watchField2" "
+net_scriptPrintRemoteUsage" "0
+net_showQueued" "0
+net_showUndoDeltas" "0
+net_showdrop" "0" - Show dropped packets in console 
+net_showfragments" "0" - Show netchannel fragments 
+net_showmsg" "0" - Show incoming message: <0|1|name> 
+net_showpeaks" "0" - Show messages for large packets only: <size> 
+net_showsendrecv" "0" - Show sendto and recvfrom calls 
+net_showsplits" "0" - Show info about packet splits 0x00080000
+net_showudp" "0" - Dump UDP packets summary to console 0x00080000
+net_showudp_oob" "0" - Dump OOB UDP packets summary to console 0x00080000
+net_showudp_remoteonly" "0" - Dump non-loopback udp only 0x00080000
+net_showusercmd" "0" - Show user command encoding 
+net_skipUnnecessaryDeltas" "1
+net_splitpacket_maxrate" "128000" - Max bytes per second when queuing splitpacket chunks 0x00080000
+net_splitrate" "3" - Number of fragments for a splitpacket that can be sent per frame 0x00080000
+net_splitrateDefaultMP" "3" - Default MP number of fragments for a splitpacket that can be sent per frame 0x00080000
+net_splitrateDefaultSP" "10000" - Default SP number of fragments for a splitpacket that can be sent per frame 0x00080000
+net_start" - Inits multiplayer network sockets 
+net_status" - Shows current network status 
+net_sv_showusercmd" "0" - Show user command decoding 
+net_tamperPackets" "0
+net_threadedEntityDeltas" "1
+net_threadedProcessPacket" "1
+net_usesocketsforloopback" "0" - Use network sockets layer even for listen server local player's packets (multiplayer only). 
+net_verifyEncryption" "0
+net_voiceEchoFromChatServer" "0
+net_warnAboutSocketReadGaps" "200" - Warn if we are waiting longer than this to check a socket for new packets 
+net_worldHitchSlopTime" "0.031
+net_writeStatsFile" - Write out networking info to a file
+ 
+new_lerping_showAnimTransitions" "0" - Turns entities red when they change anim sequences, colors them blue when we have no current cycle data to lerp to (aka they aren't animating) 
+next" "0" - Set to 1 to advance to next frame ( when singlestep == 1 ) 
+nextdemo" - Play next demo in sequence. 
+noclip_fixup" "1
+not_focus_sleep" "50" - MS to sleep while window doesn't have focus 
+notification_displayTime" "10" - How long notifications should wait before auto-hiding 
+npc_sight_mode" "2" - Each mode represents different visual additions to npc_sight. (0: barebones) (1: near->intersection corner lines) (2: curved intersection lines) 
+npc_titan_always_block_projectile_health" "50" - At this health and below always try to vortex projectiles 
+npc_titan_block_projectile_chance" "10" - Chance to use vortex/particle wall on projectile before taking damage at full health. Scales up to 100 npc_titan_always_block_projectile_health 
+npc_titan_footstep_sound_radius" "700" - How far other enemies will hear this titan sound 
+npc_titan_light_pain_threshold" "80" - Amount of damage a titan must take on a single damage to do light pain 
+npc_titan_phys_ignore_mass" "300" - Minimum mass of physics objects that the titan will collide with 
+npc_titan_phys_knock_damage" "50" - Damage applied to objects the titan knocks away 
+npc_titan_phys_knock_mass" "2000" - Maximum mass of physics objects that the titan will knock away 
+npc_titan_phys_knock_radius" "100" - Maximum distance of physics objects a titan can knock away 
+npc_titan_phys_knock_speed" "500" - Speed at which the titan knocks physics objects away 
+nucleus_hostname" "
+nucleus_pid" "0
+nucleus_skip_registration" "0" -  0x01000008
+number_shortenToMillionsAfter" "2000000
+offhandTossOverheadPitchThreshold" "-1.0
+openInvite_spam" "1" - Whether open invites should spam to the console log 
+openInvites_filterByLanguage" "1
+openInvites_filterByRegion" "1
+openinvite" - Send an open invite to the chat room 
+openinvite_duration_default" "10
+openinvitecomplete" - Open Invite is complete (we have our search results and reservation is done) 
+openinvitelaunch" - Open Invite should launch 
+operator_debug_trace" "0
+ordnancePickupSound" "player_ordinance_pickup
+ordnanceSwapSelectCooldown" "0.25
+origin_autoRefreshToken" "0
+origin_debug" "0" - Enable Origin HTTP debug logging (all HTTP queries and responses, token data etc.) 
+origin_presense_update" "10" - Minimum time between origin updates in seconds. 
+origin_ticketFailureMaxBackoffSeconds" "10
+origin_tokenFailureMaxBackoffSeconds" "10
+panel_showVisChanges" "0
+panel_test_title_safe" "0" - Test vgui panel positioning with title safe indentation 
+parenting_clearParentOriginFix" "1
+parenting_debug" "0
+particle_alwayswakeonstop" "1
+particle_cpu_level" "0
+particle_create" - Creates the named particle effect at the location under the crosshair. 
+particle_dlights_enable" "1
+particle_dlights_spew" "0
+particle_dump" - dumps particles matching provided filter (id or defname substring or *) 
+particle_gpu_level" "0
+particle_kill" - Destroys the particle effect created with the particle_create console command. 
+particle_list" - lists particles all, or matching optional filter (id or defname substring) 
+particle_overlay" "0" - Show particle overlay (2 for same as particle_overlay_list_tally) 
+particle_overlay_detail_attributes" "alpha" - Space separated list of attributes to show per particle - 'duration xyz prev_xyz radius color alpha length' 
+particle_overlay_detail_filter" "" - Filters which particles to see in detail - can be id or substring or * 
+particle_overlay_detail_scroll" "0" - Skip this many rows in particle overlay detail 
+particle_overlay_hide_sleeping" "0" - Hide sleeping effects in particle overlay 
+particle_overlay_list_filter" "*" - Filters which particles to see in list - can be id or substring or * 
+particle_overlay_list_tally" "0" - Show tally of particle counts, rather than list (same as particle_overlay 2) 
+particle_overlay_list_tally_collapse_children" "1" - Collapse children in tally-- only show totals at top level. 
+particle_overlay_scroll" "0" - Skip this many rows in particle overlay 
+particle_recreate" - Replays the last particle effect created with the particle_create console command. 
+particle_script_dump" "-1" - particle_script_dump SCRIPT_HANDLE 
+particle_script_list" "
+particle_script_log" "-1" - particle_script_log SCRIPT_HANDLE 
+particle_simulateoverflow" "0" - Used for stress-testing particle systems. Randomly denies creation of particles. 
+particle_test_attach_attachment" "0" - Attachment index for attachment mode 
+particle_test_attach_mode" "follow_attachment" - Possible Values: 'start_at_attachment', 'follow_attachment', 'start_at_origin', 'follow_origin' 
+particle_test_file" "" - Name of the particle system to dynamically spawn 
+particle_test_start" - Dispatches the test particle system with the parameters specified in particle_test_file,
+ particle_test_attach_mode and particle_test_attach_param on the entity the player is looking at.
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at  
+particle_test_stop" - Stops all particle systems on the selected entities.
+	Arguments:   	{entity_name} / {class_name} / no argument picks what player is looking at  
+particles_cull_all" "0" - Don't spawn any particle systems.  Effectively the same as setting the cpu level below the lowest level on any effect. 
+particles_cull_dlights" "1
+particles_max_passes" "10
+particles_spawncull" "1
+particles_spawncull_report" "0
+particles_try_reloading_sheets" "0
+party_doRealNameLookups" "0
+party_doRealNameLookupsForOwner" "0
+party_hostname" "
+party_keepAliveTime" "60" - How often party clients should send a keepalive packet 
+party_leave" - quit the current party 
+party_lookupRealNamesForOpenInvites" "0
+party_lookupRealNamesForOpenInvitesForOwner" "0
+party_serverChange" - update the party with new server info 
+password" "" - Current server access password 0x20020080
+path" - Show the engine filesystem path. 
+pause" - Toggle the server pause state. 
+penetration_fix_scale" "4.0
+persistence_compressOnSave" "1
+persistence_debug" "0
+persistence_disableForBuildProcess" "0
+persistence_domain" "R2
+persistent_warningRate" "1
+pertrianglecollision" "1" - Enables per-triangle collision with TRACEDETAILLEVEL_HIGH (i.e., bullets) on static models. 
+pertrianglecollision_draw" "0" - Enable per-triangle collision debug drawing. 
+pertrianglecollision_fastdebug" "0" - Check all triangles, for debugging. 
+pertrianglecollision_perf" "0" - Print static model triangle collision times to console. 
+phys_bounce" "0.2
+phys_cfm" "0.0001
+phys_cfm_anglejointstop" "0.0001
+phys_debug_check_contacts" "0
+phys_drawContacts" "0
+phys_drawGeoms" "0
+phys_drawTunnelChecks" "0
+phys_enable_PIX_counters" "1" - enable PIX counters 
+phys_enable_experimental_optimizations" "0" - enable some experimental SIMD/VMX128 optimizations in physics and collision 
+phys_enable_simd_optimizations" "1" - enable some additional SIMD/VMX128 optimizations in physics and collision 
+phys_erp" "0.05
+phys_erp_anglejointstop" "0.05
+phys_friction" "0.82
+phys_impactforcescale" "1.0
+phys_maxCollisionsPerFrame" "2400
+phys_objectDump" - Dump a list of the active objects on the client. 0x00020008
+phys_penetration_error_time" "10" - Controls the duration of vphysics penetration error boxes. 
+phys_showObjectCount" "0
+phys_show_active" "0
+phys_speeds" "0
+phys_stressbodyweights" "5.0
+phys_throw_client" - Throws an entity of the given type where the player is looking. 
+phys_timescale" "1" - Scale time for physics 
+phys_upimpactforcescale" "0.375
+physics_allow_buoyancy" "1
+physics_async_cl" "1" - Run physics simulation asynchronously from the main thread. 
+physics_async_sv" "0" - Run physics simulation asynchronously from the main server thread. 
+physics_autoSleepAngularThreshold" "120" - Angular speed below which a physic object goes to sleep. (in degrees / second) 
+physics_autoSleepDebug" "0
+physics_autoSleepGroundHysteresis" "1
+physics_autoSleepSpeedThreshold" "20" - Speed below which a physic object goes to sleep. 
+physics_broadphase_max_range" "10.0f" - Silently ignore radii larger than this in physics collision 
+physics_budget" - Times the cost of each active object 
+physics_coll_debug" "0
+physics_collideWithMovingGeo" "1
+physics_constraints" - Highlights constraint system graph for an entity 
+physics_debug_entity" - Dumps debug info for an entity 
+physics_defaultMaxAngularSpeed" "10000
+physics_defaultMaxSpeed" "10000
+physics_dump_tree" "0
+physics_highlight_active" - Turns on the absbox for all active physics objects 
+physics_max_single_md_count" "1000
+physics_pp_broadphase" "1" - Process broadphase physics collision in parallel 
+physics_pp_hles" "0" - True to do mindist hull recalcs in parallel 
+physics_pp_hulls" "0" - Process hull recalculations in parallel 
+physics_pp_mindist_events" "1" - Recalculate next mindist event times in parallel. 
+physics_pp_mindists" "1" - Process mindist creation in parallel 
+physics_pp_recalcs" "1" - True to do mindist recalcs in parallel 
+physics_pp_simunits" "0" - Process physics simulation units in parallel 
+physics_report_active" - Lists all active physics objects 
+physics_scaled_mem" "0" - Amout of extra memory taken by scaled collision meshes 
+physics_select" - Dumps debug info for an entity 
+physics_tree_debug" "0
+physics_tree_debug_level_only" "-1
+physics_tree_debug_levels" "-1
+physics_tunnelChecks" "1" - Do traces to prevent physics objects from falling through the world. 
+physics_tunnelChecksForceAlways" "0" - Require objects to do tunnel checks every frame. 
+physics_use_static_bvh" "1
+physicsshadowupdate_render" "0
+picker" - Toggles 'picker' mode.  When picker is on, the bounding box, pivot and debugging text is displayed for whatever entity the player is looking at.
+	Arguments:	full - enables all debug information 
+pin_plat_id" "0" - Platform user id for PIN 
+pin_telemetry_actually_send" "1
+pin_telemetry_debug" "0
+pin_telemetry_debug_script" "0
+pin_telemetry_hostname" "
+pin_telemetry_max_payload_size" "97280
+pin_telemetry_send_debug" "0
+ping" - Display ping to server. 
+ping_debug" "0" - Debug latency calculation. 
+ping_max_green" "70
+ping_max_red" "250
+ping_max_yellow" "140
+ping_show_measured" "1" - Use only the measured value for ping reporting. 
+pingdatacenters" - Re-pings the datacenters 
+pixelvis_debug" - Dump debug info 
+pixvis_enable" "1
+pixvis_maxquads" "256" - Change the upper bound on how many 2x2 quads to sample for pixel visibility 
+pixvis_spew" "0
+plat_environment" "
+plat_retryNameLookups" "1
+platform_description" "
+platform_user_id" "0" - Platform user id (origin user id on PC, xuid on xboxone) 
+playdemo" - Play a recorded demo file (.dem ). 
+playerDeathAnimMaxFrames" "300" - Max length of a death animation, in server frames. 
+playerListPartyColorB" "204
+playerListPartyColorG" "255
+playerListPartyColorR" "179
+playerSettings_reparse" - Reload player class settings from .set files 
+player_debugPredictedPosition" "0
+player_debug_print_damage" "0" - When true, print amount and type of all damage received by player to console. 
+player_deltaAnimsMakeMeUnpredicted" "0
+player_extraairaccelleration" "2.0" - Extra air acceleration given to players, even if they're already at max speed. Helps to start wall running 
+player_find_rodeo_target_per_cmd" "1" - Run FindRodeoTarget callback 
+player_max_command_contexts" "1000
+player_movementBounds_predictionShare" "1
+player_movement_debug" "0" - Draws player origin changes from player movement code 
+player_movingDeathThreshold" "50
+player_old_armor" "0
+player_respawnInputDebounceDuration" "0.5" - How long after respawning will certain player inputs be debounced for 
+player_restore_use_SetLocalAngles" "0
+player_restore_use_UpdateCurrentPlayerClass" "0
+player_share_squad_info" "1" - Player shares enemy information with AI squad 
+player_showEyePosition" "0
+player_showpredictedposition" "0
+player_showpredictedposition_timestep" "1.0
+player_useMovementBounds" "1
+player_viewchange_debug_pitch" "20
+player_viewchange_debug_roll" "9
+player_viewchange_debug_yaw" "160
+playerlist_showGen" "0
+playlist_autoupdate" "0
+playlist_debug" "0
+playlist_debug_getvar" "0
+playlist_debug_localization" "0
+playlist_errorOnDeprecated" "0
+playsoundscape" - Forces a soundscape to play 
+playvideo" - Plays a video: <filename> [width height] 
+playvideo_end_level_transition" - Plays a video fullscreen without ability to skip (unless dev 1) and fades in: <filename> <time> 
+playvideo_exitcommand" - Plays a video and fires and exit command when it is stopped or finishes: <filename> <exit command> 
+playvideo_exitcommand_nointerrupt" - Plays a video (without interruption) and fires and exit command when it is stopped or finishes: <filename> <exit command> 
+playvideo_nointerrupt" - Plays a video without ability to skip: <filename> [width height] 
+pm_ai_lethality" "0
+pm_ai_type" "0
+pm_burn_cards" "0
+pm_dev0" "0
+pm_dev1" "0
+pm_pilot_ammo" "0
+pm_pilot_health" "0
+pm_pilot_minimap" "0
+pm_pilot_respawn_delay" "0
+pm_score_limit" "0
+pm_time_limit" "0
+pm_titan_build" "0
+pm_titan_rebuild" "0
+pm_titan_shields" "0
+portal_pointpush_debug" "0" - Debug the portal_pointpush. 
+portal_pointpush_think_rate" "0.05f" - The amount of time between thinks for the portal_pointpush. 
+portal_use_player_avoidance" "0
+postdataupdate_threaded" "1
+postdataupdate_threaded_chunksize" "2
+prevent_ammo_suck" "0" - stops weapons from sucking up ammo 
+print_colorcorrection" - Display the color correction layer information. 
+print_timeprefix" "1
+progress_enable
+progressbar_allow_wrap" "1" - Allow loading bar to wrap. 
+progressbar_high_precision" "0" - Use a higher precision bar. 
+progressbar_single_bar" "1" - Use a single bar. 
+projectile_fake_prediction_in_kill_replay" "1" - Calls weapon primary-attack callbacks on client during replay to create predicted projectiles 
+projectile_faketrails" "1" - Enables fake projectile trails when the projectile impacts on the server before lag compensation is complete 
+projectile_filltrails" "3" - Fill the gap between the gun barrel and the first seen projectile position for trail Fx (1: 1st person only, 2: 3rd person only, 3: 1st and 3rd persons) 
+projectile_lagCompensationDebug" "0" - Draws lag compensation on projectiles 
+projectile_lagCompensationDebugDrawTime" "3.0" - Amount of time debug drawing persists with projectile_lagCompensationDebug enabled. 
+projectile_lagCompensationMissileTimeStepScalar" "1.0" - Scales the time step used for seeking missiles in lag compensation 
+projectile_muzzleOffsetFirstPersonDecayDist" "1000" - Distance over which projectiles fake their origin to come out of the gun muzzle 
+projectile_muzzleOffsetFirstPersonDecayMaxTime" "0.3" - Max time over which projectiles fake their origin to come out of the gun muzzle 
+projectile_muzzleOffsetThirdPersonDecayDist" "1000" - Distance over which projectiles fake their origin to come out of the gun muzzle 
+projectile_muzzleOffsetThirdPersonDecayMaxTime" "0.1" - Max time over which projectiles fake their origin to come out of the gun muzzle 
+projectile_prediction" "1" - Performs client-side prediction and lag compensation on projectiles 
+projectile_predictionErrorCorrectTime" "0.3" - Time over which prediction errors are corrected for projectiles 
+prop_active_gib_limit" "64
+prop_active_gib_max_fade_time" "12
+prop_break_disable_float" "1
+prop_crosshair" - Shows name for prop looking at 
+prop_debug" - Toggle prop debug mode. If on, props will show colorcoded bounding boxes. Red means ignore all damage. White means respond physically to damage but never break. Green maps health in the range of 100 down to 1. 
+prop_lightweightPropsSkipAnimData" "0
+props_break_burst_rotation" "100" - Rate of rotation in degrees per second. 
+props_break_max_pieces" "-1" - Maximum prop breakable piece count (-1 = model default) 
+props_break_max_pieces_perframe" "20" - Maximum prop breakable piece count per frame (-1 = model default) 
+publication_hostname" "
+push_cl" "1" - 1: Moving geo pushes client entities, 0: Client entities do not get pushed 
+push_cl_always_update_prev_matrix" "0
+push_debug" "0" - Debug all pushing entities 
+push_debug_ent" "-1" - Debug pushing entity 
+push_player_nearby_dist" "12" - Player distance offset for looking for nearby safe locations when they're about to be squished 
+push_ragdolls" "1" - Toggles whether to push ragdoll entities 
+putEntityInSafeSpot_debug" "0
+pvs_addWorkItemsThreshold" "250
+pvs_debug" "0
+pvs_drawPortals" "0" - Draw portals 
+pvs_extraCull" "1
+pvs_start_early" "2" - 0 not early, 1 after view setup, 2 after threaded bone setup 
+pvs_yield" "1" - When multithreading, yield CPU to let some other tasks run instead 
+quit" - Exit the engine. 
+r_AirboatViewDampenDamp" "1.0
+r_AirboatViewDampenFreq" "7.0
+r_AirboatViewZHeight" "0.0
+r_DrawBeams" "1" - 0=Off, 1=Normal, 2=Wireframe 
+r_JeepViewDampenDamp" "1.0
+r_JeepViewDampenFreq" "7.0
+r_VehicleViewDampen" "1
+r_WaterDrawReflection" "1" - Enable water reflection 
+r_WaterDrawRefraction" "1" - Enable water refraction 
+r_aspectratio" "0
+r_bloomtintb" "0.11
+r_bloomtintexponent" "2.2
+r_bloomtintg" "0.59
+r_bloomtintr" "0.3
+r_blurmenubg" "1" - Blurs background when menus are open 
+r_brush_queue_mode" "0
+r_cheapwaterend
+r_cheapwaterstart
+r_cleardecals" - Usage r_cleardecals <permanent>. 0x40000000
+r_createmodeldecals" "1
+r_debug_draw_box_depth_test" "1" - Toggle depth test for debug draw box functionality 
+r_decal_cover_count" "4
+r_decal_cull_stretch_limit" "0.707" - Reciprocal of per-tri limit on decal stretching (0 is most permissive, 1 is most restrictive.) 
+r_decal_draw_basis" "0
+r_decal_drawclipped" "0" - A bit-field! 1:Draw decal debug triangle overlays of *all* potential hits, 2:Draw actual hits, 4:Draw clipped hits 
+r_decal_overlap_area" "1.0
+r_decal_overlap_count" "3
+r_decal_test_scale" "1.0
+r_decals" "256
+r_depthoverlay" "0" - Replaces opaque objects with their grayscaled depth values. r_showz_power scales the output. 
+r_ditherAlpha" "1" - If true, does a dither pattern for alpha fading. 
+r_ditherFade" "1
+r_ditherFadeShadows" "1
+r_drawallrenderables" "0" - Draw all renderables, even ones inside solid leaves. 
+r_drawalphasort" "1
+r_drawbrushmodels" "1" - Render brush models. 0=Off, 1=Normal, 2=Wireframe 
+r_drawdecals" "1" - Render decals. 
+r_drawdlights" "0" - whether to debug draw dlights 
+r_drawentities" "1" - 0: dont' draw; 1: draw normal; 2: draw bones; 3: draw hulls 
+r_drawlightinfo" "0
+r_drawmodelsinzfill" "1" - Draw models in the zfill pass where they will affect light tile culling 
+r_drawmodelstatsoverlay" "0" - Draws information for static props and other models (0,1,2) 
+r_drawmodelstatsoverlaydistance" "500
+r_drawmodelstatsoverlayfilter" "-1
+r_drawmodelstatsoverlaymax" "1.5" - time in milliseconds beyond which a model overlay is fully red in r_drawmodelstatsoverlay 2 
+r_drawmodelstatsoverlaymin" "0.1" - time in milliseconds that a model must take to render before showing an overlay in r_drawmodelstatsoverlay 2 
+r_drawopaquerenderables" "1
+r_drawothermodels" "1" - Enables drawing 'other' (C_BaseAnimating) models 
+r_drawparticles" "1" - Enable/disable particle rendering 
+r_drawrenderboxes" "0
+r_drawscreenspaceparticles" "1
+r_drawsky" "1" - Enable the rendering of sky 
+r_drawskybox_deprecated" "1" - Enable the rendering of sky boxes 
+r_drawsprites" "1
+r_drawstaticlight" "0" - 0 = none, -1 = all, other draws that light index 
+r_drawstaticprops" "1" - Toggle drawing of static props 
+r_drawtracers" "1
+r_drawtranslucentrenderables" "1
+r_drawvgui" "1" - Enable the rendering of vgui panels 
+r_drawviewmodel" "1
+r_drawworld" "3" - Render the world (0 = none, 1 = opaque only, 2 = trans only, 3 = both). 
+r_dxgi_max_frame_latency" - Set the max number of command buffers in flight. 0 will set it to the DXGI default of 3. Make sure you are not forcing "Maximum pre-rendered frames" in the driver settings, but leave it application controlled. 
+r_dynamic" "1
+r_earlyRenderables" "1
+r_fadeincode" "0
+r_farz" "-1" - Override the far clipping plane. -1 means to use the value in env_fog_controller. 
+r_fastzreject" "0" - Activate/deactivates a fast z-setting algorithm to take advantage of hardware with fast z reject. Use -1 to default to hardware settings 
+r_forcecheapwater" "0" - Force all water to be cheap water, will show old renders if enabled after water has been seen 
+r_hbaoBias" "0.1" - Bias of HBAO kernel 
+r_hbaoBlurRadius" "8" - Radius of HBAO blur kernel: 4 or 8 
+r_hbaoBlurSharpness" "4.0" - Sharpness of HBAO blur kernel 
+r_hbaoDebugModeOverride" "-1
+r_hbaoDepthFadePctDefault" "0.5" - Pct of HBAO far range to spend linearly fading out, when fog is not present 
+r_hbaoDepthMax" "2000.0" - Maximum HBAO depth 
+r_hbaoDepthSharpnessScale" "2.0" - Scale factor for HBAO fade out slope: 2.0 means twice as long 
+r_hbaoDistanceLerp" "0.05" - Blend factor from the smaller exp vertical fog half dist to the larger dist 
+r_hbaoEnabled" "0
+r_hbaoExponent" "4.0" - Exponent of HBAO kernel 
+r_hbaoIntensity" "1.0" - Controls overall darkness of HBAO 
+r_hbaoRadius" "1.0" - Radius of HBAO kernel in meters 
+r_jiggle_bones" "1
+r_lightmap" "-1
+r_lightprobe_trans_rate" "0.03125" - One over the distance an entity must travel to fully transition between light probes. 
+r_lightstyle" "-1
+r_lod" "-1
+r_lod_switch_scale" "1
+r_mapextents" "16384" - Set the max dimension for the map.  This determines the far clipping plane 
+r_modeldecal_maxtotal" "75
+r_nearz" "7" - Near clipping plane distance 
+r_no_stalls" "0
+r_norefresh" "0
+r_particle_sim_spike_increment_ms" "0.25
+r_particle_sim_spike_threshold_ms" "0
+r_particle_timescale" "1.0
+r_partition_level" "-1" - Displays a particular level of the spatial partition system. Use -1 to disable it. 
+r_partition_size" "8" - How many voxels to draw from the origin 
+r_pos_debug" "
+r_printdecalinfo
+r_randomflex" "0
+r_render_pos_debug" "
+r_rimlight" "0
+r_rootlod" "0" - Root LOD 0x04800000
+r_ropetranslucent" "1
+r_shadowrendertotexture" "0
+r_sky_ignoreAngles" "0" - Ignore the angle of the sky (for debugging) 
+r_sse_s" "1" - sse ins for particle sphere create 
+r_threaded_particles" "1
+r_txaaEnabled" "0
+r_updaterefracttexture" "1" - When disabled, supresses any update of refract texture. 
+r_updaterefracttexture_allowmultiple" "0" - Allows multiple updates of refract texture per frame. 
+r_visambient" "0" - Draw leaf ambient lighting samples. Mask of VIS_AMBIENT = 1, VIS_SKY = 2, VIS_SUN = 4, VIS_CLOUDMASK = 8, VIS_LIGHTS_1ST = 16, etc. 
+r_visambient_point" "0" - Draw leaf ambient lighting samples, for a point (like particles). 
+r_vislighting_sphereradius" "12.0
+r_vismodellighting" "0" - Visualize model lighting.  Mask of VIS_AMBIENT = 1, VIS_SKY = 2, VIS_SUN = 4, VIS_CLOUDMASK = 8, VIS_LIGHTS_1ST = 16, etc.  Use -1 to see all lights. 
+r_vismodellighting_lightpos" "0" - Draw a line from the point light to the model lighting origin for this many of the closest lights that have r_vismodellighting enabled. 
+r_vismodellighting_maxdist" "1000.0
+r_vismodellighting_mindist" "48.0
+r_vismodellighting_offset_x" "0" - Offset the model lighting spheres by this amount. 
+r_vismodellighting_offset_y" "0" - Offset the model lighting spheres by this amount. 
+r_vismodellighting_offset_z" "0" - Offset the model lighting spheres by this amount. 
+r_visualizeproplightcaching" "0
+r_visualizetraces" "0
+r_visualizetraces_duration" "0.5
+r_waterforceexpensive" "0
+r_waterforcereflectentities" "0
+r_zfill" "1
+ragdoll_debug" "0
+ragdoll_skipDeathAcceleration" "1000000
+ragdoll_sleepaftertime" "5" - After this many seconds of being basically stationary, the ragdoll will go to sleep. 
+rankedplay_display_enabled" "0" -  0x01000008
+rankedplay_voice_enabled" "0" -  0x01000008
+rate" "128000" - Max bytes/sec the host can receive data 
+rcon_password" "" - remote console password. 0x200A0000
+readMsgs" - Read your messages 
+recalculateOrigin_threaded_chunksize" "50
+recheck" - Ask your server to recheck your community 0x10000000
+recompute_speed" - Recomputes clock speed (for debugging purposes). 
+record" - Record a demo. 0x00020000
+reduced_trigger_checks" "1
+reliable_effects_enable" "0
+reliable_sounds_enable" "0
+reload" - Reload the game (add setpos to jump to current view position on reload). 
+reload_localization" - Reloads all the localization data files 
+reload_script_callbacks" - Reloads script callback function pointers for client and server. 
+reload_script_callbacks_server" - Reloads script callback function pointers for server. 
+remoteCalls_requireConnectionScriptsForViewPlayer" "0
+render_blanks" - render N blank frames 
+replay_enable" "1" - Enable Replay recording on server 0x00402000
+report_cliententitysim" "0" - List all clientside simulations and time - will report and turn itself off. 
+report_clientthinklist" "0" - List all clientside entities thinking and time - will report and turn itself off. 
+report_entities" - Lists all entities 
+report_simthinklist" - Lists all simulating/thinking entities 
+report_touchlinks" - Lists all touchlinks 
+resetidletimer" - Resets the idle timer. 
+respawn_entities" - Respawn all the entities in the map. 
+restart" - Restart the game on the same level, to the beginning of the level (add setpos to jump to current view position on restart). 
+restart_checkpoint" - Restart the game on the same level, to the last checkpoint (add setpos to jump to current view position on restart). 
+retry" - Retry connection to last server. 0x50020000
+rodeo_camera_smooth_blend_out_time" "0.4
+rodeo_camera_smooth_enable" "1
+rodeo_enable" "1
+rodeo_force_mispredict" "0
+rodeo_lagcompensate" "1
+rodeo_look_tolerance" "0.3" - The higher this value, the more a pilot needs to look at a titan to rodeo it. Ranges [0, 1], with 0 being looking perpendicular to the titan, and 1 being directly looking at the titan. 
+rodeo_move_parent_workaround" "1
+rodeo_predict" "1
+rodeoed_anim_weight" "0.88
+rodeoed_anims_enabled" "0
+rope_collide" "1" - Collide rope with the world 
+rope_debug_shake" "0" - Helps visualize ropes effected by a shake. 
+rope_default_segment_length" "300" - Length that causes an additional rope segment to be created after 500 units 
+rope_min_pixel_diameter" "2.0
+rope_shake" "0
+rope_smooth_enlarge" "1.4" - How much to enlarge ropes in screen space for antialiasing effect 
+rope_smooth_maxalpha" "0.5" - Alpha for rope antialiasing effect 
+rope_smooth_maxalphawidth" "1.75
+rope_smooth_minalpha" "0.2" - Alpha for rope antialiasing effect 
+rope_smooth_minwidth" "0.3" - When using smoothing, this is the min screenspace width it lets a rope shrink to 
+rope_solid_maxalpha" "1
+rope_solid_maxwidth" "1
+rope_solid_minalpha" "0.0
+rope_solid_minwidth" "0.3
+rope_subdiv" "6" - Rope subdivision amount 0x00800008
+rope_wiggle_harmonic_falloff" "0.75" - Falloff for oscillation magnitude of wave of increasing frequency (ropes and grapple) 
+rope_wiggle_magnitude_loose" ".04" - Fraction of rope (including grapple) distance used as max wiggle distance while the rope is loose (shooting) 
+rope_wiggle_magnitude_tight" ".002" - Fraction of rope (including grapple) distance used as max wiggle distance while the rope is tight (pulling or retracting) 
+rope_wiggle_oscillate_speed" "64" - Speed at which rope (including grapple) wiggle oscillates 
+rope_wiggle_rotate_speed" "2" - Speed at which rope (including grapple) wiggle rotates 
+rope_wiggle_zipline_min_points" "80" - Increases point count for ziplines that are wiggling 
+rope_wind_dist" "1000" - Don't use CPU applying small wind gusts to ropes when they're past this distance. 
+rotate_ents" "0
+rpt_client_enable" -  0x40020010
+rpt_password
+rspn_motd" "
+rt_sync_message_pump" "1" - If 1 render thread with process message queue before starting main thread processing. If 2 then main thread will wait for the next frames message queue processing before gathering mouse input. If 3 then the main thread will wait for the current frames message queue processing before gathering mouse input...this may have a problem with the queue message pump sometimes starting before gathering mouse input and sometimes after causing hitches, but it has less latency and lower frame times when compared to the other methods. If 0 then gathering mouse input may happen before, during, or after the last frames mouse messages were process causing horrible hitch mouse response. 
+rt_worker" "1
+rui_padDist" "0.7
+rui_safeAreaFrac" "0.0" - Fraction of safe area to use 
+rumble_print" - Print current list of active rumbles 
+s2sPort" "(37015 + 1)" - S2S communication port 0x00080000
+save" - Saves current game. 0x00020000
+savePlayerConfig" - Store player settings. 
+save_Max_Commit_Time" "30.0" - Max time to wait between commit tries. 
+save_can_restore_ifSaveInProgress" "0" - Can start restore before save finishes! 
+save_clear_cache" - Reset the save enviorment cache 0x00020000
+save_clear_dir" - Reset the save enviorment 0x00020000
+save_clearmemory" - Clears the in Memory save file. 0x00020000
+save_client_entity" "0
+save_commit" - If we have a save wating for a commit .. this will force it. 0x00020000
+save_commit_file" - Saves in memory image to a named file. 0x00020000
+save_do_AsyncFinishAllWrites" "0" - We wait for all writes to finish at key points in  code. 
+save_do_seperate_restore_queue" "1" - A restore is always queued , no mater the depth of pending saves 
+save_enable" "1
+save_enforce_hash_match" "1" - Can be used to turn off the Hash version validation match on restore. 
+save_enforce_versionTag_match" "1" - Can be used to turn off the version id matching on restore. 
+save_experiential_DoNot_WriteDisk" "0" - Disallow disk file write for a save. 
+save_history_count" "0" - Keep this many old copies in history of saves. 
+save_queue_ifSaveInProgress" "0" - Queue a save if we are still saving from before! 
+save_reject" - If we have a save wating for a commit .. this will force a reject. 0x00020000
+save_server_on_thread" "1" - Save will run the server save on the server thread. 
+save_spew" "0
+save_thread_entities" "1
+scene_clamplookat" "1" - Clamp head turns to a MAX of 20 degrees per think. 
+scheme_manager_font_debug" "0" - 0:Off, 1:On 
+scoreboard_down" - Select next scoreboard player 
+scoreboard_focus" - Focus on scoreboard 
+scoreboard_mute" - Toggle the scoreboard player's muted status 
+scoreboard_profile" - Show the scoreboard player's profile 
+scoreboard_toggle_focus" - Toggle scoreboard focus 
+scoreboard_up" - Select previous scoreboard player 
+scr_centertime" "2
+screen_indicator_back_range" "60.0" - Number of degrees behind the player that is considered more behind than to the side 
+screen_indicator_ellipse_height" "0.75
+screen_indicator_ellipse_width" "0.85
+screen_indicator_pitch_limit" "75.0" - The maximum pitch difference that will affect the indicator position 
+screen_indicator_pitch_scale" "2.0
+screenshot" - Take a screenshot. 0x40000000
+screenshot_overview" - Take an overview screenshot. 0x40000000
+script_compile_all_levels" "0" - Compiles all level scripts when loading a map. 
+script_debugger_connect_client_on_mapspawn" "
+script_debugger_connect_server_on_mapspawn" "0
+script_debugger_connect_ui_on_mapspawn" "
+script_debugger_host" "localhost
+script_debugger_port_client" "15100
+script_debugger_port_server" "15100
+script_debugger_port_ui" "15100
+script_disallow_newslot_on_globals" "0" - Throws compile errors for global variables assigned with <- 
+script_dump_simple" "1" - If enabled then script dump format will skip null array/table entries and display each non-container value on a single line with the fully scoped key name. 
+script_error_on_midgame_load" "1
+script_infinite_loop_ms" "3000" - If script runs for more than this many milliseconds at once time then you will get a script error.
+ 
+script_parallel_trace_LOS_multiple" "1
+script_precache_errors" "1
+script_printDeferredCalls" "0
+script_printdiag" - Print the printtodiag() buffer to the console 
+script_retry_after_compile_errors" "0" - After a compile error, tries compiling again immediately. 
+script_server_fps" "10
+script_showErrorDialogs" "1
+send_data_to_all_players" "0" - If true update the local player for all players. 
+sequence_transitioner_enable" "1
+sequence_transitioner_fixed_fade" "-1
+serverFilter" "" - Only connects to matchmaking servers with the same value 
+server_concommands_allways_network" "1" - When set to 1 , server commands with listen server pass down the network layer. 
+server_game_time" - Gives the game time in seconds (server's curtime) 
+server_helicopter_rope_events" "0" - Controls weather the helicopter/rope integration is controlled by the server. 
+server_query_interval" "0.5
+server_single_frame" - Single step a frame for server 
+serverinfo" - Request serverinfo from a remote ip and port 
+set" - Change a variable in the class settings (does not save out to disk)
+ 
+set_entitlements" - Set entitlement bitflags on client. Needs to be set before connecting to server to have effect on server 
+set_loading_progress_background" - Sets the background for load screen. This is cleared to the default after each load. 0x00020000
+set_loading_progress_detente" - Set the keyboard and controller strings for the detentes. This is cleared to the default after each load. 0x00020000
+set_loading_progress_fadeout_enabled" - Sets whether or not to fade out of loading. This is cleared to the default after each load. (Default is <fadeoutEnabled> = true ) 0x00020000
+set_loading_progress_sp_text" - Set the sp text for the load sreen. This is cleared to the default after each load. 0x00020000
+setinfo" - Adds a new user info value 0x40000000
+setpause" - Set the pause state of the server. 
+sfm_record_hz" "30
+shadow_always_update" "0" - Set to 1 to make shadow maps regenerate every frame. 
+shadow_bleedfudge" "0.0" - Fudge value to decrease shadow map light bleeding 
+shadow_capable" "1
+shadow_clear_dist" "1.0
+shadow_depthres" "512
+shadow_drawfrustum" "0
+shadow_dynamic_blendfactor" "1" - Blend dynamic shadows over time. Low value: long history, 1: no history 
+shadow_enable" "1
+shadow_filter_maxstep" "0.18" - Max step threshold for shadow map blend 
+shadow_filter_size" "3" - Size of the blur filter applied to spot shadows (will force value to odd integer in shader). 
+shadow_info" "0" - Information about currently active depth shadows 
+shadow_maxdynamic" "4" - Maximum number of shadows that should update every frame. 
+shadow_maxspotshadows" "80" - Maximum global count of low res (shadow_depthres) spot shadows 
+shadow_maxspotupdates" "4" - Maximum number of dirty spot shadow depth textures to recalculate per frame 
+shadow_minvariance" "0.01" - Minimum variance for shadow maps (controls edge softness) 
+shadow_multisampled" "1" - Enable multisampling for shadows. 
+shadow_noLOD" "1
+shadow_show_spot_udpate_infos" "0
+shadow_update_culling" "1" - Don't update shadows that aren't in the view frustum. 
+shake" - Shake the screen. 
+shake_angleFactor_human" "1.0
+shake_angleFactor_titan" "1.0
+shake_basicPitchFactor" "0.20
+shake_basicRandomRollFactor" "0.15
+shake_offsetFactor_human" "1.0
+shake_offsetFactor_titan" "1.0
+shake_stop" - Stops all active screen shakes.
+ 
+shake_testpunch" - Test a punch-style screen shake.
+ 
+shake_viewmodelFactor_ads_human" "0.01
+shake_viewmodelFactor_ads_titan" "0.10
+shake_viewmodelFactor_human" "0.10
+shake_viewmodelFactor_titan" "0.10
+show_loading_progress" - Prints all debug information regarding the state of the loading progress. 
+show_trigger_distance" "5000" - Sets the distance from the player that triggers can be shown at. 
+showfps_enabled" "0
+showfps_heightpercent" "0.25
+showfps_mouse_latency" "1" - If 1 showfps_enabled will show mouse input latency instead of the time from before the move command. 
+showfps_smoothtime" "0.5
+showhitlocation" "0
+showmem_enabled" "0
+shownet_enabled" "0
+showpanel" - Shows a viewport panel <name> 
+showsnapshot_enabled" "0
+showtriggers" "0" - Shows trigger brushes. Must be set while loading the map 
+showtriggers_toggle" - Toggle show triggers 
+sidearmSwapSelectCooldown" "0.25
+sidearmSwapSelectDoubleTapTime" "0.25
+silentconnect" - Silently connect to specified server, without disconnecting from our current server unless it succeeds. 0x00020000
+single_frame_shutdown_for_reload" "1
+singlestep" "0" - Run engine in single step mode ( set next to 1 to advance a frame ) 
+sk_bullseye_health" "0
+sk_healthcharger" "0
+skill_arena" "" - The arena that skill should be read from / written to (eg. fnf, experimental, etc) 
+skill_dediOnly" "0" - Only do skill for dedicated servers 
+skill_enabled" "1
+skill_errorDelayTime" "30
+skill_hostname" "
+skill_readPlayerSkill
+skill_readPlayerSkillsOnConnect" "1
+skill_writeTrainingData
+skip_jump_height_fraction" "0.75" - Jump height fraction when skipping 
+skip_replenish_double_jump" "1" - Whether the player can double jump after skipping 
+skip_sounds" "0" - Enables skip-specific sounds 
+skip_speed_reduce" "12" - Speed lost when skipping 
+skip_speed_retain" "450" - Speed loss doesn't go below this 
+skip_time" "0.1" - Time after landing that is considered "skipping" if the player jumps again 
+skybox_swap" - Swap through the skyboxes in our queue 
+sleep_when_meeting_framerate" "1" - Sleep instead of spinning if we're meeting the desired framerate. 
+sleep_when_meeting_framerate_headroom_ms" "2.25" - Only sleep if the current frame has at least this much time remaining, otherwise spin. 
+slide_auto_stand" "0" - Automatically stand when slide ends 
+slide_boost_cooldown" "2" - Min time between slides before getting another boost 
+slide_max_angle_dot" "0.6" - Cosine of max angle from forward that you can slide when sprinting 
+slide_step_velocity_reduction" "10" - Velocity reduction when going up a step (is multiplied by step height) 
+slide_viewTiltDecreaseSpeed" "2.5" - Speed at which view tilt decreases while sliding in degrees per second 
+slide_viewTiltIncreaseSpeed" "5" - Speed at which view tilt increases while sliding in degrees per second 
+slide_viewTiltPlayerSpeed" "400" - Speed at which view tilt is full while sliding 
+slide_viewTiltSide" "15" - View tilt when looking to the side while sliding in degrees 
+slide_whileInAir" "0" - Allows beginning a slide (including the boost) while still in the air 
+smart_ammo_debug" "0
+smart_ammo_interp_entity_fields" "0
+snapshot_canary" "0
+snapshot_memory_report" - Prints information about memory usage of snapshot data structures 0x00020004
+sort_opaque_meshes" "0" - Sort opaque meshes front to back to try to improve rendering speed.  This may not be worth the CPU cost. 
+sound_musicReduced" "0" -  0x01000008
+sound_num_speakers" "2" - 2 - headphones or stereo, 6 - 5.1 surround, 8 - 7.1 surround.  All other values invalid 
+sound_only_warn_on_missing_sound_events_in_client_script" "1
+sound_printloaderrors" "1" - Set to 1 to print sound errors on load. 
+sound_volume" "1" - master game volume 0x01000008
+sound_volume_dialogue" "1" - dialogue volume (mp) 0x01000008
+sound_volume_dialogue_sp" "1" - dialogue volume (sp) 
+sound_volume_music_game" "1" - music volume in game (mp) 0x01000008
+sound_volume_music_game_sp" "1" - music volume in game (sp) 
+sound_volume_music_lobby" "1" - music volume in lobby 0x01000008
+sound_volume_sfx" "1" - sound effect volume (mp) 0x01000008
+sound_volume_sfx_sp" "1" - sound effect volume (sp) 
+sound_volume_voice" "1" - voice chat volume 
+sound_without_focus" "0" - Play sounds even when the app doesn't have focus. 0x01000008
+soundscape_debug" "0" - 1 - console prints when entering and leaving soundscapes | 2 - draws lines to all env_soundscape entities. Green lines show the active soundscape, red lines show soundscapes that aren't in range, and white lines show soundscapes that are in range, but not the active soundscape. 
+soundscape_dumpclient" - Dumps the client's soundscape data.
+ 
+soundscape_fadetime" "2.0" - Time to crossfade sounds between soundscapes 
+soundscape_flush" - Flushes the server & client side soundscapes 
+soundscape_message" "0
+soundscape_radius_debug" "0" - Prints current volume of radius sounds 
+sp_deathtips_tip1" "0" -  0x01000004
+sp_deathtips_tip2" "0" -  0x01000004
+sp_deathtips_tip3" "0" -  0x01000004
+sp_deathtips_tip4" "0" -  0x01000004
+sp_deathtips_tip5" "0" -  0x01000004
+sp_difficulty" "0" - SP difficulty 0x01000204
+sp_lastMission" "0" - SP last mission 0x01000204
+sp_lastdeathhints" "0" -  0x01000004
+sp_missionEasyCompletion" "0" - SP completed mission on easy difficulty 0x01000204
+sp_missionHardCompletion" "0" - SP completed mission on hard difficulty 0x01000204
+sp_missionMasterCompletion" "0" - SP completed mission on master difficulty 0x01000204
+sp_missionNormalCompletion" "0" - SP completed mission on normal difficulty 0x01000204
+sp_not_focus_pause" "1" - Pause the singleplayer game when the window is not in focus 
+sp_startpoint" "0" -  0x01000204
+sp_titanLoadoutCurrent" "0" - Currently selected titan loadout 0x01000204
+sp_titanLoadoutsSelected" "0" -  0x01000204
+sp_titanLoadoutsUsed" "0" - SP titan load outs that player has used already 0x01000204
+sp_unlockedMission" "0" - SP furthest mission unlocked 0x01000204
+sp_unlocks_level_0" "0" -  0x01000004
+sp_unlocks_level_1" "0" -  0x01000004
+sp_unlocks_level_10" "0" -  0x01000004
+sp_unlocks_level_11" "0" -  0x01000004
+sp_unlocks_level_12" "0" -  0x01000004
+sp_unlocks_level_13" "0" -  0x01000004
+sp_unlocks_level_14" "0" -  0x01000004
+sp_unlocks_level_2" "0" -  0x01000004
+sp_unlocks_level_3" "0" -  0x01000004
+sp_unlocks_level_4" "0" -  0x01000004
+sp_unlocks_level_5" "0" -  0x01000004
+sp_unlocks_level_6" "0" -  0x01000004
+sp_unlocks_level_7" "0" -  0x01000004
+sp_unlocks_level_8" "0" -  0x01000004
+sp_unlocks_level_9" "0" -  0x01000004
+spam_skinning_matrices_used" "0
+spam_skinning_matrices_used_detailed" "0
+spatial_partition_deadlock_assert" "1
+spawn_as_pilot" - Spawn as Pilot 
+spawn_as_titan" - Spawn as Titan 
+spawnpoint_avoid_npc_titan_sight" "1" - Avoids sightlines to NPC titans 
+spawnpoint_enemy_ai_far_dist" "1024" - Distance beyond which enemies do not count for a spawnpoint for AI 
+spawnpoint_enemy_ai_near_dist" "384" - Distance within which enemies fully count for a spawnpoint for AI 
+spawnpoint_enemy_titan_far_dist" "2048" - Distance beyond which enemies do not count for a spawnpoint for titans 
+spawnpoint_enemy_titan_near_dist" "512" - Distance within which enemies fully count for a spawnpoint for titans 
+spawnpoint_enemy_wallrun_far_dist" "2048" - Distance beyond which enemies do not count for a spawnpoint for wall runners 
+spawnpoint_enemy_wallrun_near_dist" "512" - Distance within which enemies fully count for a spawnpoint for wall runners 
+spawnpoint_friendly_ai_far_dist" "1024" - Distance beyond which allies do not count for a spawnpoint for AI 
+spawnpoint_friendly_ai_near_dist" "384" - Distance within which allies fully count for a spawnpoint for AI 
+spawnpoint_friendly_titan_far_dist" "1536" - Distance beyond which allies do not count for a spawnpoint for titans 
+spawnpoint_friendly_titan_near_dist" "0" - Distance within which allies fully count for a spawnpoint for titans 
+spawnpoint_friendly_wallrun_far_dist" "2048" - Distance beyond which allies do not count for a spawnpoint for wall runners 
+spawnpoint_friendly_wallrun_near_dist" "384" - Distance within which allies fully count for a spawnpoint for wall runners 
+spawnpoint_last_spawn_rating" "-4" - Penalty given to spawnpoint that was last chosen 
+spawnpoint_pet_titan_far_dist" "2048" - Distance beyond which pet titan does not count for a spawnpoint 
+spawnpoint_pet_titan_near_dist" "768" - Distance within which pet titan fully counts for a spawnpoint 
+spawnpoint_show_all" "0" - Draws/debugs spawn point entities 
+spawnpoint_show_class" "-1" - Draw spawnpoint data for class: -1(automatic based on spawnpoint type), 0(titan), 1(wallrun), 2(ai) 
+spawnpoint_show_dist" "0" - Draws spawnpoint_*_near_dist and spawnpoint_*_far_dist around spawnpoints 
+spawnpoint_show_sight" "0" - Shows successful sight checks on spawnpoints that are drawing 
+spawnpoint_text_dist" "500" - Distance to draw spawnpoint debug text 
+spawnpoint_text_dynamic" "0" - Shows dynamic spawnpoint text for current gamestate instead of last spawn 
+spawnpoint_text_team" "-2" - Team used when drawing ent_text for spawnpoints. -1 for all, -2 for just TEAM_IMC (2) and TEAM_MILITIA (3) 
+spawnpoint_velocity_predict_time" "2.0" - Time to predict player movement when calculating spawn weights 
+spec_chasecam_wait_on_dead_player_duration" "6" - How long chase camera should wait on a dead player before forcing camera to the next observer target 
+sprint_camera_smoothing_enabled" "1" -  0x01000008
+sprint_powerdrain" "0
+sprinttilt_accel" "35" - Acceleration of sprint view tilt fraction 
+sprinttilt_maxvel" "2" - Maximum speed of sprint view tilt 
+sprinttilt_turnrange" "120" - Max turn rate that creates view tilt when sprinting 
+ss_enable" "0" - Enables Split Screen support. Play Single Player now launches into split screen mode. NO ONLINE SUPPORT 
+ss_force_primary_fullscreen" "0" - If enabled, all splitscreen users will only see the first user's screen full screen 
+ss_map" - Start playing on specified map with max allowed splitscreen players. 0x00020000
+ss_mimic" "0" - Split screen users mimic base player's CUserCmds 
+ss_reloadletterbox" - ss_reloadletterbox 
+ss_splitmode" "0" - Two player split screen mode (0 - recommended settings base on the width, 1 - horizontal, 2 - vertical (only allowed in widescreen) 
+ss_verticalsplit" "0" - Two player split screen uses vertical split (do not set this directly, use ss_splitmode instead). 
+ss_viewmodelfov" "54" - Client-side viewmodel fov control that is global for all splitscreen players on this machine.  This gets overridden via splitscreen_config.txt for splitscreen. 
+ss_voice_hearpartner" "0" - Route voice between splitscreen players on same system. 
+star_memory" - Dump memory stats 
+startdemos" - Play demos in demo sequence. 
+startmovie" - Start recording movie frames. 0x00020000
+staticProp_GatherVisibleStaticProps_Yield" "0
+staticProp_drawDecalsInSortOrder" "1
+staticProp_earlyDepthPrepass" "1
+staticProp_earlyDepthPrepassDist" "1500000
+staticProp_earlyDepthPrepassIncludeOpaques" "1
+staticProp_earlyDepthPrepassIncludeOpaquesDist" "1000
+staticfile_hostname" "
+stats" - Prints server performance variables 
+stats_hostname" "
+status" - Display map and connection status. 
+step_debug" "0
+stop" - Finish recording demo. 
+stop_transition_videos_fadeout" - Fades out all transition videos playing to the screen: <time> 
+stopdemo" - Stop playing back a demo. 0x00020000
+stopsoundscape" - Stops all soundscape processing and fades current looping sounds 
+stopvideos" - Stops all videos playing to the screen 
+stopvideos_fadeout" - Fades out all videos playing to the screen: <time> 
+stream_addnoise" "0" - Adds corruption to streamed-in MIP levels for debugging. 
+stream_bsp_bucket_bias" "-0.5" - Tweak MIP of BSP coverage (higher = blurrier mips) 
+stream_bsp_dist_scale" "100" - Scale BSP coverage (relative to models) (higher = more important) 
+stream_drop_unused" "0" - Drop unused textures aggressively 
+stream_enable" "1" - Enable texture streaming 
+stream_force_wrong_pitch_path" "0" - Force 'wrong pitch' path when streaming textures, for reproing issues and perf on weird cards. 
+stream_freeze_camera" "0" - Freezes camera for purposes of streaming map textures. 
+stream_memory" "950000" - Stream memory to target (in kb). 
+stream_memory_ignore" "0" - Ignore stream_memory limit when streaming is enabled. 
+stream_memory_while_loading" "0" - Stream memory to target (in kb). 
+stream_mips_use_staging_texture" "0
+stream_mode" "default" - Stream mode: default all none 
+stream_overlay" "0" - Texture streaming debug overlay. 
+stream_overlay_mode" "short" - Which debug view to show (tex mtl bsp short) 
+stream_pause" "0" - Pause texture streaming 
+stream_picmip" "2" - Picmip used when stream mode is picmip. (Or the map doesn't have streaming data.) 
+stringtable_alwaysrebuilddictionaries" "0" - Rebuild dictionary file on every level load
+ 
+stringtable_compress" "1" - Compress string table for networking
+ 
+stringtable_showsizes" "0" - Show sizes of string tables when building for signon
+ 
+stringtable_usedictionaries" "0" - Use dictionaries for string table networking
+ 
+stringtabledictionary" - Create dictionary for current strings. 
+stryder_security" "
+stuck_debugging" "0" - Debug getting stuck 
+stuck_debugging_world_only" "0" - Only check for stuck in world geo 
+studio_debugVertexSharing" "0" - Show co-located vertex sharing. Black = shared, yellow = texture seam, purple = normal seam, gray/white = both, red = other. Brighter colors show more different values. MUST BE SET BEFORE LOADING THE MODEL. 
+studio_queue_mode" "1
+studiobonecache_unlimited" "1
+stuffcmds" - Parses and stuffs command line + commands to command buffer. 
+subscription_hostname" "
+superjump_disabled_from_water" "0
+superjump_drain_power_onfail" "0
+superjump_fail_sound_when_jump_limit" "1
+superjump_limit" "0
+superjump_limitreset_onwallrun" "1
+superjump_max_power_use" "100
+superjump_min_height_fraction" "0.25" - Minimum fraction of desired superjump height that is acheived, even if already moving quickly upwards 
+superjump_min_power_use" "0
+superjump_powerreset_onground" "1
+surfaceprop" - Reports the surface properties at the cursor 
+sv_AllWaysSupportsSaveRestore" "0" - Set to 1 to override the server save restore test. 
+sv_airaccelerate" "10
+sv_allTicksFinal" "0
+sv_allowSendTableTransmitToClients" "1" - Allow transmission of sendtable data to clients. 
+sv_alltalk" "0" - Players can hear all other players, no team restrictions 0x00080104
+sv_backspeed" "0.6" - How much to slow down backwards motion 
+sv_balanceTeams" "1
+sv_bounce" "0" - Bounce multiplier for when physically simulated objects collide with other objects. 
+sv_bounds_show_errors" "0
+sv_cheats" "0" - Allow cheats on server 0x00082100
+sv_clampPlayerFrameTime" "0
+sv_clockcorrection" "1" - Whether to try to correct client's tickcount if they are ahead of the server 
+sv_clockcorrection_msecs" "75" - The server tries to keep each player's m_nTickBase within this many msecs of the server absolute tickcount 
+sv_compressPlaylists" "1
+sv_connectingClientDelay" "3" - Amount of time to wait between resends of data to a connecting client 
+sv_debug_deferred_trace" "0
+sv_debug_deferred_trace_overlay" "0
+sv_debug_prop_send" "0
+sv_debugmanualmode" "0" - Make sure entities correctly report whether or not their network data has changed. 
+sv_disconnectOnTooManySnapshotFrames" "1" - Disconnect client when the server has sent 128 snapshot messages to client without the server getting any message from the client. 
+sv_dumpstringtables" "0
+sv_earlyPersistenceRead" "0" - Should the server try to read persistence earlier in the connection process
+ 0x00080000
+sv_edgefriction" "2
+sv_everyThirdTick" "1" - Do networking every third tick, regardless of how backed up we are
+ 
+sv_extra_client_connect_time" "60.0" - Seconds after client connect during which extra frames are buffered to prevent non-delta'd update 
+sv_footsteps" "1" - Play footstep sound for players 
+sv_forceGrapplesToFail" "0" - Force all grapples to fail on the server (cause clients to mispredict them) 
+sv_forceRodeoToFail" "0
+sv_friction" "4" - World friction. (Equivalent player setting is in player settings files) 
+sv_gravity" "750" - World gravity. 
+sv_hibernate_ms" "5" - # of milliseconds to sleep per frame while hibernating 
+sv_hibernate_ms_vgui" "5" - # of milliseconds to sleep per frame while hibernating but running the vgui dedicated server frontend 
+sv_hibernate_postgame_delay" "5" - # of seconds to wait after final client leaves before hibernating. 
+sv_hibernate_when_empty" "0" - Puts the server into extremely low CPU usage mode when no clients connected 
+sv_instancebaselines" "1" - Enable instanced baselines. Saves network overhead. 
+sv_kickPlayersTooFarInFuture" "1
+sv_lagpushticks" "0" - Push computed lag compensation amount by this many ticks. 
+sv_lerpAnims" "1
+sv_lobbyType" "0
+sv_massreport" "0
+sv_maxUserCmdsPerPlayerPerFrame" "10
+sv_max_prop_data_dwords_lobby" "100000" - Maximum amount of prop data per-snapshot in dwords (lobby) 
+sv_max_prop_data_dwords_multiplayer" "125000" - Maximum amount of prop data per-snapshot in dwords (multiplayer) 
+sv_max_prop_data_dwords_singleplayer" "300000" - Maximum amount of prop data per-snapshot in dwords (singleplayer) 
+sv_max_props_lobby" "50000" - Maximum amount of props per-snapshot (lobby) 
+sv_max_props_multiplayer" "75000" - Maximum number of props per-snapshot (multiplayer) 
+sv_max_props_singleplayer" "200000" - Maximum number of props per-snapshot (singleplayer) 
+sv_max_snapshots_lobby" "100" - Maximum number of snapshots for the lobby 
+sv_max_snapshots_multiplayer" "300" - Maximum number of snapshots for multiplayer levels 
+sv_max_snapshots_singleplayer" "10" - Maximum number of snapshots for singleplayer levels 
+sv_maxclientframes" "300
+sv_maxrate" "0" - Max bandwidth rate allowed on server, 0 == unlimited 0x00082000
+sv_maxroutable" "1200" - Server upper bound on net_maxroutable that a client can use. 
+sv_maxspeed" "320
+sv_maxunlag" "0.5" - Maximum lag compensation in seconds 
+sv_maxupdaterate" "60" - Maximum updates per second that the server will allow 
+sv_maxvelocity" "12100" - Maximum speed any ballistically moving object is allowed to attain per axis. 
+sv_minrate" "128000" - Min bandwidth rate allowed on server, 0 == unlimited 0x00082000
+sv_minupdaterate" "1" - Minimum updates per second that the server will allow 
+sv_netvisdist" "10000" - Test networking visibility distance 
+sv_noclipaccelerate" "10000
+sv_noclipduringpause" "0" - If cheats are enabled, then you can noclip with the game paused (for doing screenshots, etc.). 
+sv_noclipspeed" "5
+sv_normalSimulationCommandThreshold" "3
+sv_optimizedmovement" "1
+sv_parallel_sendsnapshot" "1
+sv_partyDediOnly" "0
+sv_pausable" "0" - Whether the server is allowed to pause 0x00080000
+sv_physics_maxvelocity" "4000.0" - Max velocity of a vphysics object on the server 
+sv_playerNameAppendCheater" "1
+sv_playerSimTimeBuffer" "0" - On first sim, how close to curtime do we set the player's m_lastUCmdSimulationTime 
+sv_players" "1
+sv_precacheinfo" - Show precache info. 
+sv_printClockCorrections" "0" - Should we print when we are adjust player's simulation time? 
+sv_printClockTiming" "0
+sv_props_funnel_into_portals" "1
+sv_props_funnel_into_portals_deceleration" "2.0f" - When a funneling prop is leaving a portal, decelerate any velocity that is in opposition to funneling by this amount per second 
+sv_pushaway_accel" "400" - How hard physics objects are pushed away from the players. 
+sv_pushaway_clientside" "2" - Clientside physics push away (0=off, 1=only localplayer, 2=all players) 
+sv_pushaway_clientside_size" "1000" - Physics props below this size are made client side 
+sv_pushaway_debug" "0" - Debug physics object pushaway 
+sv_pushaway_dist" "15" - Max distance at which physics objects are pushed from players. 
+sv_pushaway_min_player_speed" "75" - If a player is moving slower than this, don't push away physics objects (enables ducking behind things). 
+sv_pushaway_player_accel" "3000" - How hard the player is pushed away from physics objects 
+sv_pushaway_player_dist" "5" - Max distance at which player is pushed from physics objects 
+sv_rcon_banpenalty" "0" - Number of minutes to ban users who fail rcon authentication 
+sv_rcon_log" "1" - Enable/disable rcon logging. 
+sv_rcon_maxfailures" "10" - Max number of times a user can fail rcon authentication before being banned 
+sv_rcon_minfailures" "5" - Number of times a user can fail rcon authentication in sv_rcon_minfailuretime before being banned 
+sv_rcon_minfailuretime" "30" - Number of seconds to track failed rcon authentications 
+sv_regeneration_wait_time" "20.0
+sv_rejectClientConnects" "0
+sv_rejectConnections" "0
+sv_robust_explosions" "1
+sv_rollangle" "0" - Max view roll angle 
+sv_rollspeed" "200
+sv_scarySnapDeltaPrints" "50
+sv_screenShake_debug" "0
+sv_screenShake_enabled" "1
+sv_screenShake_maxAmplitudeWarning" "60
+sv_script_perf_dump_on_shutdown" "0
+sv_script_think_interval" "0.1
+sv_sendPlayerDamageMsg" "0
+sv_sendPlaylists" "1
+sv_separate_freq_change_prop_send" "1
+sv_shiftPlayerSimTimeBackwards" "1" - If a player is sending us commands that would get ahead of the server, do we rewind time to allow it 
+sv_showClientTickCmds" "0
+sv_showLargeSnapshotSize" "10000
+sv_showSnapshots" "0
+sv_showUserCmds" "0
+sv_show_placement_help_in_preview" "0" - Forces the placement preview to show any help in placement given from info_placement_helper entities.
+ 
+sv_showents" - Prints the server entity list 
+sv_showfiredbullets" "0
+sv_showhitboxes" "-1" - Send server-side hitboxes for specified entity to client (NOTE:  this uses lots of bandwidth, use on listen server only). 
+sv_showlagcompensation" "0" - Show lag compensated hitboxes whenever a player is lag compensated. 
+sv_shutdown" - Sets the server to shutdown when all games have completed 
+sv_single_core_dedi" "0
+sv_skyname" "" - Current name of the skybox texture 
+sv_soundscape_printdebuginfo" - print soundscapes 
+sv_specaccelerate" "1000.0
+sv_specnoclip" "1
+sv_specspeed" "5.0
+sv_stats" "1" - Collect CPU usage stats 
+sv_stopspeed" "100" - Minimum stopping speed when on ground. (Equivalent player setting is in player settings files) 
+sv_stressbots" "1" - If set to 1, the server calculates data and fills packets to bots. Used for perf testing. 
+sv_struggleCheck" "1.016" - How long ago the 60th server frame can have been. 1.0 means the server is running in realtime. Higher means small hitches are ok. 
+sv_teststepsimulation" "0
+sv_thinktimecheck" "0" - Check for thinktimes all on same timestamp. 
+sv_threaded_post_process_ai" "1
+sv_threaded_post_process_players" "1
+sv_turbophysics" "1" - Turns on turbo physics 
+sv_turbophysics_player" "1" - Turns on turbo physics on players only 
+sv_unlag" "1" - Enables player lag compensation 
+sv_unlag_debug" "1
+sv_unnecessaryConnectDelay" "60" - Amount of time to wait before responding to a connecting client (or malicious hacker) 
+sv_updaterate_mp" "20" - Maximum update rate at which server sends packets to clients in MP (updates per-second). 
+sv_updaterate_sp" "20" - Maximum update rate at which server sends packets to clients in SP (updates per-second). 
+sv_useReputation" "1
+sv_use_edgefriction" "1
+sv_usercmd_before_entities" "1
+sv_usercmd_fairness" "1
+sv_usercmd_fairness_dediOnly" "0
+sv_usercmd_max_queued" "40
+sv_usercmd_num_per_iteration" "1
+sv_usercmd_shuffle_players" "1
+sv_visiblemaxplayers" "-1" - Overrides the max players reported to prospective clients 0x00080000
+sv_visualizetraces" "0
+sv_visualizetraces_duration" "0.5
+sv_voiceDebug" "0" - Show who is getting each voice packet from the server 
+sv_voiceEcho" "0" - Server will return a voice chat message back to the sending client. 
+sv_voiceenable" "1
+sv_warnAboutCmdNumJumps" "20
+sv_wateraccelerate" "10
+sv_waterdist" "12" - Vertical view fixup when eyes are near water plane. 
+sv_weapon_despawn_time" "90.0
+sv_writeSendTableStreamFile
+switchclass" - Change player class: soldier, titan 
+sys_attract_mode_timeout" "30
+sys_minidumpexpandedspew" "0
+sys_minidumpspewlines" "500" - Lines of crash dump console spew to keep. 0x00080000
+takecurrentammo" - Remove player's extra ammo for the current weapon.
+ 
+teamSortCurrentPopulation
+teamSpot_costLimitPerFrame" "10" - How much work the teamspot system can do before it tries to wait until next frame to continue. Use "teamSpot_debug 2" to debug costs. 
+teamSpot_enabled" "1" - Enables teamspotting including letting AI know about what players see. CANNOT BE CHANGED DURING GAMEPLAY 
+teamSpot_lockOffTime" "0.1" - In seconds, how long a team must go without seeing an entity before they are no longer conisdered "spotted". 
+teamSpot_lockOnTime" "0.75" - Consecutive seconds that a team must see an entity before they are considered "spotted". 
+teamSpot_lockOnTimeForgiveness" "0.45" - During lockon, how many seconds a team can go without seeing an entity before the lockon process must start over. 
+teamSpot_minimap_enabled" "0" - Enables teamspotting on minimap. 
+teamSpot_threaded" "1
+telemetry_client_debug" "0
+telemetry_client_enable" "1" - Enable sending telemetry data 
+telemetry_client_sendInterval" "10.0" - How often to send telemetry data (seconds) 
+template_debug" "0
+testCockpitJoltAngles
+testCockpitJoltOrigin
+test_entity_blocker" - Test command that drops an entity blocker out in front of the player. 
+test_freezeframe" - Test the freeze frame code. 
+test_massive_dmg" "30
+test_massive_dmg_clip" "0.5
+test_setteam" - Sets target to the player's team. 
+testhudanim" - Test a hud element animation.
+	Arguments: <anim name>
+ 
+testscript_debug" "0" - Debug test scripts. 
+tether_damageScale" "0.00" - amount that stretching the tether damages it 
+tether_dodge_damage" "0" - Damage done to tether by dodging away from it 
+tether_healthDrain" "200" - rate at which tether health drains even if it isn't stretched 
+tether_healthDrainNPC" "200" - rate at which tether health drains even if it isn't stretched (when attached to an NPC) 
+tether_maxvel" "200" - max velocity with which tether pulls you back 
+tether_npc_strength" "5" - Strength with which tether pulls NPCs (velocity per unit of distance) 
+tether_radius" "250" - radius below which the tether does nothing 
+tether_strength" "25" - strength with which tether pulls back (per unit past the radius) 
+think_limit" "10" - Maximum think time in milliseconds, warning is printed if this is exceeded. 0x00082008
+think_trace_limit" "0" - Break into the debugger if this many or more traces are performed in a single think function. Negative numbers mean that the same think function may be broken into many times (once per [x] may traces), positive numbers mean each think will break only once. 
+thirdperson" - Switch to thirdperson camera. 
+thirdperson_mayamode" - Switch to thirdperson Maya-like camera controls. 
+thirdperson_screenspace" "0" - Movement will be relative to the camera, eg: left means screen-left 
+thirdpersonshoulder" - Switch to thirdperson-shoulder camera. 
+thread_test_tslist
+thread_test_tsqueue
+threadpool_affinity" "1" - Enable setting affinity 
+threadpool_run_tests
+timedemo" - Play a demo and report performance info. 
+timedemo_vprofrecord" - Play a demo and report performance info.  Also record vprof data for the span of the demo 
+timedemoquit" - Play a demo, report performance info, and then exit 
+timeout" "15" - Seconds without communication before clients or servers will decide to disconnect. 
+timeout_during_load" "180" - Seconds without communication during a level load before clients or servers will decide to disconnect. 
+titanSoul_debug" "0
+titan_hideEnts" "0
+titan_hidePlayer" "0" - Whether to send the player entity while they are in a titan 
+titan_loadout_select" - Titan loadout select 
+titan_step_damage_debug" "0" - Draw debug box of titan step damage volume 
+titan_step_damage_rodeo_immunity_time" "0.1" - How long players are immune from step damage after jumping off from a rodeo 
+toggle" - Toggles a convar on or off, or cycles through a set of values. 
+toolload" - Load a tool. 
+toolunload" - Unload a tool. 
+trace_enableNewPointTriangleTrace" "1
+tracer_debug" "0
+tracer_extra" "1
+trail_optimizedRemove" "1
+traversal_anim" "1" - Enables automantle animation 
+traversal_cooldown" "0.5" - Minimum time between traversals (in seconds) 
+traversal_enable" "1" - Enables player traversals 
+traversal_hand_debug" "0" - Enables debugging of traversal hand positioning 
+traversal_hand_required_width" "6" - Required width of geometry for hands (from center) 
+traversal_viewLerpInDuration" "0.15" - Duration of view lerp from normal at the start of a traversal 
+traversal_viewLerpOut" "1" - Controls whether traversal view position and angle lerp back to normal at the end of a traversal 
+traversal_viewLerpOutAngle" "1" - Controls whether traversal view angle lerps back to normal at the end of a traversal 
+traversal_viewLerpOutDebug" "0" - Debugs traversal view position lerping 
+traversal_viewLerpOutPos" "1" - Controls whether traversal view position lerps back to normal at the end of a traversal 
+traversal_window_duration" "0.3" - Duration of window side traversal animation 
+traversal_window_enable" "1" - Enables window traversals 
+traversal_window_finish_angle" "45" - Finishing yaw relative to the window's forward direction when starting at a 90 degree angle 
+traversal_window_forward_offset" "6" - Distance of player through the window after completing window traversal 
+traversal_window_hand_vertical_offset" "22" - Vertical distance from hand position to eye position at start and end of window traversal 
+traversal_window_sideways_offset" "18" - Distance of player from the edge of the window toward the center of the window after completing window traversal 
+traversal_window_view_pitch_max" "35" - Max view pitch when doing window traversal 
+traversal_window_view_pitch_min" "-80" - Min view pitch when doing window traversal 
+traversal_window_yaw_max" "80" - Max view yaw when doing window traversal 
+trialPeriodIsActive" "0" - Determines whether trial users(IsRunningTrialVersion) are allowed to play MP. Manipulated by Stryder 
+trigger_touch_on_spawn" "0" - Causes triggers to detect entities the moment they spawn. 
+trigger_use_new_filters" "0" - Always use new trigger filter settings 
+tsaa_blendfactorincreaseatmaxvelocity" "4.0
+tsaa_blendfactorincreasewhenunoccluded" "5.0
+tsaa_blendfactormaxesoutatvelocity" "0.25
+tsaa_blendfactormodulationonsparklesandunocclusion" "1.0
+tsaa_blendfactoroverride" "-1.0
+tsaa_curframeblendamount" "0.05
+tsaa_debugresponsiveflag" "0.0
+tsaa_neighborhoodclamping" "1.0
+tsaa_neighborhoodclampingsoftened" "1.0
+tsaa_numsamples" "64
+ui_fadecloud_time" "1.5
+ui_fadexui_time" "0.5
+ui_gameui_ctrlr_title" "0
+ui_gameui_modal" "0" - If set, the game UI pages will take modal input focus. 
+ui_loadingscreen_autotransition_time" "5.0
+ui_loadingscreen_fadein_time" "1.0
+ui_loadingscreen_fadeout_time" "0.2
+ui_loadingscreen_mintransition_time" "0.5
+ui_loadingscreen_transition_time" "1.0
+ui_lobby_jointimeout" "75
+ui_lobby_noautostart" "0
+ui_lobby_noresults_create_msg_time" "2.5
+ui_posedebug_fade_in_time" "0.2" - Time during which a new pose activity layer is shown in green in +posedebug UI 0x00024008
+ui_posedebug_fade_out_time" "0.8" - Time to keep a no longer active pose activity layer in red until removing it from +posedebug UI 0x00024008
+ui_reloadscheme" - Reloads the resource files for the active UI window 
+ui_virtualnav_render" "0
+uiscript_reset" - Resets all UI script state 
+uiscript_resolutionchanged" - Notifies UI script that the resolution has changed 
+unbind" - Unbind a key. 
+unbindall" - Unbind all keys. 
+unbindall_ignoreGamepad" - Unbind all keys, skip gamepad binds. 
+unique_entity_names" "0" - Should entities have permanently unique entity names.  Or just concurrently unique? 
+unload_level_loadscreen" - Unloads the loadscreen for the current level 
+unmuteroom" - Unmute the chatroom 
+unpause" - Unpause the game. 
+usePromptBaseColor" "255 255 255 255
+usePromptButtonTextColor" "255 255 255 255
+usePromptImageScale" "1.5
+usePromptImageYOffset" "0
+usePromptTextColor" "220 215 210 255
+use_fair_fight" "0
+use_fair_fight_weapon_cheat" "0" - Enable FairFight weapon cheat detect 
+user" - Show user data. 
+users" - Show user info for players on server. 
+v_centermove" "0.15
+v_centerspeed" "500
+vel_alwaysEstimateVelocity" "1
+vel_debug" "0
+vel_sampleFrequency" "0.1" - how often we sample velocity 
+vel_samples" "2" - how many samples to use when estimating velocity 
+version" - Print version info string. 
+vgui_debugFocus" "0
+vgui_drawfocus" "0" - Report which panel is under the mouse. 
+vgui_drawkeyfocus" "0" - Report which panel has keyboard focus. 
+vgui_drawtree" "0" - Draws the vgui panel hiearchy to the specified depth level. 
+vgui_drawtree_bounds" "0" - Show panel bounds. 
+vgui_drawtree_clear
+vgui_drawtree_draw_selected" "0" - Highlight the selected panel 
+vgui_drawtree_freeze" "0" - Set to 1 to stop updating the vgui_drawtree view. 
+vgui_drawtree_hidden" "0" - Draw the hidden panels. 
+vgui_drawtree_panelalpha" "0" - Show the panel alpha values in the vgui_drawtree view. 
+vgui_drawtree_panelptr" "0" - Show the panel pointer values in the vgui_drawtree view. 
+vgui_drawtree_popupsonly" "0" - Draws the vgui popup list in hierarchy(1) or most recently used(2) order. 
+vgui_drawtree_render_order" "0" - List the vgui_drawtree panels in render order. 
+vgui_drawtree_scheme" "0" - Show scheme file for each panel 
+vgui_drawtree_visible" "1" - Draw the visible panels. 
+vgui_interactive" "0
+vgui_noquads" "0
+vgui_notext" "0
+vgui_resize_on_resolution_change" "0
+vgui_show_glyph_miss" "0
+vgui_simulate_during_bone_setup" "1
+vgui_spew_fonts
+vgui_togglepanel" - show/hide vgui panel by name. 
+video_menu_uiscript_reset" "1
+viewDrift" "1
+viewDrift_pitch_base1_amp" "1.0
+viewDrift_pitch_base1_freq" "1.11
+viewDrift_pitch_base1_phase" "0.0
+viewDrift_pitch_base2_amp" "0.5
+viewDrift_pitch_base2_freq" "3
+viewDrift_pitch_base2_phase" "3.14159265359
+viewDrift_pitch_scaler_amp" "0.25
+viewDrift_pitch_scaler_base" "0.75
+viewDrift_pitch_scaler_freq" "3.33
+viewDrift_pitch_scaler_phase" "0.23
+viewDrift_pitch_shifter_amp" "0.2
+viewDrift_pitch_shifter_freq" "2.72
+viewDrift_pitch_shifter_phase" "0.3
+viewDrift_yaw_base1_amp" "0.5
+viewDrift_yaw_base1_freq" "1.11
+viewDrift_yaw_base1_phase" "0.0
+viewDrift_yaw_base2_amp" "0.5
+viewDrift_yaw_base2_freq" "3.0
+viewDrift_yaw_base2_phase" "3.14159265359
+viewDrift_yaw_scaler_amp" "0.25
+viewDrift_yaw_scaler_base" "0.75
+viewDrift_yaw_scaler_freq" "3.33
+viewDrift_yaw_scaler_phase" "0.23
+viewDrift_yaw_shifter_amp" "0.2
+viewDrift_yaw_shifter_freq" "2.72
+viewDrift_yaw_shifter_phase" "0.3
+view_offset_entity_enable" "1" - Whether to apply camera animations from the view offset entity 
+viewangle_debug" "0
+viewangles_simpler" "1
+viewmodelShake" "1" - Enables viewmodel shake. 
+viewmodelShake_sourceRollRange" "3" - The range of weapon kick roll that will be sampled for viewmodel shake. 
+viewpunch_base_springConstantX" "65.0" - Default. Bigger number increases the speed at which the view corrects. 
+viewpunch_base_springConstantY" "65.0" - Default. Bigger number increases the speed at which the view corrects. 
+viewpunch_base_springConstantZ" "65.0" - Default. Bigger number increases the speed at which the view corrects. 
+viewpunch_base_springDampingX" "9.0" - Default. Bigger number makes the response more damped. 
+viewpunch_base_springDampingY" "9.0" - Default. Bigger number makes the response more damped. 
+viewpunch_base_springDampingZ" "9.0" - Default. Bigger number makes the response more damped. 
+violence_ablood" "1" - Draw alien blood 
+violence_agibs" "1" - Show alien gib entities 
+violence_hblood" "1" - Draw human blood 
+violence_hgibs" "1" - Show human gib entities 
+visible_ent_cone_debug_duration_client" "0
+visible_ent_cone_debug_duration_server" "0
+vismon_poll_frequency" ".5
+vismon_trace_limit" "12
+voice_absTriggerAmount" "2
+voice_allow_mute_self" "0
+voice_avggain" "0.5
+voice_clientdebug" "0
+voice_debugAddSecondTalker" "0
+voice_debugThresholds" "0
+voice_debugfeedback" "0
+voice_enable" "1" - Toggle voice transmit and receive. 
+voice_energyPerZeroThreshold" "8000
+voice_energyThreshold" "12000
+voice_forcemicrecord" "1
+voice_inputfromfile" "0" - Get voice input from 'voice_input.wav' rather than from the microphone. 0x00080000
+voice_late_update" "1
+voice_loopback" "0
+voice_maxgain" "10
+voice_minEnergyPerZeroThreshold" "1000
+voice_mixer_boost" "0
+voice_mixer_mute" "0
+voice_mixer_volume" "1.0
+voice_modenable" "1" - Enable/disable voice in this mod. 0x40000088
+voice_profile" "0
+voice_recordtofile" "0" - Record mic data and decompressed voice data into 'voice_micdata.wav' and 'voice_decompressed.wav' 0x00080000
+voice_scale" "1
+voice_serverdebug" "0
+voice_showchannels" "0
+voice_showincoming" "0
+voice_threshold_delay" "0.3
+voice_triggerCrossingRate" "0
+voice_triggerRate" "50
+voice_vox" "1" - Voice chat uses a vox-style always on 
+voice_writevoices" "0" - Saves each speaker's voice data into separate .wav files
+ 
+voice_xsend_debug" "0
+voice_zeroCrossingThreshold" "0.02
+voicerecord_toggle
+vortex_damageimpulsescale" "0.5" - Scales impulse force from bullets when using the vortex 
+voxeltree_box" - View entities in the voxel-tree inside box <Vector(min), Vector(max)>. 
+voxeltree_playerview" - View entities in the voxel-tree at the player position. 
+voxeltree_sphere" - View entities in the voxel-tree inside sphere <Vector(center), float(radius)>. 
+vphys_sleep_timeout" - set sleep timeout: large values mean stuff won't ever sleep 
+vphysics_threadmode" "1
+vprof_scope_entity_gamephys" "0
+vprof_scope_entity_thinks" "0
+vprof_server_spike_threshold" "999.0
+vprof_server_thread" "0
+vprof_think_limit" "0
+vscript_ui_do_delay_init" "1
+vsm_culling" "1
+vsm_ignore_edge_planes" "0
+vsm_ignore_face_planes" "0
+vtune" - Controls VTune's sampling. 
+vx_datacache_list" - vx_datacache_list 
+vx_do_not_throttle_events" "0" - Force VXConsole updates every frame; smoother vprof data but at a slight (~0.2ms) perf cost. 
+vx_model_list" - Dump models to VXConsole 
+wallrun_allowed_wall_dist" "13" - Distance to the side that feet may be from the wall 
+wallrun_allowed_wall_dist_wallhang" "18" - Distance to the side that hand may be from the wall for wallhang 
+wallrun_angleChangeMinCos" "0.8" - Cosine of maximum angle the wall can change away from you without falling off 
+wallrun_avoid_wall_top_decel" "3000" - Deceleration applied to prevent the player from wall running too close to the top of a wall and falling off 
+wallrun_curveDebug" "0" - Draws debugging information for wallrun curves 
+wallrun_curveEnable" "1" - Enables usage of wallrun curve hints 
+wallrun_debug" "0" - Shows wall run debug info 
+wallrun_enable" "1" - Enables wall running 
+wallrun_fallAwaySpeed" "70.0" - Velocity away from the wall when falling off 
+wallrun_gravityRampUpTime" "1.0" - While wall running, gravity starts at 0 and ramps up to full over this many seconds 
+wallrun_hangStopTime" "0.5" - Length of time to come to a stop when zooming 
+wallrun_hangslipduration" "1.0" - Time it takes for slipping to become completely gravity based 
+wallrun_hangslipstarttime" "3.0" - Time wall hanging before you start to slip down 
+wallrun_hangslipvel" "70" - Impulse downward when slipping starts while wall hanging 
+wallrun_maxViewTilt" "15.0" - Amount of roll applied to the view in degrees while wall running 
+wallrun_minAngle_air" "180.0" - Angle at which you can start wall running when hitting a wall from a jump (0 to 180) 
+wallrun_noInputSlipFrac" "0.7" - Min fraction of slip behavior when not pushing in any direction (applies more gravity) 
+wallrun_pushAwayFallOffTime" "0.05" - Pushing away from the wall for this many seconds causes you to fall off 
+wallrun_repelEnable" "1" - Enables repelling players from walls they have jumped off of 
+wallrun_repelSoftness" "5.0" - Softness of wall jump repel: higher values make it easier for players to reduce their speed away from the wall 
+wallrun_repelTimeMax" "0.4" - Time after jumping off the wall that player is no longer repelled from the wall 
+wallrun_repelTimeMin" "0.2" - Time after jumping off the wall that player is repelled from the wall 
+wallrun_retry_interval" "0.07" - Length of time between checking for the ability to wallrun after hitting a wall in air movement 
+wallrun_rotateMaxRate" "3" - Maximum rotation speed around a wall in radians per second; avoids sticking to walls that do tight curves 
+wallrun_sameWallDist" "100" - Within this distance of the previous wall run, wall run is prevented at a higher point on the same wall 
+wallrun_sameWallDot" "0.9" - Dot product threshold for preventing wall running on the same wall twice 
+wallrun_sameWallHeight" "0" - Height, relative to where the player last touched the wall, above which he cannot reattach 
+wallrun_sameWallSlope" "0" - Beyond wallrun_samewalldist, wall running is permitted at higher points with this slope 
+wallrun_slipduration" "1.0" - Time it takes for slipping to become completely gravity based 
+wallrun_slipslowdown" "0.5" - Fraction of velocity lost when slipping starts 
+wallrun_slipstarttime" "1.5" - Time wall running before you start to slip down 
+wallrun_slipvel" "70" - Impulse downward when slipping starts 
+wallrun_strengthLossEnd" "1000" - Number of wall runs at which point upward strength is fully lost (scales upWallBoost, jumpUpSpeed, and gravityRampUpTime to zero) 
+wallrun_strengthLossStart" "1000" - Number of wall runs allowed before starting to lose upward strength (scales upWallBoost, jumpUpSpeed, and gravityRampUpTime) 
+wallrun_upWallBoost" "250.0" - Initial vertical velocity boost when wall running begins 
+wallrun_upwardAutoPush" "0.65" - The amount of automatic up-the-wall input applied when the player pushes forward along the wall. Helps to fight gravity when pushing forward. 
+wallrun_viewTiltPredictTime" "0.25" - Time before you start wall running where your view starts tilting. Predicts upcoming wall running 
+wallrun_viewTiltSpeed" "6.0" - Speed at which the view tilts while wall running 
+warning_test" - Cause the engine to print a Warning(). 
+was_loaded" "" - Current game from a restore? 0x00012008
+weaponAmmoPickupSound" "player.ammoPickup
+weaponFastHolsterScale" "0.25" - Scales holster animations if swapping to a weapon with "fast_swap_to" enabled. 
+weaponSelectOrdnance
+weaponSelectPrimary0
+weaponSelectPrimary1
+weapon_auto_swap_ordnance_no_ammo" "0" - If you touch a new ordnance weapon with no ammo in your current it will auto replace it 
+weapon_debugScript" "0
+weapon_friendly_fire_prevent_ui" "ui/friendly_fire_warning.rpak" - UI to show on friendly fire prevention 
+weapon_list" - Lists all weapons owned by the local player 
+weapon_meleeButtonPressProtection" "1
+weapon_parentingFixLerp" "1
+weapon_pickup_allow_dupes" "1" - Whether or not you are allowed 2 of the same weapon in your inventory 
+weapon_render_with_fastpath" "1" - Allow weapons to draw using the fast path. 
+weapon_reparse" - Reloads the weapon script files 
+weapon_reparse_server" - Reloads the weapon script files 
+weapon_showproficiency" "0
+weapon_sprint_raise_delay" "1" - Enables weapon delay between sprint and shooting 
+weaponx_player_data_optimization" "1" - Enable/disable weaponx player data optimization. Only applies with net_optimize_weapons >= 2 
+weaponx_predicting_client_only_optimization" "1" - Enable/disable weaponx optimization for burst fire, shot count and charge data only being sent to predicting client 
+weaponx_smartammo_data_optimization" "0" - Enable/disable weaponx smartammo data optimization. Only applies with net_optimize_weapons >= 2 
+window_hint_debug" "0" - Debugs search for window hints 
+window_hint_fov_down" "0" - Window hints below this vertical FOV will be ignored 
+window_hint_fov_horz" "60" - Window hints beyond this horizontal FOV will be ignored 
+window_hint_fov_up" "60" - Window hints above this vertical FOV will be ignored 
+window_hint_keyboard_fov_horz" "7" - Window hints beyond this horizontal FOV will be ignored 
+window_hint_lookahead_time" "0.8" - Lookahead prediction time for window checks 
+window_hint_max_horz_vel_change_dot" "0.966f" - Min dot product of velocity change when adjusting for windows 
+window_hint_max_vel_change_down" "150" - Max removed vertical velocity when adjusting for windows 
+window_hint_max_vel_change_up" "80" - Max added vertical velocity when adjusting for windows 
+window_hint_min_horz_vel" "100" - Horizontal velocity is increased to at least this when adjusting for windows 
+window_hint_permissive_max_horz_vel_change_dot" "0.88f" - Min dot product of velocity change when adjusting for windows (off grapple) 
+window_hint_permissive_max_vel_change_down" "300" - Max removed vertical velocity when adjusting for windows (off grapple) 
+window_hint_permissive_max_vel_change_up" "300" - Max added vertical velocity when adjusting for windows (off grapple) 
+xc_crouch_debounce" "0
+xlook
+xmove
+z_ragdoll_impact_strength" "500
+zipline_debug" "0
+zipline_use_range" "120.0
