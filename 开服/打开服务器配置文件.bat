@@ -1,0 +1,1 @@
+start R2Northstar\mods\Northstar.CustomServers\mod\cfg
